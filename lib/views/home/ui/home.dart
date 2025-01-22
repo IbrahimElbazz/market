@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
+import 'package:market/views/home/ui/widgets/list_category.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -28,6 +29,19 @@ class Home extends StatelessWidget {
                 width: 300.w,
                 child: Image.asset('assets/images/3858422.jpg'),
               ),
+              Row(
+                children: [
+                  Text(
+                    'Category',
+                    style: TextStyle(
+                      fontSize: 21.sp,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+              const GapH(height: 10),
+              const ListCategory()
             ],
           ),
         ),
