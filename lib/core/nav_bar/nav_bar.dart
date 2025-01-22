@@ -1,13 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:market/views/favorit/ui/fav.dart';
+import 'package:market/views/home/ui/home.dart';
+import 'package:market/views/profile/ui/profile.dart';
+import 'package:market/views/store/ui/store.dart';
 
 class NavBar extends StatelessWidget {
-  const NavBar({super.key});
+  NavBar({super.key});
+
+  final List<Widget> views = [
+    const Home(),
+    const Store(),
+    const Fav(),
+    const Profile(),
+  ];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(),
+      body: views[2],
       bottomNavigationBar: Container(
         color: Colors.white,
         child: GNav(

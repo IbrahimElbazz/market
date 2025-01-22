@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/widgets/gap.dart';
-import 'package:market/views/login/screens/widgets/login_form.dart';
+import 'package:market/views/login/ui/widgets/login_form.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
