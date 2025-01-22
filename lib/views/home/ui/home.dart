@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
+import 'package:market/views/home/ui/widgets/category_card.dart';
 import 'package:market/views/home/ui/widgets/list_category.dart';
 
 class Home extends StatelessWidget {
@@ -41,7 +42,9 @@ class Home extends StatelessWidget {
                 ],
               ),
               const GapH(height: 10),
-              const ListCategory()
+              const ListCategory(),
+              const GapH(height: 10),
+              const CategoryCard()
             ],
           ),
         ),
