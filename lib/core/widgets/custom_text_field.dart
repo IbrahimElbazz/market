@@ -6,13 +6,16 @@ class CustomTextField extends StatelessWidget {
     required this.hint,
     this.controller,
     this.iconButton,
+    this.enable,
   });
   final String? hint;
   final TextEditingController? controller;
   final Widget? iconButton;
+  final bool? enable;
   @override
   Widget build(BuildContext context) {
     return TextField(
+      enabled: enable,
       controller: controller,
       decoration: InputDecoration(
         hintText: hint ?? "",
