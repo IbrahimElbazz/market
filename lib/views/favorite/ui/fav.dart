@@ -16,7 +16,7 @@ class Fav extends StatelessWidget {
             children: [
               const GapH(height: 20),
               Text(
-                'Your Favorite',
+                'Your Favorite products',
                 style: TextStyle(
                   color: Colors.blue,
                   fontSize: 24.sp,
