@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:market/core/nav_bar/nav_bar.dart';
 import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
 
@@ -69,17 +70,26 @@ class LoginForm extends StatelessWidget {
               ),
             ),
             const GapH(height: 20),
-            Container(
-              height: 55.h,
-              width: 50.w,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
-                color: Colors.red.withOpacity(0.2),
-              ),
-              child: const Center(
-                child: Icon(
-                  Icons.g_mobiledata,
-                  color: Colors.red,
+            GestureDetector(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const NavBar();
+                  },
+                ));
+              },
+              child: Container(
+                height: 55.h,
+                width: 50.w,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(50),
+                  color: Colors.red.withOpacity(0.2),
+                ),
+                child: const Center(
+                  child: Icon(
+                    Icons.g_mobiledata,
+                    color: Colors.red,
+                  ),
                 ),
               ),
             ),
