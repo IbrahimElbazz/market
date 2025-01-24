@@ -7,35 +7,49 @@ class CustomTextField extends StatelessWidget {
     this.controller,
     this.iconButton,
     this.enable,
+    this.isPassword,
   });
   final String? hint;
   final TextEditingController? controller;
   final Widget? iconButton;
   final bool? enable;
+  final bool? isPassword;
   @override
   Widget build(BuildContext context) {
-    return TextField(
+    return TextFormField(
+      validator: (value) {
+        if (value == null || value.isEmpty) {
+          return 'enter value ';
+        }
+        return null;
+      },
       enabled: enable,
       controller: controller,
+      obscureText: isPassword ?? false,
       decoration: InputDecoration(
-        hintText: hint ?? "",
-        hintStyle: const TextStyle(
-          color: Colors.black,
-        ),
-        suffixIcon: iconButton ?? const SizedBox.shrink(),
-        focusedBorder: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(
-            color: Colors.blue,
+          hintText: hint ?? "",
+          hintStyle: const TextStyle(
+            color: Colors.black,
           ),
-        ),
-        border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(
-            color: Colors.grey,
+          suffixIcon: iconButton ?? const SizedBox.shrink(),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: const BorderSide(
+              color: Colors.blue,
+            ),
           ),
-        ),
-      ),
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: const BorderSide(
+              color: Colors.grey,
+            ),
+          ),
+          errorBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(12),
+            borderSide: const BorderSide(
+              color: Colors.red,
+            ),
+          )),
     );
   }
 }
