@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
-import 'package:market/views/home/ui/widgets/product_card.dart';
+import 'package:market/core/widgets/product_card.dart';
 
 class Store extends StatelessWidget {
   const Store({super.key});
@@ -21,7 +21,7 @@ class Store extends StatelessWidget {
                 hint: 'search now ',
                 iconButton: Icon(
                   Icons.search,
-                  color: Colors.grey,
+                  color: Colors.black,
                 ),
               ),
               const GapH(height: 20),

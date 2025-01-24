@@ -31,6 +31,7 @@ class NavBar extends StatelessWidget {
           return state.maybeWhen(
             orElse: () {
               return Scaffold(
+                backgroundColor: Colors.blue[50],
                 body: views[nav.currentIndex],
                 bottomNavigationBar: Container(
                   color: Colors.white,
