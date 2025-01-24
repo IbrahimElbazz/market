@@ -12,12 +12,6 @@ class LoginCubit extends Cubit<LoginState> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   final formKey = GlobalKey<FormState>();
-  bool isPasswordHidden = true;
-
-  void showPass() {
-    isPasswordHidden = !isPasswordHidden;
-    emit(const LoginState.showPass());
-  }
 
   Future<void> login() async {
     emit(const LoginState.loading());

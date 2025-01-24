@@ -15,6 +15,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
+  bool isPasswordHidden = true;
   @override
   Widget build(BuildContext context) {
     return BlocConsumer<LoginCubit, LoginState>(
@@ -98,21 +99,21 @@ class _LoginScreenState extends State<LoginScreen> {
                               const GapH(height: 20),
                               CustomTextField(
                                 hint: 'Password',
-                                isPassword: cub.isPasswordHidden,
+                                isPassword: isPasswordHidden,
                                 controller: context
                                     .read<LoginCubit>()
                                     .passwordController,
                                 iconButton: IconButton(
                                   onPressed: () {
                                     setState(() {
-                                      cub.showPass();
+                                      isPasswordHidden = !isPasswordHidden;
                                     });
                                   },
                                   icon: Icon(
-                                    cub.isPasswordHidden
+                                    isPasswordHidden
                                         ? Icons.visibility_off
                                         : Icons.visibility,
-                                    color: cub.isPasswordHidden
+                                    color: isPasswordHidden
                                         ? Colors.grey
                                         : Colors.blue,
                                   ),

@@ -22,7 +22,6 @@ mixin _$LoginState<T> {
     required TResult Function() success,
     required TResult Function(String errorMessage) error,
     required TResult Function() loading,
-    required TResult Function() showPass,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -31,7 +30,6 @@ mixin _$LoginState<T> {
     TResult? Function()? success,
     TResult? Function(String errorMessage)? error,
     TResult? Function()? loading,
-    TResult? Function()? showPass,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -40,7 +38,6 @@ mixin _$LoginState<T> {
     TResult Function()? success,
     TResult Function(String errorMessage)? error,
     TResult Function()? loading,
-    TResult Function()? showPass,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -50,7 +47,6 @@ mixin _$LoginState<T> {
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
     required TResult Function(Loading<T> value) loading,
-    required TResult Function(ShowPass<T> value) showPass,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -59,7 +55,6 @@ mixin _$LoginState<T> {
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
     TResult? Function(Loading<T> value)? loading,
-    TResult? Function(ShowPass<T> value)? showPass,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -68,7 +63,6 @@ mixin _$LoginState<T> {
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     TResult Function(Loading<T> value)? loading,
-    TResult Function(ShowPass<T> value)? showPass,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -140,7 +134,6 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function() success,
     required TResult Function(String errorMessage) error,
     required TResult Function() loading,
-    required TResult Function() showPass,
   }) {
     return initial();
   }
@@ -152,7 +145,6 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function()? success,
     TResult? Function(String errorMessage)? error,
     TResult? Function()? loading,
-    TResult? Function()? showPass,
   }) {
     return initial?.call();
   }
@@ -164,7 +156,6 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function()? success,
     TResult Function(String errorMessage)? error,
     TResult Function()? loading,
-    TResult Function()? showPass,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -180,7 +171,6 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
     required TResult Function(Loading<T> value) loading,
-    required TResult Function(ShowPass<T> value) showPass,
   }) {
     return initial(this);
   }
@@ -192,7 +182,6 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
     TResult? Function(Loading<T> value)? loading,
-    TResult? Function(ShowPass<T> value)? showPass,
   }) {
     return initial?.call(this);
   }
@@ -204,7 +193,6 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     TResult Function(Loading<T> value)? loading,
-    TResult Function(ShowPass<T> value)? showPass,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -263,7 +251,6 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function() success,
     required TResult Function(String errorMessage) error,
     required TResult Function() loading,
-    required TResult Function() showPass,
   }) {
     return success();
   }
@@ -275,7 +262,6 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function()? success,
     TResult? Function(String errorMessage)? error,
     TResult? Function()? loading,
-    TResult? Function()? showPass,
   }) {
     return success?.call();
   }
@@ -287,7 +273,6 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function()? success,
     TResult Function(String errorMessage)? error,
     TResult Function()? loading,
-    TResult Function()? showPass,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -303,7 +288,6 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
     required TResult Function(Loading<T> value) loading,
-    required TResult Function(ShowPass<T> value) showPass,
   }) {
     return success(this);
   }
@@ -315,7 +299,6 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
     TResult? Function(Loading<T> value)? loading,
-    TResult? Function(ShowPass<T> value)? showPass,
   }) {
     return success?.call(this);
   }
@@ -327,7 +310,6 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     TResult Function(Loading<T> value)? loading,
-    TResult Function(ShowPass<T> value)? showPass,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -414,7 +396,6 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function() success,
     required TResult Function(String errorMessage) error,
     required TResult Function() loading,
-    required TResult Function() showPass,
   }) {
     return error(errorMessage);
   }
@@ -426,7 +407,6 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function()? success,
     TResult? Function(String errorMessage)? error,
     TResult? Function()? loading,
-    TResult? Function()? showPass,
   }) {
     return error?.call(errorMessage);
   }
@@ -438,7 +418,6 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function()? success,
     TResult Function(String errorMessage)? error,
     TResult Function()? loading,
-    TResult Function()? showPass,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -454,7 +433,6 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
     required TResult Function(Loading<T> value) loading,
-    required TResult Function(ShowPass<T> value) showPass,
   }) {
     return error(this);
   }
@@ -466,7 +444,6 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
     TResult? Function(Loading<T> value)? loading,
-    TResult? Function(ShowPass<T> value)? showPass,
   }) {
     return error?.call(this);
   }
@@ -478,7 +455,6 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     TResult Function(Loading<T> value)? loading,
-    TResult Function(ShowPass<T> value)? showPass,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -545,7 +521,6 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function() success,
     required TResult Function(String errorMessage) error,
     required TResult Function() loading,
-    required TResult Function() showPass,
   }) {
     return loading();
   }
@@ -557,7 +532,6 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function()? success,
     TResult? Function(String errorMessage)? error,
     TResult? Function()? loading,
-    TResult? Function()? showPass,
   }) {
     return loading?.call();
   }
@@ -569,7 +543,6 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function()? success,
     TResult Function(String errorMessage)? error,
     TResult Function()? loading,
-    TResult Function()? showPass,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -585,7 +558,6 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
     required TResult Function(Loading<T> value) loading,
-    required TResult Function(ShowPass<T> value) showPass,
   }) {
     return loading(this);
   }
@@ -597,7 +569,6 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
     TResult? Function(Loading<T> value)? loading,
-    TResult? Function(ShowPass<T> value)? showPass,
   }) {
     return loading?.call(this);
   }
@@ -609,7 +580,6 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     TResult Function(Loading<T> value)? loading,
-    TResult Function(ShowPass<T> value)? showPass,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -621,127 +591,4 @@ class _$LoadingImpl<T> implements Loading<T> {
 
 abstract class Loading<T> implements LoginState<T> {
   const factory Loading() = _$LoadingImpl<T>;
-}
-
-/// @nodoc
-abstract class _$$ShowPassImplCopyWith<T, $Res> {
-  factory _$$ShowPassImplCopyWith(
-          _$ShowPassImpl<T> value, $Res Function(_$ShowPassImpl<T>) then) =
-      __$$ShowPassImplCopyWithImpl<T, $Res>;
-}
-
-/// @nodoc
-class __$$ShowPassImplCopyWithImpl<T, $Res>
-    extends _$LoginStateCopyWithImpl<T, $Res, _$ShowPassImpl<T>>
-    implements _$$ShowPassImplCopyWith<T, $Res> {
-  __$$ShowPassImplCopyWithImpl(
-      _$ShowPassImpl<T> _value, $Res Function(_$ShowPassImpl<T>) _then)
-      : super(_value, _then);
-
-  /// Create a copy of LoginState
-  /// with the given fields replaced by the non-null parameter values.
-}
-
-/// @nodoc
-
-class _$ShowPassImpl<T> implements ShowPass<T> {
-  const _$ShowPassImpl();
-
-  @override
-  String toString() {
-    return 'LoginState<$T>.showPass()';
-  }
-
-  @override
-  bool operator ==(Object other) {
-    return identical(this, other) ||
-        (other.runtimeType == runtimeType && other is _$ShowPassImpl<T>);
-  }
-
-  @override
-  int get hashCode => runtimeType.hashCode;
-
-  @override
-  @optionalTypeArgs
-  TResult when<TResult extends Object?>({
-    required TResult Function() initial,
-    required TResult Function() success,
-    required TResult Function(String errorMessage) error,
-    required TResult Function() loading,
-    required TResult Function() showPass,
-  }) {
-    return showPass();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? whenOrNull<TResult extends Object?>({
-    TResult? Function()? initial,
-    TResult? Function()? success,
-    TResult? Function(String errorMessage)? error,
-    TResult? Function()? loading,
-    TResult? Function()? showPass,
-  }) {
-    return showPass?.call();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeWhen<TResult extends Object?>({
-    TResult Function()? initial,
-    TResult Function()? success,
-    TResult Function(String errorMessage)? error,
-    TResult Function()? loading,
-    TResult Function()? showPass,
-    required TResult orElse(),
-  }) {
-    if (showPass != null) {
-      return showPass();
-    }
-    return orElse();
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult map<TResult extends Object?>({
-    required TResult Function(_Initial<T> value) initial,
-    required TResult Function(Success<T> value) success,
-    required TResult Function(Error<T> value) error,
-    required TResult Function(Loading<T> value) loading,
-    required TResult Function(ShowPass<T> value) showPass,
-  }) {
-    return showPass(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult? mapOrNull<TResult extends Object?>({
-    TResult? Function(_Initial<T> value)? initial,
-    TResult? Function(Success<T> value)? success,
-    TResult? Function(Error<T> value)? error,
-    TResult? Function(Loading<T> value)? loading,
-    TResult? Function(ShowPass<T> value)? showPass,
-  }) {
-    return showPass?.call(this);
-  }
-
-  @override
-  @optionalTypeArgs
-  TResult maybeMap<TResult extends Object?>({
-    TResult Function(_Initial<T> value)? initial,
-    TResult Function(Success<T> value)? success,
-    TResult Function(Error<T> value)? error,
-    TResult Function(Loading<T> value)? loading,
-    TResult Function(ShowPass<T> value)? showPass,
-    required TResult orElse(),
-  }) {
-    if (showPass != null) {
-      return showPass(this);
-    }
-    return orElse();
-  }
-}
-
-abstract class ShowPass<T> implements LoginState<T> {
-  const factory ShowPass() = _$ShowPassImpl<T>;
 }
