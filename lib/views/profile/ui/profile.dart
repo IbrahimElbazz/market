@@ -3,6 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/nav_bar/nav_bar.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/views/edit_profile/ui/screens/edit_profile.dart';
+import 'package:market/views/my_order/ui/screens/my_order.dart';
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -91,19 +92,31 @@ class Profile extends StatelessWidget {
                     const GapH(
                       height: 15,
                     ),
-                    Container(
-                      height: 55.h,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(16),
-                        color: Colors.blue,
-                      ),
-                      child: Center(
-                        child: Text(
-                          'My order',
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 18.sp,
-                            fontWeight: FontWeight.bold,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) {
+                              return const MyOrder();
+                            },
+                          ),
+                        );
+                      },
+                      child: Container(
+                        height: 55.h,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(16),
+                          color: Colors.blue,
+                        ),
+                        child: Center(
+                          child: Text(
+                            'My order',
+                            style: TextStyle(
+                              color: Colors.white,
+                              fontSize: 18.sp,
+                              fontWeight: FontWeight.bold,
+                            ),
                           ),
                         ),
                       ),
