@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:market/core/widgets/cached_network_image.dart';
 import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/views/product_details/ui/widgets/comment_card.dart';
@@ -46,9 +47,9 @@ class OrderDetails extends StatelessWidget {
               child: Column(
                 children: [
                   const GapH(height: 50),
-                  Image.network(
-                    width: 300.w,
-                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXappsZyHph8O7O45kgi1tFZeFaGZ13phc6g&s",
+                  const CachedImage(
+                    imageUrl:
+                        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXappsZyHph8O7O45kgi1tFZeFaGZ13phc6g&s',
                   ),
                   const GapH(height: 50),
                   Row(

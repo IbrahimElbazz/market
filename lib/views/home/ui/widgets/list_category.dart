@@ -12,7 +12,7 @@ class ListCategory extends StatelessWidget {
       height: 90.h,
       width: double.infinity,
       child: ListView.builder(
-        itemCount: listCatigory.length,
+        itemCount: listCategory.length,
         shrinkWrap: true,
         physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
@@ -28,12 +28,12 @@ class ListCategory extends StatelessWidget {
                   borderRadius: BorderRadius.circular(50),
                 ),
                 child: Icon(
-                  listCatigory[index]['icon'],
+                  listCategory[index]['icon'],
                   color: Colors.white,
                 ),
               ),
               Text(
-                '${listCatigory[index]['name']}',
+                '${listCategory[index]['name']}',
               )
             ],
           );
@@ -43,7 +43,7 @@ class ListCategory extends StatelessWidget {
   }
 }
 
-List listCatigory = [
+List listCategory = [
   {
     'name': 'Sports',
     'icon': Icons.sports,

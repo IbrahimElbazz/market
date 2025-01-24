@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:market/core/widgets/cached_network_image.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/views/product_details/ui/screens/order_details.dart';
 
@@ -36,29 +37,10 @@ class ProductCard extends StatelessWidget {
             ),
             child: Column(
               children: [
-                Image.network(
-                  width: 300,
-                  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXappsZyHph8O7O45kgi1tFZeFaGZ13phc6g&s",
+                const CachedImage(
+                  imageUrl:
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXappsZyHph8O7O45kgi1tFZeFaGZ13phc6g&s',
                 ),
-                // CachedNetworkImage(
-                //   imageUrl:
-                //       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXappsZyHph8O7O45kgi1tFZeFaGZ13phc6g&s",
-                //   imageBuilder: (context, imageProvider) => Container(
-                //     decoration: BoxDecoration(
-                //       image: DecorationImage(
-                //         image: imageProvider,
-                //         fit: BoxFit.cover,
-                //         colorFilter: const ColorFilter.mode(
-                //           Colors.red,
-                //           BlendMode.colorBurn,
-                //         ),
-                //       ),
-                //     ),
-                //   ),
-                //   placeholder: (context, url) =>
-                //       const CircularProgressIndicator(),
-                //   errorWidget: (context, url, error) => const Icon(Icons.error),
-                // ),
                 const GapH(height: 10),
                 Row(
                   children: [
