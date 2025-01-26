@@ -3,6 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/views/auth/login/logic/cubit/login_cubit.dart';
 import 'package:market/views/auth/login/ui/login_screen.dart';
+import 'package:market/views/auth/register/logic/cubit/register_cubit.dart';
 
 class market extends StatelessWidget {
   const market({super.key});
@@ -12,8 +13,15 @@ class market extends StatelessWidget {
       designSize: const Size(430, 930),
       minTextAdapt: true,
       splitScreenMode: true,
-      child: BlocProvider(
-        create: (context) => LoginCubit(),
+      child: MultiBlocProvider(
+        providers: [
+          BlocProvider(
+            create: (context) => LoginCubit(),
+          ),
+          BlocProvider(
+            create: (context) => RegisterCubit(),
+          ),
+        ],
         child: const MaterialApp(
           debugShowCheckedModeBanner: false,
           title: 'market',

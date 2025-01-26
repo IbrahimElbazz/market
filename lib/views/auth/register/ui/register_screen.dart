@@ -4,35 +4,34 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/nav_bar/nav_bar.dart';
 import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
-import 'package:market/views/auth/login/logic/cubit/login_cubit.dart';
-import 'package:market/views/auth/login/logic/cubit/login_state.dart';
-import 'package:market/views/auth/register/ui/register_screen.dart';
+import 'package:market/views/auth/register/logic/cubit/register_cubit.dart';
+import 'package:market/views/auth/register/logic/cubit/register_state.dart';
 
-class LoginScreen extends StatefulWidget {
-  const LoginScreen({super.key});
+class Register extends StatefulWidget {
+  const Register({super.key});
 
   @override
-  State<LoginScreen> createState() => _LoginScreenState();
+  State<Register> createState() => _RegisterState();
 }
 
-class _LoginScreenState extends State<LoginScreen> {
+class _RegisterState extends State<Register> {
   bool isPasswordHidden = true;
   @override
   Widget build(BuildContext context) {
-    return BlocConsumer<LoginCubit, LoginState>(
+    return BlocConsumer<RegisterCubit, RegisterState>(
       listener: (context, state) {
         state.maybeWhen(
           orElse: () {
             return const SizedBox.shrink();
           },
-          success: () {
+          successRegister: () {
             Navigator.push(
                 context,
                 MaterialPageRoute(
                   builder: (context) => NavBar(),
                 ));
           },
-          loading: () {
+          loadingRegister: () {
             return showDialog(
               context: context,
               builder: (context) {
@@ -44,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
               },
             );
           },
-          error: (errorMessage) {
+          errorRegister: (errorMessage) {
             Navigator.pop(context);
             return ScaffoldMessenger.of(context).showSnackBar(
               SnackBar(
@@ -55,11 +54,13 @@ class _LoginScreenState extends State<LoginScreen> {
           },
         );
       },
-      buildWhen: (previous, current) {
-        return current is Success || current is Error || current is Loading;
+      listenWhen: (previous, current) {
+        return current is SuccessRegister ||
+            current is ErrorRegister ||
+            current is LoadingRegister;
       },
       builder: (context, state) {
-        final cub = context.read<LoginCubit>();
+        final cub = context.read<RegisterCubit>();
         return Scaffold(
           backgroundColor: const Color.fromARGB(255, 240, 240, 240),
           body: SafeArea(
@@ -70,7 +71,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   children: [
                     const GapH(height: 50),
                     Text(
-                      'Welcome to our market',
+                      'Create new account',
                       style: TextStyle(
                         fontSize: 20.sp,
                         color: Colors.black,
@@ -80,7 +81,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     const GapH(height: 50),
                     Container(
                       width: 380.w,
-                      height: 500.h,
                       decoration: BoxDecoration(
                         color: Colors.white,
                         borderRadius: BorderRadius.circular(30),
@@ -88,22 +88,24 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 16.w),
                         child: Form(
-                          key: context.read<LoginCubit>().formKey,
+                          key: cub.formKey,
                           child: Column(
                             children: [
                               const GapH(height: 50),
                               CustomTextField(
+                                hint: 'name',
+                                controller: cub.nameController,
+                              ),
+                              const GapH(height: 20),
+                              CustomTextField(
                                 hint: 'Email',
-                                controller:
-                                    context.read<LoginCubit>().emailController,
+                                controller: cub.emailController,
                               ),
                               const GapH(height: 20),
                               CustomTextField(
                                 hint: 'Password',
                                 isPassword: isPasswordHidden,
-                                controller: context
-                                    .read<LoginCubit>()
-                                    .passwordController,
+                                controller: cub.passwordController,
                                 iconButton: IconButton(
                                   onPressed: () {
                                     setState(() {
@@ -120,30 +122,13 @@ class _LoginScreenState extends State<LoginScreen> {
                                   ),
                                 ),
                               ),
-                              const GapH(height: 10),
-                              Row(
-                                mainAxisAlignment: MainAxisAlignment.end,
-                                children: [
-                                  Text(
-                                    'Forget password ?',
-                                    style: TextStyle(
-                                      color: Colors.blue,
-                                      fontSize: 14.sp,
-                                    ),
-                                  ),
-                                ],
-                              ),
                               const GapH(
                                 height: 30,
                               ),
                               GestureDetector(
                                 onTap: () {
-                                  if (context
-                                      .read<LoginCubit>()
-                                      .formKey
-                                      .currentState!
-                                      .validate()) {
-                                    context.read<LoginCubit>().login();
+                                  if (cub.formKey.currentState!.validate()) {
+                                    cub.register();
                                   }
                                 },
                                 child: Container(
@@ -154,7 +139,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   ),
                                   child: Center(
                                     child: Text(
-                                      'Login',
+                                      'Register',
                                       style: TextStyle(
                                         color: Colors.white,
                                         fontSize: 18.sp,
@@ -167,14 +152,14 @@ class _LoginScreenState extends State<LoginScreen> {
                               const GapH(height: 20),
                               GestureDetector(
                                 onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) {
-                                        return NavBar();
-                                      },
-                                    ),
-                                  );
+                                  // Navigator.push(
+                                  //   context,
+                                  //   MaterialPageRoute(
+                                  //     builder: (context) {
+                                  //       return NavBar();
+                                  //     },
+                                  //   ),
+                                  // );
                                 },
                                 child: Container(
                                   height: 55.h,
@@ -196,7 +181,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Text(
-                                    'Do not have acc ?',
+                                    'I already have acc : ',
                                     style: TextStyle(
                                       color: Colors.black,
                                       fontSize: 14.sp,
@@ -205,14 +190,10 @@ class _LoginScreenState extends State<LoginScreen> {
                                   const GapW(width: 5),
                                   GestureDetector(
                                     onTap: () {
-                                      Navigator.push(context, MaterialPageRoute(
-                                        builder: (context) {
-                                          return const Register();
-                                        },
-                                      ));
+                                      Navigator.pop(context);
                                     },
                                     child: Text(
-                                      'Register',
+                                      'login',
                                       style: TextStyle(
                                         color: Colors.blue,
                                         fontSize: 14.sp,
@@ -221,6 +202,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                   ),
                                 ],
                               ),
+                              const GapH(height: 15),
                             ],
                           ),
                         ),
