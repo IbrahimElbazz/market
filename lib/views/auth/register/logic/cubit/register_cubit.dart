@@ -21,7 +21,7 @@ class RegisterCubit extends Cubit<RegisterState> {
       );
       emit(const RegisterState.successRegister());
     } on AuthApiException catch (e) {
-      emit(RegisterState.errorRegister(errorMessage: e.toString()));
+      emit(RegisterState.errorRegister(errorMessage: e.message));
     } catch (e) {
       emit(RegisterState.errorRegister(errorMessage: e.toString()));
     }
