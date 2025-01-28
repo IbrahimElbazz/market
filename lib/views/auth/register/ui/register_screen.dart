@@ -151,33 +151,6 @@ class _RegisterState extends State<Register> {
                                 ),
                               ),
                               const GapH(height: 20),
-                              GestureDetector(
-                                onTap: () {
-                                  // Navigator.push(
-                                  //   context,
-                                  //   MaterialPageRoute(
-                                  //     builder: (context) {
-                                  //       return NavBar();
-                                  //     },
-                                  //   ),
-                                  // );
-                                },
-                                child: Container(
-                                  height: 55.h,
-                                  width: 50.w,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(50),
-                                    color: Colors.red.withOpacity(0.2),
-                                  ),
-                                  child: const Center(
-                                    child: Icon(
-                                      Icons.g_mobiledata,
-                                      color: Colors.red,
-                                    ),
-                                  ),
-                                ),
-                              ),
-                              const GapH(height: 20),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
