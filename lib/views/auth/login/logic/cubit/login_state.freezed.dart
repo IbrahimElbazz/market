@@ -22,6 +22,9 @@ mixin _$LoginState<T> {
     required TResult Function() success,
     required TResult Function(String errorMessage) error,
     required TResult Function() loading,
+    required TResult Function() successGoogle,
+    required TResult Function() errorGoogle,
+    required TResult Function() loadingGoogle,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -30,6 +33,9 @@ mixin _$LoginState<T> {
     TResult? Function()? success,
     TResult? Function(String errorMessage)? error,
     TResult? Function()? loading,
+    TResult? Function()? successGoogle,
+    TResult? Function()? errorGoogle,
+    TResult? Function()? loadingGoogle,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -38,6 +44,9 @@ mixin _$LoginState<T> {
     TResult Function()? success,
     TResult Function(String errorMessage)? error,
     TResult Function()? loading,
+    TResult Function()? successGoogle,
+    TResult Function()? errorGoogle,
+    TResult Function()? loadingGoogle,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -47,6 +56,9 @@ mixin _$LoginState<T> {
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
     required TResult Function(Loading<T> value) loading,
+    required TResult Function(SuccessGoogle<T> value) successGoogle,
+    required TResult Function(ErrorGoogle<T> value) errorGoogle,
+    required TResult Function(LoadingGoogle<T> value) loadingGoogle,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -55,6 +67,9 @@ mixin _$LoginState<T> {
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
     TResult? Function(Loading<T> value)? loading,
+    TResult? Function(SuccessGoogle<T> value)? successGoogle,
+    TResult? Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult? Function(LoadingGoogle<T> value)? loadingGoogle,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,6 +78,9 @@ mixin _$LoginState<T> {
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     TResult Function(Loading<T> value)? loading,
+    TResult Function(SuccessGoogle<T> value)? successGoogle,
+    TResult Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult Function(LoadingGoogle<T> value)? loadingGoogle,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -134,6 +152,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function() success,
     required TResult Function(String errorMessage) error,
     required TResult Function() loading,
+    required TResult Function() successGoogle,
+    required TResult Function() errorGoogle,
+    required TResult Function() loadingGoogle,
   }) {
     return initial();
   }
@@ -145,6 +166,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function()? success,
     TResult? Function(String errorMessage)? error,
     TResult? Function()? loading,
+    TResult? Function()? successGoogle,
+    TResult? Function()? errorGoogle,
+    TResult? Function()? loadingGoogle,
   }) {
     return initial?.call();
   }
@@ -156,6 +180,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function()? success,
     TResult Function(String errorMessage)? error,
     TResult Function()? loading,
+    TResult Function()? successGoogle,
+    TResult Function()? errorGoogle,
+    TResult Function()? loadingGoogle,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -171,6 +198,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
     required TResult Function(Loading<T> value) loading,
+    required TResult Function(SuccessGoogle<T> value) successGoogle,
+    required TResult Function(ErrorGoogle<T> value) errorGoogle,
+    required TResult Function(LoadingGoogle<T> value) loadingGoogle,
   }) {
     return initial(this);
   }
@@ -182,6 +212,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
     TResult? Function(Loading<T> value)? loading,
+    TResult? Function(SuccessGoogle<T> value)? successGoogle,
+    TResult? Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult? Function(LoadingGoogle<T> value)? loadingGoogle,
   }) {
     return initial?.call(this);
   }
@@ -193,6 +226,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     TResult Function(Loading<T> value)? loading,
+    TResult Function(SuccessGoogle<T> value)? successGoogle,
+    TResult Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult Function(LoadingGoogle<T> value)? loadingGoogle,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -251,6 +287,9 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function() success,
     required TResult Function(String errorMessage) error,
     required TResult Function() loading,
+    required TResult Function() successGoogle,
+    required TResult Function() errorGoogle,
+    required TResult Function() loadingGoogle,
   }) {
     return success();
   }
@@ -262,6 +301,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function()? success,
     TResult? Function(String errorMessage)? error,
     TResult? Function()? loading,
+    TResult? Function()? successGoogle,
+    TResult? Function()? errorGoogle,
+    TResult? Function()? loadingGoogle,
   }) {
     return success?.call();
   }
@@ -273,6 +315,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function()? success,
     TResult Function(String errorMessage)? error,
     TResult Function()? loading,
+    TResult Function()? successGoogle,
+    TResult Function()? errorGoogle,
+    TResult Function()? loadingGoogle,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -288,6 +333,9 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
     required TResult Function(Loading<T> value) loading,
+    required TResult Function(SuccessGoogle<T> value) successGoogle,
+    required TResult Function(ErrorGoogle<T> value) errorGoogle,
+    required TResult Function(LoadingGoogle<T> value) loadingGoogle,
   }) {
     return success(this);
   }
@@ -299,6 +347,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
     TResult? Function(Loading<T> value)? loading,
+    TResult? Function(SuccessGoogle<T> value)? successGoogle,
+    TResult? Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult? Function(LoadingGoogle<T> value)? loadingGoogle,
   }) {
     return success?.call(this);
   }
@@ -310,6 +361,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     TResult Function(Loading<T> value)? loading,
+    TResult Function(SuccessGoogle<T> value)? successGoogle,
+    TResult Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult Function(LoadingGoogle<T> value)? loadingGoogle,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -396,6 +450,9 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function() success,
     required TResult Function(String errorMessage) error,
     required TResult Function() loading,
+    required TResult Function() successGoogle,
+    required TResult Function() errorGoogle,
+    required TResult Function() loadingGoogle,
   }) {
     return error(errorMessage);
   }
@@ -407,6 +464,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function()? success,
     TResult? Function(String errorMessage)? error,
     TResult? Function()? loading,
+    TResult? Function()? successGoogle,
+    TResult? Function()? errorGoogle,
+    TResult? Function()? loadingGoogle,
   }) {
     return error?.call(errorMessage);
   }
@@ -418,6 +478,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function()? success,
     TResult Function(String errorMessage)? error,
     TResult Function()? loading,
+    TResult Function()? successGoogle,
+    TResult Function()? errorGoogle,
+    TResult Function()? loadingGoogle,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -433,6 +496,9 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
     required TResult Function(Loading<T> value) loading,
+    required TResult Function(SuccessGoogle<T> value) successGoogle,
+    required TResult Function(ErrorGoogle<T> value) errorGoogle,
+    required TResult Function(LoadingGoogle<T> value) loadingGoogle,
   }) {
     return error(this);
   }
@@ -444,6 +510,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
     TResult? Function(Loading<T> value)? loading,
+    TResult? Function(SuccessGoogle<T> value)? successGoogle,
+    TResult? Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult? Function(LoadingGoogle<T> value)? loadingGoogle,
   }) {
     return error?.call(this);
   }
@@ -455,6 +524,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     TResult Function(Loading<T> value)? loading,
+    TResult Function(SuccessGoogle<T> value)? successGoogle,
+    TResult Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult Function(LoadingGoogle<T> value)? loadingGoogle,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -521,6 +593,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function() success,
     required TResult Function(String errorMessage) error,
     required TResult Function() loading,
+    required TResult Function() successGoogle,
+    required TResult Function() errorGoogle,
+    required TResult Function() loadingGoogle,
   }) {
     return loading();
   }
@@ -532,6 +607,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function()? success,
     TResult? Function(String errorMessage)? error,
     TResult? Function()? loading,
+    TResult? Function()? successGoogle,
+    TResult? Function()? errorGoogle,
+    TResult? Function()? loadingGoogle,
   }) {
     return loading?.call();
   }
@@ -543,6 +621,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function()? success,
     TResult Function(String errorMessage)? error,
     TResult Function()? loading,
+    TResult Function()? successGoogle,
+    TResult Function()? errorGoogle,
+    TResult Function()? loadingGoogle,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -558,6 +639,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function(Success<T> value) success,
     required TResult Function(Error<T> value) error,
     required TResult Function(Loading<T> value) loading,
+    required TResult Function(SuccessGoogle<T> value) successGoogle,
+    required TResult Function(ErrorGoogle<T> value) errorGoogle,
+    required TResult Function(LoadingGoogle<T> value) loadingGoogle,
   }) {
     return loading(this);
   }
@@ -569,6 +653,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function(Success<T> value)? success,
     TResult? Function(Error<T> value)? error,
     TResult? Function(Loading<T> value)? loading,
+    TResult? Function(SuccessGoogle<T> value)? successGoogle,
+    TResult? Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult? Function(LoadingGoogle<T> value)? loadingGoogle,
   }) {
     return loading?.call(this);
   }
@@ -580,6 +667,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function(Success<T> value)? success,
     TResult Function(Error<T> value)? error,
     TResult Function(Loading<T> value)? loading,
+    TResult Function(SuccessGoogle<T> value)? successGoogle,
+    TResult Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult Function(LoadingGoogle<T> value)? loadingGoogle,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -591,4 +681,409 @@ class _$LoadingImpl<T> implements Loading<T> {
 
 abstract class Loading<T> implements LoginState<T> {
   const factory Loading() = _$LoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$SuccessGoogleImplCopyWith<T, $Res> {
+  factory _$$SuccessGoogleImplCopyWith(_$SuccessGoogleImpl<T> value,
+          $Res Function(_$SuccessGoogleImpl<T>) then) =
+      __$$SuccessGoogleImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$SuccessGoogleImplCopyWithImpl<T, $Res>
+    extends _$LoginStateCopyWithImpl<T, $Res, _$SuccessGoogleImpl<T>>
+    implements _$$SuccessGoogleImplCopyWith<T, $Res> {
+  __$$SuccessGoogleImplCopyWithImpl(_$SuccessGoogleImpl<T> _value,
+      $Res Function(_$SuccessGoogleImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of LoginState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$SuccessGoogleImpl<T> implements SuccessGoogle<T> {
+  const _$SuccessGoogleImpl();
+
+  @override
+  String toString() {
+    return 'LoginState<$T>.successGoogle()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SuccessGoogleImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() success,
+    required TResult Function(String errorMessage) error,
+    required TResult Function() loading,
+    required TResult Function() successGoogle,
+    required TResult Function() errorGoogle,
+    required TResult Function() loadingGoogle,
+  }) {
+    return successGoogle();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? success,
+    TResult? Function(String errorMessage)? error,
+    TResult? Function()? loading,
+    TResult? Function()? successGoogle,
+    TResult? Function()? errorGoogle,
+    TResult? Function()? loadingGoogle,
+  }) {
+    return successGoogle?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? success,
+    TResult Function(String errorMessage)? error,
+    TResult Function()? loading,
+    TResult Function()? successGoogle,
+    TResult Function()? errorGoogle,
+    TResult Function()? loadingGoogle,
+    required TResult orElse(),
+  }) {
+    if (successGoogle != null) {
+      return successGoogle();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(SuccessGoogle<T> value) successGoogle,
+    required TResult Function(ErrorGoogle<T> value) errorGoogle,
+    required TResult Function(LoadingGoogle<T> value) loadingGoogle,
+  }) {
+    return successGoogle(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(SuccessGoogle<T> value)? successGoogle,
+    TResult? Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult? Function(LoadingGoogle<T> value)? loadingGoogle,
+  }) {
+    return successGoogle?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(SuccessGoogle<T> value)? successGoogle,
+    TResult Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult Function(LoadingGoogle<T> value)? loadingGoogle,
+    required TResult orElse(),
+  }) {
+    if (successGoogle != null) {
+      return successGoogle(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessGoogle<T> implements LoginState<T> {
+  const factory SuccessGoogle() = _$SuccessGoogleImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$ErrorGoogleImplCopyWith<T, $Res> {
+  factory _$$ErrorGoogleImplCopyWith(_$ErrorGoogleImpl<T> value,
+          $Res Function(_$ErrorGoogleImpl<T>) then) =
+      __$$ErrorGoogleImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$ErrorGoogleImplCopyWithImpl<T, $Res>
+    extends _$LoginStateCopyWithImpl<T, $Res, _$ErrorGoogleImpl<T>>
+    implements _$$ErrorGoogleImplCopyWith<T, $Res> {
+  __$$ErrorGoogleImplCopyWithImpl(
+      _$ErrorGoogleImpl<T> _value, $Res Function(_$ErrorGoogleImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of LoginState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$ErrorGoogleImpl<T> implements ErrorGoogle<T> {
+  const _$ErrorGoogleImpl();
+
+  @override
+  String toString() {
+    return 'LoginState<$T>.errorGoogle()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$ErrorGoogleImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() success,
+    required TResult Function(String errorMessage) error,
+    required TResult Function() loading,
+    required TResult Function() successGoogle,
+    required TResult Function() errorGoogle,
+    required TResult Function() loadingGoogle,
+  }) {
+    return errorGoogle();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? success,
+    TResult? Function(String errorMessage)? error,
+    TResult? Function()? loading,
+    TResult? Function()? successGoogle,
+    TResult? Function()? errorGoogle,
+    TResult? Function()? loadingGoogle,
+  }) {
+    return errorGoogle?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? success,
+    TResult Function(String errorMessage)? error,
+    TResult Function()? loading,
+    TResult Function()? successGoogle,
+    TResult Function()? errorGoogle,
+    TResult Function()? loadingGoogle,
+    required TResult orElse(),
+  }) {
+    if (errorGoogle != null) {
+      return errorGoogle();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(SuccessGoogle<T> value) successGoogle,
+    required TResult Function(ErrorGoogle<T> value) errorGoogle,
+    required TResult Function(LoadingGoogle<T> value) loadingGoogle,
+  }) {
+    return errorGoogle(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(SuccessGoogle<T> value)? successGoogle,
+    TResult? Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult? Function(LoadingGoogle<T> value)? loadingGoogle,
+  }) {
+    return errorGoogle?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(SuccessGoogle<T> value)? successGoogle,
+    TResult Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult Function(LoadingGoogle<T> value)? loadingGoogle,
+    required TResult orElse(),
+  }) {
+    if (errorGoogle != null) {
+      return errorGoogle(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorGoogle<T> implements LoginState<T> {
+  const factory ErrorGoogle() = _$ErrorGoogleImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$LoadingGoogleImplCopyWith<T, $Res> {
+  factory _$$LoadingGoogleImplCopyWith(_$LoadingGoogleImpl<T> value,
+          $Res Function(_$LoadingGoogleImpl<T>) then) =
+      __$$LoadingGoogleImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$LoadingGoogleImplCopyWithImpl<T, $Res>
+    extends _$LoginStateCopyWithImpl<T, $Res, _$LoadingGoogleImpl<T>>
+    implements _$$LoadingGoogleImplCopyWith<T, $Res> {
+  __$$LoadingGoogleImplCopyWithImpl(_$LoadingGoogleImpl<T> _value,
+      $Res Function(_$LoadingGoogleImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of LoginState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$LoadingGoogleImpl<T> implements LoadingGoogle<T> {
+  const _$LoadingGoogleImpl();
+
+  @override
+  String toString() {
+    return 'LoginState<$T>.loadingGoogle()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$LoadingGoogleImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() success,
+    required TResult Function(String errorMessage) error,
+    required TResult Function() loading,
+    required TResult Function() successGoogle,
+    required TResult Function() errorGoogle,
+    required TResult Function() loadingGoogle,
+  }) {
+    return loadingGoogle();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? success,
+    TResult? Function(String errorMessage)? error,
+    TResult? Function()? loading,
+    TResult? Function()? successGoogle,
+    TResult? Function()? errorGoogle,
+    TResult? Function()? loadingGoogle,
+  }) {
+    return loadingGoogle?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? success,
+    TResult Function(String errorMessage)? error,
+    TResult Function()? loading,
+    TResult Function()? successGoogle,
+    TResult Function()? errorGoogle,
+    TResult Function()? loadingGoogle,
+    required TResult orElse(),
+  }) {
+    if (loadingGoogle != null) {
+      return loadingGoogle();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(SuccessGoogle<T> value) successGoogle,
+    required TResult Function(ErrorGoogle<T> value) errorGoogle,
+    required TResult Function(LoadingGoogle<T> value) loadingGoogle,
+  }) {
+    return loadingGoogle(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(SuccessGoogle<T> value)? successGoogle,
+    TResult? Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult? Function(LoadingGoogle<T> value)? loadingGoogle,
+  }) {
+    return loadingGoogle?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(SuccessGoogle<T> value)? successGoogle,
+    TResult Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult Function(LoadingGoogle<T> value)? loadingGoogle,
+    required TResult orElse(),
+  }) {
+    if (loadingGoogle != null) {
+      return loadingGoogle(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LoadingGoogle<T> implements LoginState<T> {
+  const factory LoadingGoogle() = _$LoadingGoogleImpl<T>;
 }

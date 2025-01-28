@@ -25,6 +25,13 @@ class _LoginScreenState extends State<LoginScreen> {
           orElse: () {
             return const SizedBox.shrink();
           },
+          successGoogle: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => NavBar(),
+                ));
+          },
           success: () {
             Navigator.push(
                 context,
@@ -33,6 +40,18 @@ class _LoginScreenState extends State<LoginScreen> {
                 ));
           },
           loading: () {
+            return showDialog(
+              context: context,
+              builder: (context) {
+                return const Center(
+                  child: CircularProgressIndicator(
+                    color: Colors.blue,
+                  ),
+                );
+              },
+            );
+          },
+          loadingGoogle: () {
             return showDialog(
               context: context,
               builder: (context) {
@@ -167,14 +186,7 @@ class _LoginScreenState extends State<LoginScreen> {
                               const GapH(height: 20),
                               GestureDetector(
                                 onTap: () {
-                                  Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                      builder: (context) {
-                                        return NavBar();
-                                      },
-                                    ),
-                                  );
+                                  context.read<LoginCubit>().loginWithGoogle();
                                 },
                                 child: Container(
                                   height: 55.h,

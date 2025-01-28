@@ -27,12 +27,12 @@ class market extends StatelessWidget {
             create: (context) => RegisterCubit(),
           ),
         ],
-        child: MaterialApp(
-          debugShowCheckedModeBanner: false,
-          title: 'market',
-          home:
-              client.auth.currentUser == null ? const LoginScreen() : NavBar(),
-        ),
+        child: const MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'market',
+            home: LoginScreen()
+            // client.auth.currentUser == null ? const LoginScreen() : NavBar(),
+            ),
       ),
     );
   }
