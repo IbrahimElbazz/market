@@ -24,6 +24,36 @@ class _ForgetPassScreenState extends State<ForgetPassScreen> {
           orElse: () {
             return const SizedBox.shrink();
           },
+          resetPasswordLoading: () {
+            return showDialog(
+              context: context,
+              builder: (context) {
+                return const Center(
+                  child: CircularProgressIndicator(
+                    color: Colors.blue,
+                  ),
+                );
+              },
+            );
+          },
+          resetPasswordError: (errorMessage) {
+            Navigator.pop(context);
+            return ScaffoldMessenger.of(context).showSnackBar(
+              SnackBar(
+                content: Center(child: Text(errorMessage)),
+                backgroundColor: Colors.blue,
+              ),
+            );
+          },
+          resetPasswordSuccess: () {
+            Navigator.pop(context);
+            return ScaffoldMessenger.of(context).showSnackBar(
+              const SnackBar(
+                content: Center(child: Text('done')),
+                backgroundColor: Colors.green,
+              ),
+            );
+          },
         );
       },
       buildWhen: (previous, current) {
@@ -74,14 +104,17 @@ class _ForgetPassScreenState extends State<ForgetPassScreen> {
                             const GapH(height: 50),
                             CustomTextField(
                               hint: 'Email',
-                              controller:
-                                  context.read<LoginCubit>().emailController,
+                              controller: context
+                                  .read<LoginCubit>()
+                                  .resendEmailController,
                             ),
                             const GapH(
                               height: 30,
                             ),
                             GestureDetector(
-                              onTap: () {},
+                              onTap: () {
+                                cub.forgetPassword();
+                              },
                               child: Container(
                                 height: 55.h,
                                 decoration: BoxDecoration(

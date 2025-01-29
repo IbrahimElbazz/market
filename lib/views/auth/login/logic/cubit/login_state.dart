@@ -13,4 +13,10 @@ class LoginState<T> with _$LoginState<T> {
   const factory LoginState.successGoogle() = SuccessGoogle;
   const factory LoginState.errorGoogle() = ErrorGoogle;
   const factory LoginState.loadingGoogle() = LoadingGoogle;
+
+  // reset password
+  const factory LoginState.resetPasswordLoading() = ResetPasswordLoading;
+  const factory LoginState.resetPasswordSuccess() = ResetPasswordSuccess;
+  const factory LoginState.resetPasswordError({required String errorMessage}) =
+      ResetPasswordError;
 }

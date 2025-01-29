@@ -11,9 +11,11 @@ class LoginCubit extends Cubit<LoginState> {
 
   SupabaseClient client = Supabase.instance.client;
   TextEditingController emailController = TextEditingController();
+  TextEditingController resendEmailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   final formKey = GlobalKey<FormState>();
 
+  // login
   Future<void> login() async {
     emit(const LoginState.loading());
     try {
@@ -31,6 +33,7 @@ class LoginCubit extends Cubit<LoginState> {
     }
   }
 
+  // login with google
   GoogleSignInAccount? googleUser;
   Future<AuthResponse> loginWithGoogle() async {
     emit(const LoginState.loadingGoogle());
@@ -61,5 +64,19 @@ class LoginCubit extends Cubit<LoginState> {
     );
     emit(const LoginState.successGoogle());
     return response;
+  }
+
+  // reset password
+
+  Future<void> forgetPassword() async {
+    emit(const LoginState.resetPasswordLoading());
+
+    try {
+      await client.auth.resetPasswordForEmail(
+        resendEmailController.text,
+      );
+    } on AuthApiException catch (e) {
+      emit(LoginState.resetPasswordError(errorMessage: e.message.toString()));
+    }
   }
 }
