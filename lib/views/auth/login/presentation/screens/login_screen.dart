@@ -6,6 +6,7 @@ import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/views/auth/login/logic/cubit/login_cubit.dart';
 import 'package:market/views/auth/login/logic/cubit/login_state.dart';
+import 'package:market/views/auth/login/presentation/screens/forget_pass_screen.dart';
 import 'package:market/views/auth/register/ui/register_screen.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -143,11 +144,20 @@ class _LoginScreenState extends State<LoginScreen> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
-                                  Text(
-                                    'Forget password ?',
-                                    style: TextStyle(
-                                      color: Colors.blue,
-                                      fontSize: 14.sp,
+                                  GestureDetector(
+                                    onTap: () {
+                                      Navigator.push(context, MaterialPageRoute(
+                                        builder: (context) {
+                                          return const ForgetPassScreen();
+                                        },
+                                      ));
+                                    },
+                                    child: Text(
+                                      'Forget password ?',
+                                      style: TextStyle(
+                                        color: Colors.blue,
+                                        fontSize: 14.sp,
+                                      ),
                                     ),
                                   ),
                                 ],

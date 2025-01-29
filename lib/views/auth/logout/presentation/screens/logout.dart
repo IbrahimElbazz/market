@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:market/views/auth/login/ui/login_screen.dart';
+import 'package:market/views/auth/login/presentation/screens/login_screen.dart';
 import 'package:market/views/auth/logout/logic/cubit/logout_cubit.dart';
 import 'package:market/views/auth/logout/logic/cubit/logout_state.dart';
 
