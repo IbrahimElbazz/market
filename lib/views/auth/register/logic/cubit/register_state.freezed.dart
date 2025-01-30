@@ -22,6 +22,9 @@ mixin _$RegisterState {
     required TResult Function() loadingRegister,
     required TResult Function() successRegister,
     required TResult Function(String errorMessage) errorRegister,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -30,6 +33,9 @@ mixin _$RegisterState {
     TResult? Function()? loadingRegister,
     TResult? Function()? successRegister,
     TResult? Function(String errorMessage)? errorRegister,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -38,6 +44,9 @@ mixin _$RegisterState {
     TResult Function()? loadingRegister,
     TResult Function()? successRegister,
     TResult Function(String errorMessage)? errorRegister,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -47,6 +56,9 @@ mixin _$RegisterState {
     required TResult Function(LoadingRegister value) loadingRegister,
     required TResult Function(SuccessRegister value) successRegister,
     required TResult Function(ErrorRegister value) errorRegister,
+    required TResult Function(SaveUserDataLoading value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError value) saveUserDataError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -55,6 +67,9 @@ mixin _$RegisterState {
     TResult? Function(LoadingRegister value)? loadingRegister,
     TResult? Function(SuccessRegister value)? successRegister,
     TResult? Function(ErrorRegister value)? errorRegister,
+    TResult? Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError value)? saveUserDataError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,6 +78,9 @@ mixin _$RegisterState {
     TResult Function(LoadingRegister value)? loadingRegister,
     TResult Function(SuccessRegister value)? successRegister,
     TResult Function(ErrorRegister value)? errorRegister,
+    TResult Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError value)? saveUserDataError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -134,6 +152,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function() loadingRegister,
     required TResult Function() successRegister,
     required TResult Function(String errorMessage) errorRegister,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return initial();
   }
@@ -145,6 +166,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? loadingRegister,
     TResult? Function()? successRegister,
     TResult? Function(String errorMessage)? errorRegister,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return initial?.call();
   }
@@ -156,6 +180,9 @@ class _$InitialImpl implements _Initial {
     TResult Function()? loadingRegister,
     TResult Function()? successRegister,
     TResult Function(String errorMessage)? errorRegister,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -171,6 +198,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function(LoadingRegister value) loadingRegister,
     required TResult Function(SuccessRegister value) successRegister,
     required TResult Function(ErrorRegister value) errorRegister,
+    required TResult Function(SaveUserDataLoading value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError value) saveUserDataError,
   }) {
     return initial(this);
   }
@@ -182,6 +212,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function(LoadingRegister value)? loadingRegister,
     TResult? Function(SuccessRegister value)? successRegister,
     TResult? Function(ErrorRegister value)? errorRegister,
+    TResult? Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError value)? saveUserDataError,
   }) {
     return initial?.call(this);
   }
@@ -193,6 +226,9 @@ class _$InitialImpl implements _Initial {
     TResult Function(LoadingRegister value)? loadingRegister,
     TResult Function(SuccessRegister value)? successRegister,
     TResult Function(ErrorRegister value)? errorRegister,
+    TResult Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -251,6 +287,9 @@ class _$LoadingRegisterImpl implements LoadingRegister {
     required TResult Function() loadingRegister,
     required TResult Function() successRegister,
     required TResult Function(String errorMessage) errorRegister,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return loadingRegister();
   }
@@ -262,6 +301,9 @@ class _$LoadingRegisterImpl implements LoadingRegister {
     TResult? Function()? loadingRegister,
     TResult? Function()? successRegister,
     TResult? Function(String errorMessage)? errorRegister,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return loadingRegister?.call();
   }
@@ -273,6 +315,9 @@ class _$LoadingRegisterImpl implements LoadingRegister {
     TResult Function()? loadingRegister,
     TResult Function()? successRegister,
     TResult Function(String errorMessage)? errorRegister,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (loadingRegister != null) {
@@ -288,6 +333,9 @@ class _$LoadingRegisterImpl implements LoadingRegister {
     required TResult Function(LoadingRegister value) loadingRegister,
     required TResult Function(SuccessRegister value) successRegister,
     required TResult Function(ErrorRegister value) errorRegister,
+    required TResult Function(SaveUserDataLoading value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError value) saveUserDataError,
   }) {
     return loadingRegister(this);
   }
@@ -299,6 +347,9 @@ class _$LoadingRegisterImpl implements LoadingRegister {
     TResult? Function(LoadingRegister value)? loadingRegister,
     TResult? Function(SuccessRegister value)? successRegister,
     TResult? Function(ErrorRegister value)? errorRegister,
+    TResult? Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError value)? saveUserDataError,
   }) {
     return loadingRegister?.call(this);
   }
@@ -310,6 +361,9 @@ class _$LoadingRegisterImpl implements LoadingRegister {
     TResult Function(LoadingRegister value)? loadingRegister,
     TResult Function(SuccessRegister value)? successRegister,
     TResult Function(ErrorRegister value)? errorRegister,
+    TResult Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (loadingRegister != null) {
@@ -368,6 +422,9 @@ class _$SuccessRegisterImpl implements SuccessRegister {
     required TResult Function() loadingRegister,
     required TResult Function() successRegister,
     required TResult Function(String errorMessage) errorRegister,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return successRegister();
   }
@@ -379,6 +436,9 @@ class _$SuccessRegisterImpl implements SuccessRegister {
     TResult? Function()? loadingRegister,
     TResult? Function()? successRegister,
     TResult? Function(String errorMessage)? errorRegister,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return successRegister?.call();
   }
@@ -390,6 +450,9 @@ class _$SuccessRegisterImpl implements SuccessRegister {
     TResult Function()? loadingRegister,
     TResult Function()? successRegister,
     TResult Function(String errorMessage)? errorRegister,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (successRegister != null) {
@@ -405,6 +468,9 @@ class _$SuccessRegisterImpl implements SuccessRegister {
     required TResult Function(LoadingRegister value) loadingRegister,
     required TResult Function(SuccessRegister value) successRegister,
     required TResult Function(ErrorRegister value) errorRegister,
+    required TResult Function(SaveUserDataLoading value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError value) saveUserDataError,
   }) {
     return successRegister(this);
   }
@@ -416,6 +482,9 @@ class _$SuccessRegisterImpl implements SuccessRegister {
     TResult? Function(LoadingRegister value)? loadingRegister,
     TResult? Function(SuccessRegister value)? successRegister,
     TResult? Function(ErrorRegister value)? errorRegister,
+    TResult? Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError value)? saveUserDataError,
   }) {
     return successRegister?.call(this);
   }
@@ -427,6 +496,9 @@ class _$SuccessRegisterImpl implements SuccessRegister {
     TResult Function(LoadingRegister value)? loadingRegister,
     TResult Function(SuccessRegister value)? successRegister,
     TResult Function(ErrorRegister value)? errorRegister,
+    TResult Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (successRegister != null) {
@@ -513,6 +585,9 @@ class _$ErrorRegisterImpl implements ErrorRegister {
     required TResult Function() loadingRegister,
     required TResult Function() successRegister,
     required TResult Function(String errorMessage) errorRegister,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return errorRegister(errorMessage);
   }
@@ -524,6 +599,9 @@ class _$ErrorRegisterImpl implements ErrorRegister {
     TResult? Function()? loadingRegister,
     TResult? Function()? successRegister,
     TResult? Function(String errorMessage)? errorRegister,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return errorRegister?.call(errorMessage);
   }
@@ -535,6 +613,9 @@ class _$ErrorRegisterImpl implements ErrorRegister {
     TResult Function()? loadingRegister,
     TResult Function()? successRegister,
     TResult Function(String errorMessage)? errorRegister,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (errorRegister != null) {
@@ -550,6 +631,9 @@ class _$ErrorRegisterImpl implements ErrorRegister {
     required TResult Function(LoadingRegister value) loadingRegister,
     required TResult Function(SuccessRegister value) successRegister,
     required TResult Function(ErrorRegister value) errorRegister,
+    required TResult Function(SaveUserDataLoading value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError value) saveUserDataError,
   }) {
     return errorRegister(this);
   }
@@ -561,6 +645,9 @@ class _$ErrorRegisterImpl implements ErrorRegister {
     TResult? Function(LoadingRegister value)? loadingRegister,
     TResult? Function(SuccessRegister value)? successRegister,
     TResult? Function(ErrorRegister value)? errorRegister,
+    TResult? Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError value)? saveUserDataError,
   }) {
     return errorRegister?.call(this);
   }
@@ -572,6 +659,9 @@ class _$ErrorRegisterImpl implements ErrorRegister {
     TResult Function(LoadingRegister value)? loadingRegister,
     TResult Function(SuccessRegister value)? successRegister,
     TResult Function(ErrorRegister value)? errorRegister,
+    TResult Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (errorRegister != null) {
@@ -592,4 +682,411 @@ abstract class ErrorRegister implements RegisterState {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ErrorRegisterImplCopyWith<_$ErrorRegisterImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$SaveUserDataLoadingImplCopyWith<$Res> {
+  factory _$$SaveUserDataLoadingImplCopyWith(_$SaveUserDataLoadingImpl value,
+          $Res Function(_$SaveUserDataLoadingImpl) then) =
+      __$$SaveUserDataLoadingImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$SaveUserDataLoadingImplCopyWithImpl<$Res>
+    extends _$RegisterStateCopyWithImpl<$Res, _$SaveUserDataLoadingImpl>
+    implements _$$SaveUserDataLoadingImplCopyWith<$Res> {
+  __$$SaveUserDataLoadingImplCopyWithImpl(_$SaveUserDataLoadingImpl _value,
+      $Res Function(_$SaveUserDataLoadingImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of RegisterState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$SaveUserDataLoadingImpl implements SaveUserDataLoading {
+  const _$SaveUserDataLoadingImpl();
+
+  @override
+  String toString() {
+    return 'RegisterState.saveUserDataLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SaveUserDataLoadingImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingRegister,
+    required TResult Function() successRegister,
+    required TResult Function(String errorMessage) errorRegister,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
+  }) {
+    return saveUserDataLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingRegister,
+    TResult? Function()? successRegister,
+    TResult? Function(String errorMessage)? errorRegister,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
+  }) {
+    return saveUserDataLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingRegister,
+    TResult Function()? successRegister,
+    TResult Function(String errorMessage)? errorRegister,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
+    required TResult orElse(),
+  }) {
+    if (saveUserDataLoading != null) {
+      return saveUserDataLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(LoadingRegister value) loadingRegister,
+    required TResult Function(SuccessRegister value) successRegister,
+    required TResult Function(ErrorRegister value) errorRegister,
+    required TResult Function(SaveUserDataLoading value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError value) saveUserDataError,
+  }) {
+    return saveUserDataLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(LoadingRegister value)? loadingRegister,
+    TResult? Function(SuccessRegister value)? successRegister,
+    TResult? Function(ErrorRegister value)? errorRegister,
+    TResult? Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError value)? saveUserDataError,
+  }) {
+    return saveUserDataLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(LoadingRegister value)? loadingRegister,
+    TResult Function(SuccessRegister value)? successRegister,
+    TResult Function(ErrorRegister value)? errorRegister,
+    TResult Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError value)? saveUserDataError,
+    required TResult orElse(),
+  }) {
+    if (saveUserDataLoading != null) {
+      return saveUserDataLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SaveUserDataLoading implements RegisterState {
+  const factory SaveUserDataLoading() = _$SaveUserDataLoadingImpl;
+}
+
+/// @nodoc
+abstract class _$$saveUserDataSuccessImplCopyWith<$Res> {
+  factory _$$saveUserDataSuccessImplCopyWith(_$saveUserDataSuccessImpl value,
+          $Res Function(_$saveUserDataSuccessImpl) then) =
+      __$$saveUserDataSuccessImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$saveUserDataSuccessImplCopyWithImpl<$Res>
+    extends _$RegisterStateCopyWithImpl<$Res, _$saveUserDataSuccessImpl>
+    implements _$$saveUserDataSuccessImplCopyWith<$Res> {
+  __$$saveUserDataSuccessImplCopyWithImpl(_$saveUserDataSuccessImpl _value,
+      $Res Function(_$saveUserDataSuccessImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of RegisterState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$saveUserDataSuccessImpl implements saveUserDataSuccess {
+  const _$saveUserDataSuccessImpl();
+
+  @override
+  String toString() {
+    return 'RegisterState.saveUserDataSuccess()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$saveUserDataSuccessImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingRegister,
+    required TResult Function() successRegister,
+    required TResult Function(String errorMessage) errorRegister,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
+  }) {
+    return saveUserDataSuccess();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingRegister,
+    TResult? Function()? successRegister,
+    TResult? Function(String errorMessage)? errorRegister,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
+  }) {
+    return saveUserDataSuccess?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingRegister,
+    TResult Function()? successRegister,
+    TResult Function(String errorMessage)? errorRegister,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
+    required TResult orElse(),
+  }) {
+    if (saveUserDataSuccess != null) {
+      return saveUserDataSuccess();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(LoadingRegister value) loadingRegister,
+    required TResult Function(SuccessRegister value) successRegister,
+    required TResult Function(ErrorRegister value) errorRegister,
+    required TResult Function(SaveUserDataLoading value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError value) saveUserDataError,
+  }) {
+    return saveUserDataSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(LoadingRegister value)? loadingRegister,
+    TResult? Function(SuccessRegister value)? successRegister,
+    TResult? Function(ErrorRegister value)? errorRegister,
+    TResult? Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError value)? saveUserDataError,
+  }) {
+    return saveUserDataSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(LoadingRegister value)? loadingRegister,
+    TResult Function(SuccessRegister value)? successRegister,
+    TResult Function(ErrorRegister value)? errorRegister,
+    TResult Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError value)? saveUserDataError,
+    required TResult orElse(),
+  }) {
+    if (saveUserDataSuccess != null) {
+      return saveUserDataSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class saveUserDataSuccess implements RegisterState {
+  const factory saveUserDataSuccess() = _$saveUserDataSuccessImpl;
+}
+
+/// @nodoc
+abstract class _$$saveUserDataErrorImplCopyWith<$Res> {
+  factory _$$saveUserDataErrorImplCopyWith(_$saveUserDataErrorImpl value,
+          $Res Function(_$saveUserDataErrorImpl) then) =
+      __$$saveUserDataErrorImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$saveUserDataErrorImplCopyWithImpl<$Res>
+    extends _$RegisterStateCopyWithImpl<$Res, _$saveUserDataErrorImpl>
+    implements _$$saveUserDataErrorImplCopyWith<$Res> {
+  __$$saveUserDataErrorImplCopyWithImpl(_$saveUserDataErrorImpl _value,
+      $Res Function(_$saveUserDataErrorImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of RegisterState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$saveUserDataErrorImpl implements saveUserDataError {
+  const _$saveUserDataErrorImpl();
+
+  @override
+  String toString() {
+    return 'RegisterState.saveUserDataError()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$saveUserDataErrorImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingRegister,
+    required TResult Function() successRegister,
+    required TResult Function(String errorMessage) errorRegister,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
+  }) {
+    return saveUserDataError();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingRegister,
+    TResult? Function()? successRegister,
+    TResult? Function(String errorMessage)? errorRegister,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
+  }) {
+    return saveUserDataError?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingRegister,
+    TResult Function()? successRegister,
+    TResult Function(String errorMessage)? errorRegister,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
+    required TResult orElse(),
+  }) {
+    if (saveUserDataError != null) {
+      return saveUserDataError();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(LoadingRegister value) loadingRegister,
+    required TResult Function(SuccessRegister value) successRegister,
+    required TResult Function(ErrorRegister value) errorRegister,
+    required TResult Function(SaveUserDataLoading value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError value) saveUserDataError,
+  }) {
+    return saveUserDataError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(LoadingRegister value)? loadingRegister,
+    TResult? Function(SuccessRegister value)? successRegister,
+    TResult? Function(ErrorRegister value)? errorRegister,
+    TResult? Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError value)? saveUserDataError,
+  }) {
+    return saveUserDataError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(LoadingRegister value)? loadingRegister,
+    TResult Function(SuccessRegister value)? successRegister,
+    TResult Function(ErrorRegister value)? errorRegister,
+    TResult Function(SaveUserDataLoading value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError value)? saveUserDataError,
+    required TResult orElse(),
+  }) {
+    if (saveUserDataError != null) {
+      return saveUserDataError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class saveUserDataError implements RegisterState {
+  const factory saveUserDataError() = _$saveUserDataErrorImpl;
 }

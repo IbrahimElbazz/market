@@ -8,4 +8,9 @@ class RegisterState with _$RegisterState {
   const factory RegisterState.successRegister() = SuccessRegister;
   const factory RegisterState.errorRegister({required String errorMessage}) =
       ErrorRegister;
+
+  // save user data when register
+  const factory RegisterState.saveUserDataLoading() = SaveUserDataLoading;
+  const factory RegisterState.saveUserDataSuccess() = saveUserDataSuccess;
+  const factory RegisterState.saveUserDataError() = saveUserDataError;
 }

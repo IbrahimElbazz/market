@@ -108,7 +108,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Padding(
                         padding: EdgeInsets.symmetric(horizontal: 16.w),
                         child: Form(
-                          key: context.read<LoginCubit>().formKey,
+                          key: context.read<LoginCubit>().formKeyLogin,
                           child: Column(
                             children: [
                               const GapH(height: 50),
@@ -169,7 +169,7 @@ class _LoginScreenState extends State<LoginScreen> {
                                 onTap: () {
                                   if (context
                                       .read<LoginCubit>()
-                                      .formKey
+                                      .formKeyLogin
                                       .currentState!
                                       .validate()) {
                                     context.read<LoginCubit>().login();

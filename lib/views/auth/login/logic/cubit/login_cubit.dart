@@ -13,7 +13,7 @@ class LoginCubit extends Cubit<LoginState> {
   TextEditingController emailController = TextEditingController();
   TextEditingController resendEmailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
-  final formKey = GlobalKey<FormState>();
+  final formKeyLogin = GlobalKey<FormState>();
 
   // login
   Future<void> login() async {
