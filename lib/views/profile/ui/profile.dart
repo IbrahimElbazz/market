@@ -50,6 +50,11 @@ class _ProfileState extends State<Profile> {
                     orElse: () {
                       return const SizedBox.shrink();
                     },
+                    getUserDataLoading: () {
+                      return const CircularProgressIndicator(
+                        color: Colors.blue,
+                      );
+                    },
                     getUserDataSuccess: () {
                       final cub =
                           context.read<GetUserDataCubit>().userDataModel;
