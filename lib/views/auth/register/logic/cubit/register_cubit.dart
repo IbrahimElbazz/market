@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:market/core/constant/table.dart';
+import 'package:market/market.dart';
 import 'package:market/views/auth/register/logic/cubit/register_state.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -13,7 +14,6 @@ class RegisterCubit extends Cubit<RegisterState> {
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   final formKey = GlobalKey<FormState>();
-  SupabaseClient client = Supabase.instance.client;
 
   Future<void> register() async {
     emit(const RegisterState.loadingRegister());

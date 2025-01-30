@@ -5,13 +5,13 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:market/core/constant/table.dart';
+import 'package:market/market.dart';
 import 'package:market/views/auth/login/logic/cubit/login_state.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class LoginCubit extends Cubit<LoginState> {
   LoginCubit() : super(const LoginState.initial());
 
-  SupabaseClient client = Supabase.instance.client;
   TextEditingController emailController = TextEditingController();
   TextEditingController resendEmailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
