@@ -19,4 +19,9 @@ class LoginState<T> with _$LoginState<T> {
   const factory LoginState.resetPasswordSuccess() = ResetPasswordSuccess;
   const factory LoginState.resetPasswordError({required String errorMessage}) =
       ResetPasswordError;
+
+  // save user data when login
+  const factory LoginState.saveUserDataLoading() = SaveUserDataLoading;
+  const factory LoginState.saveUserDataSuccess() = saveUserDataSuccess;
+  const factory LoginState.saveUserDataError() = saveUserDataError;
 }

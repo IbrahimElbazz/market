@@ -28,6 +28,9 @@ mixin _$LoginState<T> {
     required TResult Function() resetPasswordLoading,
     required TResult Function() resetPasswordSuccess,
     required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -42,6 +45,9 @@ mixin _$LoginState<T> {
     TResult? Function()? resetPasswordLoading,
     TResult? Function()? resetPasswordSuccess,
     TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -56,6 +62,9 @@ mixin _$LoginState<T> {
     TResult Function()? resetPasswordLoading,
     TResult Function()? resetPasswordSuccess,
     TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -73,6 +82,9 @@ mixin _$LoginState<T> {
     required TResult Function(ResetPasswordSuccess<T> value)
         resetPasswordSuccess,
     required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -87,6 +99,9 @@ mixin _$LoginState<T> {
     TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -101,6 +116,9 @@ mixin _$LoginState<T> {
     TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -178,6 +196,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function() resetPasswordLoading,
     required TResult Function() resetPasswordSuccess,
     required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return initial();
   }
@@ -195,6 +216,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function()? resetPasswordLoading,
     TResult? Function()? resetPasswordSuccess,
     TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return initial?.call();
   }
@@ -212,6 +236,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function()? resetPasswordLoading,
     TResult Function()? resetPasswordSuccess,
     TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -235,6 +262,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function(ResetPasswordSuccess<T> value)
         resetPasswordSuccess,
     required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
   }) {
     return initial(this);
   }
@@ -252,6 +282,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
   }) {
     return initial?.call(this);
   }
@@ -269,6 +302,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -333,6 +369,9 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function() resetPasswordLoading,
     required TResult Function() resetPasswordSuccess,
     required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return success();
   }
@@ -350,6 +389,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function()? resetPasswordLoading,
     TResult? Function()? resetPasswordSuccess,
     TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return success?.call();
   }
@@ -367,6 +409,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function()? resetPasswordLoading,
     TResult Function()? resetPasswordSuccess,
     TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -390,6 +435,9 @@ class _$SuccessImpl<T> implements Success<T> {
     required TResult Function(ResetPasswordSuccess<T> value)
         resetPasswordSuccess,
     required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
   }) {
     return success(this);
   }
@@ -407,6 +455,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
   }) {
     return success?.call(this);
   }
@@ -424,6 +475,9 @@ class _$SuccessImpl<T> implements Success<T> {
     TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -516,6 +570,9 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function() resetPasswordLoading,
     required TResult Function() resetPasswordSuccess,
     required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return error(errorMessage);
   }
@@ -533,6 +590,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function()? resetPasswordLoading,
     TResult? Function()? resetPasswordSuccess,
     TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return error?.call(errorMessage);
   }
@@ -550,6 +610,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function()? resetPasswordLoading,
     TResult Function()? resetPasswordSuccess,
     TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -573,6 +636,9 @@ class _$ErrorImpl<T> implements Error<T> {
     required TResult Function(ResetPasswordSuccess<T> value)
         resetPasswordSuccess,
     required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
   }) {
     return error(this);
   }
@@ -590,6 +656,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
   }) {
     return error?.call(this);
   }
@@ -607,6 +676,9 @@ class _$ErrorImpl<T> implements Error<T> {
     TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -679,6 +751,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function() resetPasswordLoading,
     required TResult Function() resetPasswordSuccess,
     required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return loading();
   }
@@ -696,6 +771,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function()? resetPasswordLoading,
     TResult? Function()? resetPasswordSuccess,
     TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return loading?.call();
   }
@@ -713,6 +791,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function()? resetPasswordLoading,
     TResult Function()? resetPasswordSuccess,
     TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -736,6 +817,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     required TResult Function(ResetPasswordSuccess<T> value)
         resetPasswordSuccess,
     required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
   }) {
     return loading(this);
   }
@@ -753,6 +837,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
   }) {
     return loading?.call(this);
   }
@@ -770,6 +857,9 @@ class _$LoadingImpl<T> implements Loading<T> {
     TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -834,6 +924,9 @@ class _$SuccessGoogleImpl<T> implements SuccessGoogle<T> {
     required TResult Function() resetPasswordLoading,
     required TResult Function() resetPasswordSuccess,
     required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return successGoogle();
   }
@@ -851,6 +944,9 @@ class _$SuccessGoogleImpl<T> implements SuccessGoogle<T> {
     TResult? Function()? resetPasswordLoading,
     TResult? Function()? resetPasswordSuccess,
     TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return successGoogle?.call();
   }
@@ -868,6 +964,9 @@ class _$SuccessGoogleImpl<T> implements SuccessGoogle<T> {
     TResult Function()? resetPasswordLoading,
     TResult Function()? resetPasswordSuccess,
     TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (successGoogle != null) {
@@ -891,6 +990,9 @@ class _$SuccessGoogleImpl<T> implements SuccessGoogle<T> {
     required TResult Function(ResetPasswordSuccess<T> value)
         resetPasswordSuccess,
     required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
   }) {
     return successGoogle(this);
   }
@@ -908,6 +1010,9 @@ class _$SuccessGoogleImpl<T> implements SuccessGoogle<T> {
     TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
   }) {
     return successGoogle?.call(this);
   }
@@ -925,6 +1030,9 @@ class _$SuccessGoogleImpl<T> implements SuccessGoogle<T> {
     TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (successGoogle != null) {
@@ -989,6 +1097,9 @@ class _$ErrorGoogleImpl<T> implements ErrorGoogle<T> {
     required TResult Function() resetPasswordLoading,
     required TResult Function() resetPasswordSuccess,
     required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return errorGoogle();
   }
@@ -1006,6 +1117,9 @@ class _$ErrorGoogleImpl<T> implements ErrorGoogle<T> {
     TResult? Function()? resetPasswordLoading,
     TResult? Function()? resetPasswordSuccess,
     TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return errorGoogle?.call();
   }
@@ -1023,6 +1137,9 @@ class _$ErrorGoogleImpl<T> implements ErrorGoogle<T> {
     TResult Function()? resetPasswordLoading,
     TResult Function()? resetPasswordSuccess,
     TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (errorGoogle != null) {
@@ -1046,6 +1163,9 @@ class _$ErrorGoogleImpl<T> implements ErrorGoogle<T> {
     required TResult Function(ResetPasswordSuccess<T> value)
         resetPasswordSuccess,
     required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
   }) {
     return errorGoogle(this);
   }
@@ -1063,6 +1183,9 @@ class _$ErrorGoogleImpl<T> implements ErrorGoogle<T> {
     TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
   }) {
     return errorGoogle?.call(this);
   }
@@ -1080,6 +1203,9 @@ class _$ErrorGoogleImpl<T> implements ErrorGoogle<T> {
     TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (errorGoogle != null) {
@@ -1144,6 +1270,9 @@ class _$LoadingGoogleImpl<T> implements LoadingGoogle<T> {
     required TResult Function() resetPasswordLoading,
     required TResult Function() resetPasswordSuccess,
     required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return loadingGoogle();
   }
@@ -1161,6 +1290,9 @@ class _$LoadingGoogleImpl<T> implements LoadingGoogle<T> {
     TResult? Function()? resetPasswordLoading,
     TResult? Function()? resetPasswordSuccess,
     TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return loadingGoogle?.call();
   }
@@ -1178,6 +1310,9 @@ class _$LoadingGoogleImpl<T> implements LoadingGoogle<T> {
     TResult Function()? resetPasswordLoading,
     TResult Function()? resetPasswordSuccess,
     TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (loadingGoogle != null) {
@@ -1201,6 +1336,9 @@ class _$LoadingGoogleImpl<T> implements LoadingGoogle<T> {
     required TResult Function(ResetPasswordSuccess<T> value)
         resetPasswordSuccess,
     required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
   }) {
     return loadingGoogle(this);
   }
@@ -1218,6 +1356,9 @@ class _$LoadingGoogleImpl<T> implements LoadingGoogle<T> {
     TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
   }) {
     return loadingGoogle?.call(this);
   }
@@ -1235,6 +1376,9 @@ class _$LoadingGoogleImpl<T> implements LoadingGoogle<T> {
     TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (loadingGoogle != null) {
@@ -1301,6 +1445,9 @@ class _$ResetPasswordLoadingImpl<T> implements ResetPasswordLoading<T> {
     required TResult Function() resetPasswordLoading,
     required TResult Function() resetPasswordSuccess,
     required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return resetPasswordLoading();
   }
@@ -1318,6 +1465,9 @@ class _$ResetPasswordLoadingImpl<T> implements ResetPasswordLoading<T> {
     TResult? Function()? resetPasswordLoading,
     TResult? Function()? resetPasswordSuccess,
     TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return resetPasswordLoading?.call();
   }
@@ -1335,6 +1485,9 @@ class _$ResetPasswordLoadingImpl<T> implements ResetPasswordLoading<T> {
     TResult Function()? resetPasswordLoading,
     TResult Function()? resetPasswordSuccess,
     TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (resetPasswordLoading != null) {
@@ -1358,6 +1511,9 @@ class _$ResetPasswordLoadingImpl<T> implements ResetPasswordLoading<T> {
     required TResult Function(ResetPasswordSuccess<T> value)
         resetPasswordSuccess,
     required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
   }) {
     return resetPasswordLoading(this);
   }
@@ -1375,6 +1531,9 @@ class _$ResetPasswordLoadingImpl<T> implements ResetPasswordLoading<T> {
     TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
   }) {
     return resetPasswordLoading?.call(this);
   }
@@ -1392,6 +1551,9 @@ class _$ResetPasswordLoadingImpl<T> implements ResetPasswordLoading<T> {
     TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (resetPasswordLoading != null) {
@@ -1458,6 +1620,9 @@ class _$ResetPasswordSuccessImpl<T> implements ResetPasswordSuccess<T> {
     required TResult Function() resetPasswordLoading,
     required TResult Function() resetPasswordSuccess,
     required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return resetPasswordSuccess();
   }
@@ -1475,6 +1640,9 @@ class _$ResetPasswordSuccessImpl<T> implements ResetPasswordSuccess<T> {
     TResult? Function()? resetPasswordLoading,
     TResult? Function()? resetPasswordSuccess,
     TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return resetPasswordSuccess?.call();
   }
@@ -1492,6 +1660,9 @@ class _$ResetPasswordSuccessImpl<T> implements ResetPasswordSuccess<T> {
     TResult Function()? resetPasswordLoading,
     TResult Function()? resetPasswordSuccess,
     TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (resetPasswordSuccess != null) {
@@ -1515,6 +1686,9 @@ class _$ResetPasswordSuccessImpl<T> implements ResetPasswordSuccess<T> {
     required TResult Function(ResetPasswordSuccess<T> value)
         resetPasswordSuccess,
     required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
   }) {
     return resetPasswordSuccess(this);
   }
@@ -1532,6 +1706,9 @@ class _$ResetPasswordSuccessImpl<T> implements ResetPasswordSuccess<T> {
     TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
   }) {
     return resetPasswordSuccess?.call(this);
   }
@@ -1549,6 +1726,9 @@ class _$ResetPasswordSuccessImpl<T> implements ResetPasswordSuccess<T> {
     TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (resetPasswordSuccess != null) {
@@ -1642,6 +1822,9 @@ class _$ResetPasswordErrorImpl<T> implements ResetPasswordError<T> {
     required TResult Function() resetPasswordLoading,
     required TResult Function() resetPasswordSuccess,
     required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
   }) {
     return resetPasswordError(errorMessage);
   }
@@ -1659,6 +1842,9 @@ class _$ResetPasswordErrorImpl<T> implements ResetPasswordError<T> {
     TResult? Function()? resetPasswordLoading,
     TResult? Function()? resetPasswordSuccess,
     TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
   }) {
     return resetPasswordError?.call(errorMessage);
   }
@@ -1676,6 +1862,9 @@ class _$ResetPasswordErrorImpl<T> implements ResetPasswordError<T> {
     TResult Function()? resetPasswordLoading,
     TResult Function()? resetPasswordSuccess,
     TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
     required TResult orElse(),
   }) {
     if (resetPasswordError != null) {
@@ -1699,6 +1888,9 @@ class _$ResetPasswordErrorImpl<T> implements ResetPasswordError<T> {
     required TResult Function(ResetPasswordSuccess<T> value)
         resetPasswordSuccess,
     required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
   }) {
     return resetPasswordError(this);
   }
@@ -1716,6 +1908,9 @@ class _$ResetPasswordErrorImpl<T> implements ResetPasswordError<T> {
     TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
   }) {
     return resetPasswordError?.call(this);
   }
@@ -1733,6 +1928,9 @@ class _$ResetPasswordErrorImpl<T> implements ResetPasswordError<T> {
     TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
     TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
     TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
     required TResult orElse(),
   }) {
     if (resetPasswordError != null) {
@@ -1753,4 +1951,526 @@ abstract class ResetPasswordError<T> implements LoginState<T> {
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ResetPasswordErrorImplCopyWith<T, _$ResetPasswordErrorImpl<T>>
       get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$SaveUserDataLoadingImplCopyWith<T, $Res> {
+  factory _$$SaveUserDataLoadingImplCopyWith(_$SaveUserDataLoadingImpl<T> value,
+          $Res Function(_$SaveUserDataLoadingImpl<T>) then) =
+      __$$SaveUserDataLoadingImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$SaveUserDataLoadingImplCopyWithImpl<T, $Res>
+    extends _$LoginStateCopyWithImpl<T, $Res, _$SaveUserDataLoadingImpl<T>>
+    implements _$$SaveUserDataLoadingImplCopyWith<T, $Res> {
+  __$$SaveUserDataLoadingImplCopyWithImpl(_$SaveUserDataLoadingImpl<T> _value,
+      $Res Function(_$SaveUserDataLoadingImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of LoginState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$SaveUserDataLoadingImpl<T> implements SaveUserDataLoading<T> {
+  const _$SaveUserDataLoadingImpl();
+
+  @override
+  String toString() {
+    return 'LoginState<$T>.saveUserDataLoading()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SaveUserDataLoadingImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() success,
+    required TResult Function(String errorMessage) error,
+    required TResult Function() loading,
+    required TResult Function() successGoogle,
+    required TResult Function() errorGoogle,
+    required TResult Function() loadingGoogle,
+    required TResult Function() resetPasswordLoading,
+    required TResult Function() resetPasswordSuccess,
+    required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
+  }) {
+    return saveUserDataLoading();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? success,
+    TResult? Function(String errorMessage)? error,
+    TResult? Function()? loading,
+    TResult? Function()? successGoogle,
+    TResult? Function()? errorGoogle,
+    TResult? Function()? loadingGoogle,
+    TResult? Function()? resetPasswordLoading,
+    TResult? Function()? resetPasswordSuccess,
+    TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
+  }) {
+    return saveUserDataLoading?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? success,
+    TResult Function(String errorMessage)? error,
+    TResult Function()? loading,
+    TResult Function()? successGoogle,
+    TResult Function()? errorGoogle,
+    TResult Function()? loadingGoogle,
+    TResult Function()? resetPasswordLoading,
+    TResult Function()? resetPasswordSuccess,
+    TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
+    required TResult orElse(),
+  }) {
+    if (saveUserDataLoading != null) {
+      return saveUserDataLoading();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(SuccessGoogle<T> value) successGoogle,
+    required TResult Function(ErrorGoogle<T> value) errorGoogle,
+    required TResult Function(LoadingGoogle<T> value) loadingGoogle,
+    required TResult Function(ResetPasswordLoading<T> value)
+        resetPasswordLoading,
+    required TResult Function(ResetPasswordSuccess<T> value)
+        resetPasswordSuccess,
+    required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
+  }) {
+    return saveUserDataLoading(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(SuccessGoogle<T> value)? successGoogle,
+    TResult? Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult? Function(LoadingGoogle<T> value)? loadingGoogle,
+    TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
+    TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
+    TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
+  }) {
+    return saveUserDataLoading?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(SuccessGoogle<T> value)? successGoogle,
+    TResult Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult Function(LoadingGoogle<T> value)? loadingGoogle,
+    TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
+    TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
+    TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
+    required TResult orElse(),
+  }) {
+    if (saveUserDataLoading != null) {
+      return saveUserDataLoading(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SaveUserDataLoading<T> implements LoginState<T> {
+  const factory SaveUserDataLoading() = _$SaveUserDataLoadingImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$saveUserDataSuccessImplCopyWith<T, $Res> {
+  factory _$$saveUserDataSuccessImplCopyWith(_$saveUserDataSuccessImpl<T> value,
+          $Res Function(_$saveUserDataSuccessImpl<T>) then) =
+      __$$saveUserDataSuccessImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$saveUserDataSuccessImplCopyWithImpl<T, $Res>
+    extends _$LoginStateCopyWithImpl<T, $Res, _$saveUserDataSuccessImpl<T>>
+    implements _$$saveUserDataSuccessImplCopyWith<T, $Res> {
+  __$$saveUserDataSuccessImplCopyWithImpl(_$saveUserDataSuccessImpl<T> _value,
+      $Res Function(_$saveUserDataSuccessImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of LoginState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$saveUserDataSuccessImpl<T> implements saveUserDataSuccess<T> {
+  const _$saveUserDataSuccessImpl();
+
+  @override
+  String toString() {
+    return 'LoginState<$T>.saveUserDataSuccess()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$saveUserDataSuccessImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() success,
+    required TResult Function(String errorMessage) error,
+    required TResult Function() loading,
+    required TResult Function() successGoogle,
+    required TResult Function() errorGoogle,
+    required TResult Function() loadingGoogle,
+    required TResult Function() resetPasswordLoading,
+    required TResult Function() resetPasswordSuccess,
+    required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
+  }) {
+    return saveUserDataSuccess();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? success,
+    TResult? Function(String errorMessage)? error,
+    TResult? Function()? loading,
+    TResult? Function()? successGoogle,
+    TResult? Function()? errorGoogle,
+    TResult? Function()? loadingGoogle,
+    TResult? Function()? resetPasswordLoading,
+    TResult? Function()? resetPasswordSuccess,
+    TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
+  }) {
+    return saveUserDataSuccess?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? success,
+    TResult Function(String errorMessage)? error,
+    TResult Function()? loading,
+    TResult Function()? successGoogle,
+    TResult Function()? errorGoogle,
+    TResult Function()? loadingGoogle,
+    TResult Function()? resetPasswordLoading,
+    TResult Function()? resetPasswordSuccess,
+    TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
+    required TResult orElse(),
+  }) {
+    if (saveUserDataSuccess != null) {
+      return saveUserDataSuccess();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(SuccessGoogle<T> value) successGoogle,
+    required TResult Function(ErrorGoogle<T> value) errorGoogle,
+    required TResult Function(LoadingGoogle<T> value) loadingGoogle,
+    required TResult Function(ResetPasswordLoading<T> value)
+        resetPasswordLoading,
+    required TResult Function(ResetPasswordSuccess<T> value)
+        resetPasswordSuccess,
+    required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
+  }) {
+    return saveUserDataSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(SuccessGoogle<T> value)? successGoogle,
+    TResult? Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult? Function(LoadingGoogle<T> value)? loadingGoogle,
+    TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
+    TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
+    TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
+  }) {
+    return saveUserDataSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(SuccessGoogle<T> value)? successGoogle,
+    TResult Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult Function(LoadingGoogle<T> value)? loadingGoogle,
+    TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
+    TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
+    TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
+    required TResult orElse(),
+  }) {
+    if (saveUserDataSuccess != null) {
+      return saveUserDataSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class saveUserDataSuccess<T> implements LoginState<T> {
+  const factory saveUserDataSuccess() = _$saveUserDataSuccessImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$saveUserDataErrorImplCopyWith<T, $Res> {
+  factory _$$saveUserDataErrorImplCopyWith(_$saveUserDataErrorImpl<T> value,
+          $Res Function(_$saveUserDataErrorImpl<T>) then) =
+      __$$saveUserDataErrorImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$saveUserDataErrorImplCopyWithImpl<T, $Res>
+    extends _$LoginStateCopyWithImpl<T, $Res, _$saveUserDataErrorImpl<T>>
+    implements _$$saveUserDataErrorImplCopyWith<T, $Res> {
+  __$$saveUserDataErrorImplCopyWithImpl(_$saveUserDataErrorImpl<T> _value,
+      $Res Function(_$saveUserDataErrorImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of LoginState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$saveUserDataErrorImpl<T> implements saveUserDataError<T> {
+  const _$saveUserDataErrorImpl();
+
+  @override
+  String toString() {
+    return 'LoginState<$T>.saveUserDataError()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$saveUserDataErrorImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() success,
+    required TResult Function(String errorMessage) error,
+    required TResult Function() loading,
+    required TResult Function() successGoogle,
+    required TResult Function() errorGoogle,
+    required TResult Function() loadingGoogle,
+    required TResult Function() resetPasswordLoading,
+    required TResult Function() resetPasswordSuccess,
+    required TResult Function(String errorMessage) resetPasswordError,
+    required TResult Function() saveUserDataLoading,
+    required TResult Function() saveUserDataSuccess,
+    required TResult Function() saveUserDataError,
+  }) {
+    return saveUserDataError();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? success,
+    TResult? Function(String errorMessage)? error,
+    TResult? Function()? loading,
+    TResult? Function()? successGoogle,
+    TResult? Function()? errorGoogle,
+    TResult? Function()? loadingGoogle,
+    TResult? Function()? resetPasswordLoading,
+    TResult? Function()? resetPasswordSuccess,
+    TResult? Function(String errorMessage)? resetPasswordError,
+    TResult? Function()? saveUserDataLoading,
+    TResult? Function()? saveUserDataSuccess,
+    TResult? Function()? saveUserDataError,
+  }) {
+    return saveUserDataError?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? success,
+    TResult Function(String errorMessage)? error,
+    TResult Function()? loading,
+    TResult Function()? successGoogle,
+    TResult Function()? errorGoogle,
+    TResult Function()? loadingGoogle,
+    TResult Function()? resetPasswordLoading,
+    TResult Function()? resetPasswordSuccess,
+    TResult Function(String errorMessage)? resetPasswordError,
+    TResult Function()? saveUserDataLoading,
+    TResult Function()? saveUserDataSuccess,
+    TResult Function()? saveUserDataError,
+    required TResult orElse(),
+  }) {
+    if (saveUserDataError != null) {
+      return saveUserDataError();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(Success<T> value) success,
+    required TResult Function(Error<T> value) error,
+    required TResult Function(Loading<T> value) loading,
+    required TResult Function(SuccessGoogle<T> value) successGoogle,
+    required TResult Function(ErrorGoogle<T> value) errorGoogle,
+    required TResult Function(LoadingGoogle<T> value) loadingGoogle,
+    required TResult Function(ResetPasswordLoading<T> value)
+        resetPasswordLoading,
+    required TResult Function(ResetPasswordSuccess<T> value)
+        resetPasswordSuccess,
+    required TResult Function(ResetPasswordError<T> value) resetPasswordError,
+    required TResult Function(SaveUserDataLoading<T> value) saveUserDataLoading,
+    required TResult Function(saveUserDataSuccess<T> value) saveUserDataSuccess,
+    required TResult Function(saveUserDataError<T> value) saveUserDataError,
+  }) {
+    return saveUserDataError(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(Success<T> value)? success,
+    TResult? Function(Error<T> value)? error,
+    TResult? Function(Loading<T> value)? loading,
+    TResult? Function(SuccessGoogle<T> value)? successGoogle,
+    TResult? Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult? Function(LoadingGoogle<T> value)? loadingGoogle,
+    TResult? Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
+    TResult? Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
+    TResult? Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult? Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult? Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult? Function(saveUserDataError<T> value)? saveUserDataError,
+  }) {
+    return saveUserDataError?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(Success<T> value)? success,
+    TResult Function(Error<T> value)? error,
+    TResult Function(Loading<T> value)? loading,
+    TResult Function(SuccessGoogle<T> value)? successGoogle,
+    TResult Function(ErrorGoogle<T> value)? errorGoogle,
+    TResult Function(LoadingGoogle<T> value)? loadingGoogle,
+    TResult Function(ResetPasswordLoading<T> value)? resetPasswordLoading,
+    TResult Function(ResetPasswordSuccess<T> value)? resetPasswordSuccess,
+    TResult Function(ResetPasswordError<T> value)? resetPasswordError,
+    TResult Function(SaveUserDataLoading<T> value)? saveUserDataLoading,
+    TResult Function(saveUserDataSuccess<T> value)? saveUserDataSuccess,
+    TResult Function(saveUserDataError<T> value)? saveUserDataError,
+    required TResult orElse(),
+  }) {
+    if (saveUserDataError != null) {
+      return saveUserDataError(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class saveUserDataError<T> implements LoginState<T> {
+  const factory saveUserDataError() = _$saveUserDataErrorImpl<T>;
 }

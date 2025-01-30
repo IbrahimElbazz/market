@@ -1,8 +1,10 @@
 import 'dart:async';
+import 'dart:developer';
 
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_sign_in/google_sign_in.dart';
+import 'package:market/core/constant/table.dart';
 import 'package:market/views/auth/login/logic/cubit/login_state.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -62,8 +64,23 @@ class LoginCubit extends Cubit<LoginState> {
       idToken: idToken,
       accessToken: accessToken,
     );
+    saveUserData(email: googleUser!.email, name: googleUser!.displayName!);
     emit(const LoginState.successGoogle());
     return response;
+  }
+
+  Future<void> saveUserData(
+      {required String name, required String email}) async {
+    emit(const LoginState.saveUserDataLoading());
+    try {
+      await client.from(TableHelper.userDataTable).upsert(
+          {'name': name, 'email': email, 'id': client.auth.currentUser!.id});
+
+      emit(const LoginState.saveUserDataSuccess());
+    } catch (e) {
+      log(e.toString());
+      emit(const LoginState.saveUserDataError());
+    }
   }
 
   // reset password
