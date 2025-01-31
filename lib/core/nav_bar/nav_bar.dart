@@ -5,10 +5,10 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:market/core/nav_bar/logic/cubit/navigation_cubit.dart';
 import 'package:market/core/nav_bar/logic/cubit/navigation_state.dart';
-import 'package:market/views/favorite/ui/fav.dart';
-import 'package:market/views/home/ui/home.dart';
-import 'package:market/views/profile/ui/profile.dart';
-import 'package:market/views/store/ui/store.dart';
+import 'package:market/features/favorite/ui/fav.dart';
+import 'package:market/features/home/ui/home.dart';
+import 'package:market/features/profile/ui/profile.dart';
+import 'package:market/features/store/ui/store.dart';
 
 class NavBar extends StatelessWidget {
   NavBar({super.key});

@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/widgets/cached_network_image.dart';
 import 'package:market/core/widgets/gap.dart';
-import 'package:market/views/product_details/ui/screens/order_details.dart';
+import 'package:market/features/product_details/ui/screens/order_details.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({
