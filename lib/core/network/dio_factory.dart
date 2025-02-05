@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:market/core/constant/key.dart';
 import 'package:pretty_dio_logger/pretty_dio_logger.dart';
 
 class DioFactory {
@@ -11,11 +12,18 @@ class DioFactory {
       dio!
         ..options.connectTimeout = timeout
         ..options.receiveTimeout = timeout;
+      addDioHeaders();
       addDioInterceptor();
       return dio!;
     } else {
       return dio!;
     }
+  }
+
+  static void addDioHeaders() async {
+    dio?.options.headers = {
+      'Authorization': 'Bearer ${KeySupabase.apiKeySupabase}',
+    };
   }
 
   static void addDioInterceptor() {
