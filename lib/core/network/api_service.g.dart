@@ -36,7 +36,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'productes',
+          'productes?select=*,rate_product(*),comments_table(*),favorite_product(*)',
           queryParameters: queryParameters,
           data: _data,
         )
