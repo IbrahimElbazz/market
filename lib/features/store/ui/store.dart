@@ -3,9 +3,11 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/core/widgets/product_card.dart';
+import 'package:market/features/home/presentation/data/models/get_product_response.dart';
 
 class Store extends StatelessWidget {
-  const Store({super.key});
+  Store({super.key});
+  final GetProductResponse _response = GetProductResponse();
 
   @override
   Widget build(BuildContext context) {
@@ -41,9 +43,11 @@ class Store extends StatelessWidget {
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 itemCount: 10,
-                itemBuilder: (context, index) => const Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: ProductCard(),
+                itemBuilder: (context, index) => Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ProductCard(
+                    dataProduct: _response,
+                  ),
                 ),
               )
             ],

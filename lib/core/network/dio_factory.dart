@@ -22,7 +22,7 @@ class DioFactory {
 
   static void addDioHeaders() async {
     dio?.options.headers = {
-      'Authorization': 'Bearer ${KeySupabase.apiKeySupabase}',
+      'apikey': KeySupabase.apiKeySupabase,
     };
   }
 

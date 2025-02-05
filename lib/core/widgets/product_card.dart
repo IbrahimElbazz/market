@@ -3,12 +3,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/widgets/cached_network_image.dart';
 import 'package:market/core/widgets/gap.dart';
+import 'package:market/features/home/presentation/data/models/get_product_response.dart';
 import 'package:market/features/product_details/ui/screens/order_details.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({
     super.key,
+    required this.dataProduct,
   });
+  final GetProductResponse dataProduct;
 
   @override
   Widget build(BuildContext context) {
@@ -37,16 +40,15 @@ class ProductCard extends StatelessWidget {
             ),
             child: Column(
               children: [
-                const CachedImage(
-                  imageUrl:
-                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXappsZyHph8O7O45kgi1tFZeFaGZ13phc6g&s',
+                CachedImage(
+                  imageUrl: dataProduct.imageUrl ?? "",
                 ),
                 const GapH(height: 10),
                 Row(
                   children: [
                     const GapW(width: 30),
                     Text(
-                      'Dior',
+                      dataProduct.productName ?? "",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 24.sp,
@@ -65,7 +67,7 @@ class ProductCard extends StatelessWidget {
                   children: [
                     const GapW(width: 30),
                     Text(
-                      '250 EG',
+                      "${dataProduct.salary} LE",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 16.sp,

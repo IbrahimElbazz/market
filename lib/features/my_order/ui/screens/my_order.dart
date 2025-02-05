@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:market/core/widgets/product_card.dart';
+import 'package:market/features/home/presentation/data/models/get_product_response.dart';
 
 class MyOrder extends StatelessWidget {
-  const MyOrder({super.key});
-
+  MyOrder({super.key});
+  final GetProductResponse _response = GetProductResponse();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -36,9 +37,11 @@ class MyOrder extends StatelessWidget {
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 itemCount: 3,
-                itemBuilder: (context, index) => const Padding(
-                  padding: EdgeInsets.all(8.0),
-                  child: ProductCard(),
+                itemBuilder: (context, index) => Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ProductCard(
+                    dataProduct: _response,
+                  ),
                 ),
               )
             ],
