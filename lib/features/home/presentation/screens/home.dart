@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:market/core/di/dependency_injection.dart';
 import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/core/widgets/product_card.dart';
-import 'package:market/features/home/presentation/logic/cubit/home_cubit.dart';
-import 'package:market/features/home/presentation/logic/cubit/home_state.dart';
+import 'package:market/features/home/logic/cubit/home_cubit.dart';
+import 'package:market/features/home/logic/cubit/home_state.dart';
 import 'package:market/features/home/presentation/widgets/list_category.dart';
+import 'package:market/features/product_details/logic/cubit/product_details_cubit.dart';
+import 'package:market/features/product_details/presentation/screens/product_details.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -33,7 +36,7 @@ class _HomeState extends State<Home> {
               const GapH(height: 20),
               const CustomTextField(
                 enable: false,
-                hint: 'search now ',
+                hint: 'search now',
                 iconButton: Icon(
                   Icons.search,
                   color: Colors.black,
@@ -84,8 +87,22 @@ class _HomeState extends State<Home> {
                         itemCount: getProductResponse.length,
                         itemBuilder: (context, index) => Padding(
                           padding: const EdgeInsets.all(8.0),
-                          child: ProductCard(
-                            dataProduct: getProductResponse[index],
+                          child: GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) {
+                                    return ProductDetails(
+                                      data: getProductResponse[index],
+                                    );
+                                  },
+                                ),
+                              );
+                            },
+                            child: ProductCard(
+                              dataProduct: getProductResponse[index],
+                            ),
                           ),
                         ),
                       );

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:market/core/widgets/product_card.dart';
-import 'package:market/features/home/presentation/data/models/get_product_response.dart';
+import 'package:market/features/home/data/models/get_product_response.dart';
 
 class MyOrder extends StatelessWidget {
   MyOrder({super.key});

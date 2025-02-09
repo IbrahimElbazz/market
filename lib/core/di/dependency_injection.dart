@@ -2,8 +2,10 @@ import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:market/core/network/api_service.dart';
 import 'package:market/core/network/dio_factory.dart';
-import 'package:market/features/home/presentation/data/repos/get_product_repo.dart';
-import 'package:market/features/home/presentation/logic/cubit/home_cubit.dart';
+import 'package:market/features/home/data/repos/get_product_repo.dart';
+import 'package:market/features/home/logic/cubit/home_cubit.dart';
+import 'package:market/features/product_details/data/repo/product_details_repo.dart';
+import 'package:market/features/product_details/logic/cubit/product_details_cubit.dart';
 
 final getIt = GetIt.instance;
 
@@ -16,4 +18,8 @@ Future<void> setupGetIt() async {
   getIt.registerLazySingleton<HomeCubit>(() => HomeCubit(getIt()));
   // get product repo
   getIt.registerFactory<GetProductRepo>(() => GetProductRepo(getIt()));
+  // get product details
+  getIt.registerLazySingleton<ProductDetailsCubit>(
+      () => ProductDetailsCubit(getIt()));
+  getIt.registerFactory<ProductDetailsRepo>(() => ProductDetailsRepo(getIt()));
 }

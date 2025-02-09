@@ -1,6 +1,6 @@
 import 'package:market/core/network/api_result.dart';
 import 'package:market/core/network/api_service.dart';
-import 'package:market/features/home/presentation/data/models/get_product_response.dart';
+import 'package:market/features/home/data/models/get_product_response.dart';
 
 class GetProductRepo {
   GetProductRepo(ApiService apiService) : _apiService = apiService;

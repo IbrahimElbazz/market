@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/core/widgets/product_card.dart';
-import 'package:market/features/home/presentation/data/models/get_product_response.dart';
+import 'package:market/features/home/data/models/get_product_response.dart';
 
 class Fav extends StatelessWidget {
   Fav({super.key});

@@ -1,6 +1,6 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:market/features/home/presentation/data/repos/get_product_repo.dart';
-import 'package:market/features/home/presentation/logic/cubit/home_state.dart';
+import 'package:market/features/home/data/repos/get_product_repo.dart';
+import 'package:market/features/home/logic/cubit/home_state.dart';
 
 class HomeCubit extends Cubit<HomeState> {
   HomeCubit(this._getProductRepo) : super(const HomeState.initial());
