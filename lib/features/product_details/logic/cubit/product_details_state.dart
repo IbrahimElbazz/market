@@ -1,10 +1,12 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-import 'package:market/features/product_details/data/models/product_details_response_model.dart';
+import 'package:market/features/product_details/data/models/rates/product_details_rate_response_model.dart';
 part 'product_details_state.freezed.dart';
 
 @freezed
 class ProductDetailsState<T> with _$ProductDetailsState<T> {
   const factory ProductDetailsState.initial() = _Initial;
+
+  // get rate
   const factory ProductDetailsState.loadingGetProductDetailsRate() =
       LoadingGetProductDetailsRate;
   const factory ProductDetailsState.successGetProductDetailsRate(
@@ -12,4 +14,10 @@ class ProductDetailsState<T> with _$ProductDetailsState<T> {
       SuccessGetProductDetailsRate;
   const factory ProductDetailsState.errorGetProductDetailsRate(
       {required String errorMessage}) = ErrorGetProductDetailsRate;
+
+  // add rate
+  const factory ProductDetailsState.loadingAddRate() = LoadingAddRate;
+  const factory ProductDetailsState.successAddRate() = SuccessAddRate;
+  const factory ProductDetailsState.errorAddRate(
+      {required String errorMessage}) = ErrorAddRate;
 }

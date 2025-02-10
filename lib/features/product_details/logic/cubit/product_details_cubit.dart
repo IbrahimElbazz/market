@@ -1,7 +1,8 @@
 import 'dart:developer';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:market/features/product_details/data/models/product_details_response_model.dart';
+import 'package:market/features/product_details/data/models/rates/add_rate_request_model.dart';
+import 'package:market/features/product_details/data/models/rates/product_details_rate_response_model.dart';
 import 'package:market/features/product_details/data/repo/product_details_repo.dart';
 import 'package:market/features/product_details/logic/cubit/product_details_state.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -18,6 +19,8 @@ class ProductDetailsCubit extends Cubit<ProductDetailsState> {
   int userRates = 0;
   List userRatesList = [];
   double avgUserRate = 0;
+
+  // get rate
   Future<void> getProductDetailsRate(String productId) async {
     emit(const ProductDetailsState.loadingGetProductDetailsRate());
 
@@ -51,8 +54,6 @@ class ProductDetailsCubit extends Cubit<ProductDetailsState> {
         userRates += element.rate!;
         userRatesList.add(userRates);
         avgUserRate = userRates / userRatesList.length;
-        log(avgUserRate.toString());
-        log('+++++++++++++++++++++++++++++++++++++++++');
       }
     }
   }
@@ -64,5 +65,22 @@ class ProductDetailsCubit extends Cubit<ProductDetailsState> {
         avgRate = rates / data.length.toInt();
       }
     }
+  }
+
+  // add rate
+
+  Future addRate(AddRateRequestModel addRate) async {
+    emit(const ProductDetailsState.loadingAddRate());
+
+    final response = await _productDetailsRepo.addRate(addRate);
+
+    response.when(
+      success: (data) {
+        emit(const ProductDetailsState.successAddRate());
+      },
+      failure: (message) {
+        emit(ProductDetailsState.errorAddRate(errorMessage: message));
+      },
+    );
   }
 }

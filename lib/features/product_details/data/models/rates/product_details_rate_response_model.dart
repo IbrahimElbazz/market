@@ -1,5 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
-part 'product_details_response_model.g.dart';
+part 'product_details_rate_response_model.g.dart';
 
 @JsonSerializable()
 class ProductDetailsRateResponseModel {

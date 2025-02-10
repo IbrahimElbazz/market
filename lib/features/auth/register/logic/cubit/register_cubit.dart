@@ -42,7 +42,6 @@ class RegisterCubit extends Cubit<RegisterState> {
 
       emit(const RegisterState.saveUserDataSuccess());
     } catch (e) {
-      log(e.toString());
       emit(const RegisterState.saveUserDataError());
     }
   }

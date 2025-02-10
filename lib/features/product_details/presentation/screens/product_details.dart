@@ -8,9 +8,11 @@ import 'package:market/core/widgets/cached_network_image.dart';
 import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/features/home/data/models/get_product_response.dart';
+import 'package:market/features/product_details/data/models/rates/add_rate_request_model.dart';
 import 'package:market/features/product_details/logic/cubit/product_details_cubit.dart';
 import 'package:market/features/product_details/logic/cubit/product_details_state.dart';
 import 'package:market/features/product_details/presentation/widgets/comment_card.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class ProductDetails extends StatefulWidget {
   const ProductDetails({super.key, required this.data});
@@ -65,7 +67,37 @@ class _ProductDetailsState extends State<ProductDetails> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(30),
               ),
-              child: BlocBuilder<ProductDetailsCubit, ProductDetailsState>(
+              child: BlocConsumer<ProductDetailsCubit, ProductDetailsState>(
+                listener: (context, state) {
+                  state.maybeWhen(
+                    orElse: () {},
+                    errorAddRate: (errorMessage) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          backgroundColor: Colors.blue,
+                          content: Center(
+                            child: Text(errorMessage),
+                          ),
+                        ),
+                      );
+                    },
+                    successAddRate: () {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          backgroundColor: Colors.blue,
+                          content: Center(
+                            child: Text('add rate done'),
+                          ),
+                        ),
+                      );
+                    },
+                  );
+                },
+                listenWhen: (previous, current) {
+                  return current is ErrorAddRate ||
+                      current is LoadingAddRate ||
+                      current is SuccessAddRate;
+                },
                 buildWhen: (previous, current) {
                   return current is LoadingGetProductDetailsRate ||
                       current is SuccessGetProductDetailsRate ||
@@ -164,7 +196,17 @@ class _ProductDetailsState extends State<ProductDetails> {
                                   color: Colors.amber,
                                 ),
                                 onRatingUpdate: (rating) {
-                                  print(rating);
+                                  if (cub.avgUserRate == 0) {
+                                    context
+                                        .read<ProductDetailsCubit>()
+                                        .addRate(AddRateRequestModel(
+                                          rate: rating.toInt(),
+                                          forProductId: widget.data.productId,
+                                          forUserId: Supabase.instance.client
+                                              .auth.currentUser!.id,
+                                        ));
+                                  }
+                                  log('aleardy rated');
                                 },
                               ),
                             ],

@@ -22,10 +22,9 @@ class GetUserDataCubit extends Cubit<GetUserDataState> {
         name: data[0]['name'],
         email: data[0]['email'],
       );
-      log(data.toString());
+
       emit(const GetUserDataState.getUserDataSuccess());
     } catch (e) {
-      log(e.toString());
       emit(const GetUserDataState.getUserDataError());
     }
   }

@@ -24,6 +24,9 @@ mixin _$ProductDetailsState<T> {
             List<ProductDetailsRateResponseModel> productDetails)
         successGetProductDetailsRate,
     required TResult Function(String errorMessage) errorGetProductDetailsRate,
+    required TResult Function() loadingAddRate,
+    required TResult Function() successAddRate,
+    required TResult Function(String errorMessage) errorAddRate,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -33,6 +36,9 @@ mixin _$ProductDetailsState<T> {
     TResult? Function(List<ProductDetailsRateResponseModel> productDetails)?
         successGetProductDetailsRate,
     TResult? Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult? Function()? loadingAddRate,
+    TResult? Function()? successAddRate,
+    TResult? Function(String errorMessage)? errorAddRate,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -42,6 +48,9 @@ mixin _$ProductDetailsState<T> {
     TResult Function(List<ProductDetailsRateResponseModel> productDetails)?
         successGetProductDetailsRate,
     TResult Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult Function()? loadingAddRate,
+    TResult Function()? successAddRate,
+    TResult Function(String errorMessage)? errorAddRate,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -54,6 +63,9 @@ mixin _$ProductDetailsState<T> {
         successGetProductDetailsRate,
     required TResult Function(ErrorGetProductDetailsRate<T> value)
         errorGetProductDetailsRate,
+    required TResult Function(LoadingAddRate<T> value) loadingAddRate,
+    required TResult Function(SuccessAddRate<T> value) successAddRate,
+    required TResult Function(ErrorAddRate<T> value) errorAddRate,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -65,6 +77,9 @@ mixin _$ProductDetailsState<T> {
         successGetProductDetailsRate,
     TResult? Function(ErrorGetProductDetailsRate<T> value)?
         errorGetProductDetailsRate,
+    TResult? Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult? Function(SuccessAddRate<T> value)? successAddRate,
+    TResult? Function(ErrorAddRate<T> value)? errorAddRate,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -76,6 +91,9 @@ mixin _$ProductDetailsState<T> {
         successGetProductDetailsRate,
     TResult Function(ErrorGetProductDetailsRate<T> value)?
         errorGetProductDetailsRate,
+    TResult Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult Function(SuccessAddRate<T> value)? successAddRate,
+    TResult Function(ErrorAddRate<T> value)? errorAddRate,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -150,6 +168,9 @@ class _$InitialImpl<T> implements _Initial<T> {
             List<ProductDetailsRateResponseModel> productDetails)
         successGetProductDetailsRate,
     required TResult Function(String errorMessage) errorGetProductDetailsRate,
+    required TResult Function() loadingAddRate,
+    required TResult Function() successAddRate,
+    required TResult Function(String errorMessage) errorAddRate,
   }) {
     return initial();
   }
@@ -162,6 +183,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(List<ProductDetailsRateResponseModel> productDetails)?
         successGetProductDetailsRate,
     TResult? Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult? Function()? loadingAddRate,
+    TResult? Function()? successAddRate,
+    TResult? Function(String errorMessage)? errorAddRate,
   }) {
     return initial?.call();
   }
@@ -174,6 +198,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(List<ProductDetailsRateResponseModel> productDetails)?
         successGetProductDetailsRate,
     TResult Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult Function()? loadingAddRate,
+    TResult Function()? successAddRate,
+    TResult Function(String errorMessage)? errorAddRate,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -192,6 +219,9 @@ class _$InitialImpl<T> implements _Initial<T> {
         successGetProductDetailsRate,
     required TResult Function(ErrorGetProductDetailsRate<T> value)
         errorGetProductDetailsRate,
+    required TResult Function(LoadingAddRate<T> value) loadingAddRate,
+    required TResult Function(SuccessAddRate<T> value) successAddRate,
+    required TResult Function(ErrorAddRate<T> value) errorAddRate,
   }) {
     return initial(this);
   }
@@ -206,6 +236,9 @@ class _$InitialImpl<T> implements _Initial<T> {
         successGetProductDetailsRate,
     TResult? Function(ErrorGetProductDetailsRate<T> value)?
         errorGetProductDetailsRate,
+    TResult? Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult? Function(SuccessAddRate<T> value)? successAddRate,
+    TResult? Function(ErrorAddRate<T> value)? errorAddRate,
   }) {
     return initial?.call(this);
   }
@@ -220,6 +253,9 @@ class _$InitialImpl<T> implements _Initial<T> {
         successGetProductDetailsRate,
     TResult Function(ErrorGetProductDetailsRate<T> value)?
         errorGetProductDetailsRate,
+    TResult Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult Function(SuccessAddRate<T> value)? successAddRate,
+    TResult Function(ErrorAddRate<T> value)? errorAddRate,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -285,6 +321,9 @@ class _$LoadingGetProductDetailsRateImpl<T>
             List<ProductDetailsRateResponseModel> productDetails)
         successGetProductDetailsRate,
     required TResult Function(String errorMessage) errorGetProductDetailsRate,
+    required TResult Function() loadingAddRate,
+    required TResult Function() successAddRate,
+    required TResult Function(String errorMessage) errorAddRate,
   }) {
     return loadingGetProductDetailsRate();
   }
@@ -297,6 +336,9 @@ class _$LoadingGetProductDetailsRateImpl<T>
     TResult? Function(List<ProductDetailsRateResponseModel> productDetails)?
         successGetProductDetailsRate,
     TResult? Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult? Function()? loadingAddRate,
+    TResult? Function()? successAddRate,
+    TResult? Function(String errorMessage)? errorAddRate,
   }) {
     return loadingGetProductDetailsRate?.call();
   }
@@ -309,6 +351,9 @@ class _$LoadingGetProductDetailsRateImpl<T>
     TResult Function(List<ProductDetailsRateResponseModel> productDetails)?
         successGetProductDetailsRate,
     TResult Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult Function()? loadingAddRate,
+    TResult Function()? successAddRate,
+    TResult Function(String errorMessage)? errorAddRate,
     required TResult orElse(),
   }) {
     if (loadingGetProductDetailsRate != null) {
@@ -327,6 +372,9 @@ class _$LoadingGetProductDetailsRateImpl<T>
         successGetProductDetailsRate,
     required TResult Function(ErrorGetProductDetailsRate<T> value)
         errorGetProductDetailsRate,
+    required TResult Function(LoadingAddRate<T> value) loadingAddRate,
+    required TResult Function(SuccessAddRate<T> value) successAddRate,
+    required TResult Function(ErrorAddRate<T> value) errorAddRate,
   }) {
     return loadingGetProductDetailsRate(this);
   }
@@ -341,6 +389,9 @@ class _$LoadingGetProductDetailsRateImpl<T>
         successGetProductDetailsRate,
     TResult? Function(ErrorGetProductDetailsRate<T> value)?
         errorGetProductDetailsRate,
+    TResult? Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult? Function(SuccessAddRate<T> value)? successAddRate,
+    TResult? Function(ErrorAddRate<T> value)? errorAddRate,
   }) {
     return loadingGetProductDetailsRate?.call(this);
   }
@@ -355,6 +406,9 @@ class _$LoadingGetProductDetailsRateImpl<T>
         successGetProductDetailsRate,
     TResult Function(ErrorGetProductDetailsRate<T> value)?
         errorGetProductDetailsRate,
+    TResult Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult Function(SuccessAddRate<T> value)? successAddRate,
+    TResult Function(ErrorAddRate<T> value)? errorAddRate,
     required TResult orElse(),
   }) {
     if (loadingGetProductDetailsRate != null) {
@@ -459,6 +513,9 @@ class _$SuccessGetProductDetailsRateImpl<T>
             List<ProductDetailsRateResponseModel> productDetails)
         successGetProductDetailsRate,
     required TResult Function(String errorMessage) errorGetProductDetailsRate,
+    required TResult Function() loadingAddRate,
+    required TResult Function() successAddRate,
+    required TResult Function(String errorMessage) errorAddRate,
   }) {
     return successGetProductDetailsRate(productDetails);
   }
@@ -471,6 +528,9 @@ class _$SuccessGetProductDetailsRateImpl<T>
     TResult? Function(List<ProductDetailsRateResponseModel> productDetails)?
         successGetProductDetailsRate,
     TResult? Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult? Function()? loadingAddRate,
+    TResult? Function()? successAddRate,
+    TResult? Function(String errorMessage)? errorAddRate,
   }) {
     return successGetProductDetailsRate?.call(productDetails);
   }
@@ -483,6 +543,9 @@ class _$SuccessGetProductDetailsRateImpl<T>
     TResult Function(List<ProductDetailsRateResponseModel> productDetails)?
         successGetProductDetailsRate,
     TResult Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult Function()? loadingAddRate,
+    TResult Function()? successAddRate,
+    TResult Function(String errorMessage)? errorAddRate,
     required TResult orElse(),
   }) {
     if (successGetProductDetailsRate != null) {
@@ -501,6 +564,9 @@ class _$SuccessGetProductDetailsRateImpl<T>
         successGetProductDetailsRate,
     required TResult Function(ErrorGetProductDetailsRate<T> value)
         errorGetProductDetailsRate,
+    required TResult Function(LoadingAddRate<T> value) loadingAddRate,
+    required TResult Function(SuccessAddRate<T> value) successAddRate,
+    required TResult Function(ErrorAddRate<T> value) errorAddRate,
   }) {
     return successGetProductDetailsRate(this);
   }
@@ -515,6 +581,9 @@ class _$SuccessGetProductDetailsRateImpl<T>
         successGetProductDetailsRate,
     TResult? Function(ErrorGetProductDetailsRate<T> value)?
         errorGetProductDetailsRate,
+    TResult? Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult? Function(SuccessAddRate<T> value)? successAddRate,
+    TResult? Function(ErrorAddRate<T> value)? errorAddRate,
   }) {
     return successGetProductDetailsRate?.call(this);
   }
@@ -529,6 +598,9 @@ class _$SuccessGetProductDetailsRateImpl<T>
         successGetProductDetailsRate,
     TResult Function(ErrorGetProductDetailsRate<T> value)?
         errorGetProductDetailsRate,
+    TResult Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult Function(SuccessAddRate<T> value)? successAddRate,
+    TResult Function(ErrorAddRate<T> value)? errorAddRate,
     required TResult orElse(),
   }) {
     if (successGetProductDetailsRate != null) {
@@ -635,6 +707,9 @@ class _$ErrorGetProductDetailsRateImpl<T>
             List<ProductDetailsRateResponseModel> productDetails)
         successGetProductDetailsRate,
     required TResult Function(String errorMessage) errorGetProductDetailsRate,
+    required TResult Function() loadingAddRate,
+    required TResult Function() successAddRate,
+    required TResult Function(String errorMessage) errorAddRate,
   }) {
     return errorGetProductDetailsRate(errorMessage);
   }
@@ -647,6 +722,9 @@ class _$ErrorGetProductDetailsRateImpl<T>
     TResult? Function(List<ProductDetailsRateResponseModel> productDetails)?
         successGetProductDetailsRate,
     TResult? Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult? Function()? loadingAddRate,
+    TResult? Function()? successAddRate,
+    TResult? Function(String errorMessage)? errorAddRate,
   }) {
     return errorGetProductDetailsRate?.call(errorMessage);
   }
@@ -659,6 +737,9 @@ class _$ErrorGetProductDetailsRateImpl<T>
     TResult Function(List<ProductDetailsRateResponseModel> productDetails)?
         successGetProductDetailsRate,
     TResult Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult Function()? loadingAddRate,
+    TResult Function()? successAddRate,
+    TResult Function(String errorMessage)? errorAddRate,
     required TResult orElse(),
   }) {
     if (errorGetProductDetailsRate != null) {
@@ -677,6 +758,9 @@ class _$ErrorGetProductDetailsRateImpl<T>
         successGetProductDetailsRate,
     required TResult Function(ErrorGetProductDetailsRate<T> value)
         errorGetProductDetailsRate,
+    required TResult Function(LoadingAddRate<T> value) loadingAddRate,
+    required TResult Function(SuccessAddRate<T> value) successAddRate,
+    required TResult Function(ErrorAddRate<T> value) errorAddRate,
   }) {
     return errorGetProductDetailsRate(this);
   }
@@ -691,6 +775,9 @@ class _$ErrorGetProductDetailsRateImpl<T>
         successGetProductDetailsRate,
     TResult? Function(ErrorGetProductDetailsRate<T> value)?
         errorGetProductDetailsRate,
+    TResult? Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult? Function(SuccessAddRate<T> value)? successAddRate,
+    TResult? Function(ErrorAddRate<T> value)? errorAddRate,
   }) {
     return errorGetProductDetailsRate?.call(this);
   }
@@ -705,6 +792,9 @@ class _$ErrorGetProductDetailsRateImpl<T>
         successGetProductDetailsRate,
     TResult Function(ErrorGetProductDetailsRate<T> value)?
         errorGetProductDetailsRate,
+    TResult Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult Function(SuccessAddRate<T> value)? successAddRate,
+    TResult Function(ErrorAddRate<T> value)? errorAddRate,
     required TResult orElse(),
   }) {
     if (errorGetProductDetailsRate != null) {
@@ -727,4 +817,486 @@ abstract class ErrorGetProductDetailsRate<T> implements ProductDetailsState<T> {
   _$$ErrorGetProductDetailsRateImplCopyWith<T,
           _$ErrorGetProductDetailsRateImpl<T>>
       get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$LoadingAddRateImplCopyWith<T, $Res> {
+  factory _$$LoadingAddRateImplCopyWith(_$LoadingAddRateImpl<T> value,
+          $Res Function(_$LoadingAddRateImpl<T>) then) =
+      __$$LoadingAddRateImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$LoadingAddRateImplCopyWithImpl<T, $Res>
+    extends _$ProductDetailsStateCopyWithImpl<T, $Res, _$LoadingAddRateImpl<T>>
+    implements _$$LoadingAddRateImplCopyWith<T, $Res> {
+  __$$LoadingAddRateImplCopyWithImpl(_$LoadingAddRateImpl<T> _value,
+      $Res Function(_$LoadingAddRateImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ProductDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$LoadingAddRateImpl<T> implements LoadingAddRate<T> {
+  const _$LoadingAddRateImpl();
+
+  @override
+  String toString() {
+    return 'ProductDetailsState<$T>.loadingAddRate()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$LoadingAddRateImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProductDetailsRate,
+    required TResult Function(
+            List<ProductDetailsRateResponseModel> productDetails)
+        successGetProductDetailsRate,
+    required TResult Function(String errorMessage) errorGetProductDetailsRate,
+    required TResult Function() loadingAddRate,
+    required TResult Function() successAddRate,
+    required TResult Function(String errorMessage) errorAddRate,
+  }) {
+    return loadingAddRate();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProductDetailsRate,
+    TResult? Function(List<ProductDetailsRateResponseModel> productDetails)?
+        successGetProductDetailsRate,
+    TResult? Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult? Function()? loadingAddRate,
+    TResult? Function()? successAddRate,
+    TResult? Function(String errorMessage)? errorAddRate,
+  }) {
+    return loadingAddRate?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProductDetailsRate,
+    TResult Function(List<ProductDetailsRateResponseModel> productDetails)?
+        successGetProductDetailsRate,
+    TResult Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult Function()? loadingAddRate,
+    TResult Function()? successAddRate,
+    TResult Function(String errorMessage)? errorAddRate,
+    required TResult orElse(),
+  }) {
+    if (loadingAddRate != null) {
+      return loadingAddRate();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(LoadingGetProductDetailsRate<T> value)
+        loadingGetProductDetailsRate,
+    required TResult Function(SuccessGetProductDetailsRate<T> value)
+        successGetProductDetailsRate,
+    required TResult Function(ErrorGetProductDetailsRate<T> value)
+        errorGetProductDetailsRate,
+    required TResult Function(LoadingAddRate<T> value) loadingAddRate,
+    required TResult Function(SuccessAddRate<T> value) successAddRate,
+    required TResult Function(ErrorAddRate<T> value) errorAddRate,
+  }) {
+    return loadingAddRate(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(LoadingGetProductDetailsRate<T> value)?
+        loadingGetProductDetailsRate,
+    TResult? Function(SuccessGetProductDetailsRate<T> value)?
+        successGetProductDetailsRate,
+    TResult? Function(ErrorGetProductDetailsRate<T> value)?
+        errorGetProductDetailsRate,
+    TResult? Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult? Function(SuccessAddRate<T> value)? successAddRate,
+    TResult? Function(ErrorAddRate<T> value)? errorAddRate,
+  }) {
+    return loadingAddRate?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(LoadingGetProductDetailsRate<T> value)?
+        loadingGetProductDetailsRate,
+    TResult Function(SuccessGetProductDetailsRate<T> value)?
+        successGetProductDetailsRate,
+    TResult Function(ErrorGetProductDetailsRate<T> value)?
+        errorGetProductDetailsRate,
+    TResult Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult Function(SuccessAddRate<T> value)? successAddRate,
+    TResult Function(ErrorAddRate<T> value)? errorAddRate,
+    required TResult orElse(),
+  }) {
+    if (loadingAddRate != null) {
+      return loadingAddRate(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LoadingAddRate<T> implements ProductDetailsState<T> {
+  const factory LoadingAddRate() = _$LoadingAddRateImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$SuccessAddRateImplCopyWith<T, $Res> {
+  factory _$$SuccessAddRateImplCopyWith(_$SuccessAddRateImpl<T> value,
+          $Res Function(_$SuccessAddRateImpl<T>) then) =
+      __$$SuccessAddRateImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$SuccessAddRateImplCopyWithImpl<T, $Res>
+    extends _$ProductDetailsStateCopyWithImpl<T, $Res, _$SuccessAddRateImpl<T>>
+    implements _$$SuccessAddRateImplCopyWith<T, $Res> {
+  __$$SuccessAddRateImplCopyWithImpl(_$SuccessAddRateImpl<T> _value,
+      $Res Function(_$SuccessAddRateImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ProductDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$SuccessAddRateImpl<T> implements SuccessAddRate<T> {
+  const _$SuccessAddRateImpl();
+
+  @override
+  String toString() {
+    return 'ProductDetailsState<$T>.successAddRate()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SuccessAddRateImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProductDetailsRate,
+    required TResult Function(
+            List<ProductDetailsRateResponseModel> productDetails)
+        successGetProductDetailsRate,
+    required TResult Function(String errorMessage) errorGetProductDetailsRate,
+    required TResult Function() loadingAddRate,
+    required TResult Function() successAddRate,
+    required TResult Function(String errorMessage) errorAddRate,
+  }) {
+    return successAddRate();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProductDetailsRate,
+    TResult? Function(List<ProductDetailsRateResponseModel> productDetails)?
+        successGetProductDetailsRate,
+    TResult? Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult? Function()? loadingAddRate,
+    TResult? Function()? successAddRate,
+    TResult? Function(String errorMessage)? errorAddRate,
+  }) {
+    return successAddRate?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProductDetailsRate,
+    TResult Function(List<ProductDetailsRateResponseModel> productDetails)?
+        successGetProductDetailsRate,
+    TResult Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult Function()? loadingAddRate,
+    TResult Function()? successAddRate,
+    TResult Function(String errorMessage)? errorAddRate,
+    required TResult orElse(),
+  }) {
+    if (successAddRate != null) {
+      return successAddRate();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(LoadingGetProductDetailsRate<T> value)
+        loadingGetProductDetailsRate,
+    required TResult Function(SuccessGetProductDetailsRate<T> value)
+        successGetProductDetailsRate,
+    required TResult Function(ErrorGetProductDetailsRate<T> value)
+        errorGetProductDetailsRate,
+    required TResult Function(LoadingAddRate<T> value) loadingAddRate,
+    required TResult Function(SuccessAddRate<T> value) successAddRate,
+    required TResult Function(ErrorAddRate<T> value) errorAddRate,
+  }) {
+    return successAddRate(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(LoadingGetProductDetailsRate<T> value)?
+        loadingGetProductDetailsRate,
+    TResult? Function(SuccessGetProductDetailsRate<T> value)?
+        successGetProductDetailsRate,
+    TResult? Function(ErrorGetProductDetailsRate<T> value)?
+        errorGetProductDetailsRate,
+    TResult? Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult? Function(SuccessAddRate<T> value)? successAddRate,
+    TResult? Function(ErrorAddRate<T> value)? errorAddRate,
+  }) {
+    return successAddRate?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(LoadingGetProductDetailsRate<T> value)?
+        loadingGetProductDetailsRate,
+    TResult Function(SuccessGetProductDetailsRate<T> value)?
+        successGetProductDetailsRate,
+    TResult Function(ErrorGetProductDetailsRate<T> value)?
+        errorGetProductDetailsRate,
+    TResult Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult Function(SuccessAddRate<T> value)? successAddRate,
+    TResult Function(ErrorAddRate<T> value)? errorAddRate,
+    required TResult orElse(),
+  }) {
+    if (successAddRate != null) {
+      return successAddRate(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessAddRate<T> implements ProductDetailsState<T> {
+  const factory SuccessAddRate() = _$SuccessAddRateImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$ErrorAddRateImplCopyWith<T, $Res> {
+  factory _$$ErrorAddRateImplCopyWith(_$ErrorAddRateImpl<T> value,
+          $Res Function(_$ErrorAddRateImpl<T>) then) =
+      __$$ErrorAddRateImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$ErrorAddRateImplCopyWithImpl<T, $Res>
+    extends _$ProductDetailsStateCopyWithImpl<T, $Res, _$ErrorAddRateImpl<T>>
+    implements _$$ErrorAddRateImplCopyWith<T, $Res> {
+  __$$ErrorAddRateImplCopyWithImpl(
+      _$ErrorAddRateImpl<T> _value, $Res Function(_$ErrorAddRateImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ProductDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$ErrorAddRateImpl<T>(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorAddRateImpl<T> implements ErrorAddRate<T> {
+  const _$ErrorAddRateImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'ProductDetailsState<$T>.errorAddRate(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorAddRateImpl<T> &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of ProductDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorAddRateImplCopyWith<T, _$ErrorAddRateImpl<T>> get copyWith =>
+      __$$ErrorAddRateImplCopyWithImpl<T, _$ErrorAddRateImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProductDetailsRate,
+    required TResult Function(
+            List<ProductDetailsRateResponseModel> productDetails)
+        successGetProductDetailsRate,
+    required TResult Function(String errorMessage) errorGetProductDetailsRate,
+    required TResult Function() loadingAddRate,
+    required TResult Function() successAddRate,
+    required TResult Function(String errorMessage) errorAddRate,
+  }) {
+    return errorAddRate(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProductDetailsRate,
+    TResult? Function(List<ProductDetailsRateResponseModel> productDetails)?
+        successGetProductDetailsRate,
+    TResult? Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult? Function()? loadingAddRate,
+    TResult? Function()? successAddRate,
+    TResult? Function(String errorMessage)? errorAddRate,
+  }) {
+    return errorAddRate?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProductDetailsRate,
+    TResult Function(List<ProductDetailsRateResponseModel> productDetails)?
+        successGetProductDetailsRate,
+    TResult Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult Function()? loadingAddRate,
+    TResult Function()? successAddRate,
+    TResult Function(String errorMessage)? errorAddRate,
+    required TResult orElse(),
+  }) {
+    if (errorAddRate != null) {
+      return errorAddRate(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(LoadingGetProductDetailsRate<T> value)
+        loadingGetProductDetailsRate,
+    required TResult Function(SuccessGetProductDetailsRate<T> value)
+        successGetProductDetailsRate,
+    required TResult Function(ErrorGetProductDetailsRate<T> value)
+        errorGetProductDetailsRate,
+    required TResult Function(LoadingAddRate<T> value) loadingAddRate,
+    required TResult Function(SuccessAddRate<T> value) successAddRate,
+    required TResult Function(ErrorAddRate<T> value) errorAddRate,
+  }) {
+    return errorAddRate(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(LoadingGetProductDetailsRate<T> value)?
+        loadingGetProductDetailsRate,
+    TResult? Function(SuccessGetProductDetailsRate<T> value)?
+        successGetProductDetailsRate,
+    TResult? Function(ErrorGetProductDetailsRate<T> value)?
+        errorGetProductDetailsRate,
+    TResult? Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult? Function(SuccessAddRate<T> value)? successAddRate,
+    TResult? Function(ErrorAddRate<T> value)? errorAddRate,
+  }) {
+    return errorAddRate?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(LoadingGetProductDetailsRate<T> value)?
+        loadingGetProductDetailsRate,
+    TResult Function(SuccessGetProductDetailsRate<T> value)?
+        successGetProductDetailsRate,
+    TResult Function(ErrorGetProductDetailsRate<T> value)?
+        errorGetProductDetailsRate,
+    TResult Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult Function(SuccessAddRate<T> value)? successAddRate,
+    TResult Function(ErrorAddRate<T> value)? errorAddRate,
+    required TResult orElse(),
+  }) {
+    if (errorAddRate != null) {
+      return errorAddRate(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorAddRate<T> implements ProductDetailsState<T> {
+  const factory ErrorAddRate({required final String errorMessage}) =
+      _$ErrorAddRateImpl<T>;
+
+  String get errorMessage;
+
+  /// Create a copy of ProductDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ErrorAddRateImplCopyWith<T, _$ErrorAddRateImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
 }
