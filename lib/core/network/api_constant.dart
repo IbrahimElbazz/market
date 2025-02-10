@@ -4,4 +4,6 @@ class ApiConstant {
       'productes?select=*,rate_product(*),comments_table(*),favorite_product(*)';
   static const productDetails = 'rate_product?select=*&for_product_id=eq.{id}';
   static const addRate = 'rate_product';
+  static const updateRate =
+      'rate_product?for_user_id=eq.{userId}&for_product_id=eq.{productId}';
 }

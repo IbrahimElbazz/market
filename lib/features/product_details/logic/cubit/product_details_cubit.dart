@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:market/features/product_details/data/models/rates/add_rate_request_model.dart';
 import 'package:market/features/product_details/data/models/rates/product_details_rate_response_model.dart';
+import 'package:market/features/product_details/data/models/rates/update_rate_request_model.dart';
 import 'package:market/features/product_details/data/repo/product_details_repo.dart';
 import 'package:market/features/product_details/logic/cubit/product_details_state.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -80,6 +81,28 @@ class ProductDetailsCubit extends Cubit<ProductDetailsState> {
       },
       failure: (message) {
         emit(ProductDetailsState.errorAddRate(errorMessage: message));
+      },
+    );
+  }
+
+  // update rate
+
+  Future updateRate(
+      UpdateRateRequestModel rate, String userId, String productId) async {
+    emit(const ProductDetailsState.loadingUpdateRate());
+
+    final response = await _productDetailsRepo.updateRate(
+      rate: rate,
+      userId: userId,
+      productId: productId,
+    );
+
+    response.when(
+      success: (data) {
+        emit(const ProductDetailsState.successUpdateRate());
+      },
+      failure: (message) {
+        emit(ProductDetailsState.errorUpdateRate(errorMessage: message));
       },
     );
   }

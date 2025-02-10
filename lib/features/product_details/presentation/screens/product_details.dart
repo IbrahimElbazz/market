@@ -9,6 +9,7 @@ import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/features/home/data/models/get_product_response.dart';
 import 'package:market/features/product_details/data/models/rates/add_rate_request_model.dart';
+import 'package:market/features/product_details/data/models/rates/update_rate_request_model.dart';
 import 'package:market/features/product_details/logic/cubit/product_details_cubit.dart';
 import 'package:market/features/product_details/logic/cubit/product_details_state.dart';
 import 'package:market/features/product_details/presentation/widgets/comment_card.dart';
@@ -82,6 +83,8 @@ class _ProductDetailsState extends State<ProductDetails> {
                       );
                     },
                     successAddRate: () {
+                      context.read<ProductDetailsCubit>().getProductDetailsRate(
+                          widget.data.productId.toString());
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
                           backgroundColor: Colors.blue,
@@ -91,17 +94,46 @@ class _ProductDetailsState extends State<ProductDetails> {
                         ),
                       );
                     },
+                    errorUpdateRate: (errorMessage) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          backgroundColor: Colors.blue,
+                          content: Center(
+                            child: Text(errorMessage),
+                          ),
+                        ),
+                      );
+                    },
+                    successUpdateRate: () {
+                      context.read<ProductDetailsCubit>().getProductDetailsRate(
+                          widget.data.productId.toString());
+
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          backgroundColor: Colors.blue,
+                          content: Center(
+                            child: Text('update rate done'),
+                          ),
+                        ),
+                      );
+                    },
                   );
                 },
                 listenWhen: (previous, current) {
                   return current is ErrorAddRate ||
                       current is LoadingAddRate ||
-                      current is SuccessAddRate;
+                      current is SuccessAddRate ||
+                      current is SuccessUpdateRate ||
+                      current is ErrorUpdateRate ||
+                      current is LoadingUpdateRate;
                 },
                 buildWhen: (previous, current) {
                   return current is LoadingGetProductDetailsRate ||
                       current is SuccessGetProductDetailsRate ||
-                      current is ErrorGetProductDetailsRate;
+                      current is ErrorGetProductDetailsRate ||
+                      current is SuccessUpdateRate ||
+                      current is ErrorUpdateRate ||
+                      current is LoadingUpdateRate;
                 },
                 builder: (context, state) {
                   return state.maybeWhen(
@@ -205,8 +237,18 @@ class _ProductDetailsState extends State<ProductDetails> {
                                           forUserId: Supabase.instance.client
                                               .auth.currentUser!.id,
                                         ));
+                                  } else {
+                                    context
+                                        .read<ProductDetailsCubit>()
+                                        .updateRate(
+                                          UpdateRateRequestModel(
+                                            rate: rating.toInt(),
+                                          ),
+                                          Supabase.instance.client.auth
+                                              .currentUser!.id,
+                                          widget.data.productId.toString(),
+                                        );
                                   }
-                                  log('aleardy rated');
                                 },
                               ),
                             ],

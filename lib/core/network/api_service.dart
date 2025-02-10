@@ -3,6 +3,7 @@ import 'package:market/core/network/api_constant.dart';
 import 'package:market/features/home/data/models/get_product_response.dart';
 import 'package:market/features/product_details/data/models/rates/add_rate_request_model.dart';
 import 'package:market/features/product_details/data/models/rates/product_details_rate_response_model.dart';
+import 'package:market/features/product_details/data/models/rates/update_rate_request_model.dart';
 import 'package:retrofit/retrofit.dart';
 
 part 'api_service.g.dart';
@@ -24,4 +25,11 @@ abstract class ApiService {
   // add rate
   @POST(ApiConstant.addRate)
   Future addRate(@Body() AddRateRequestModel addRateRequestModel);
+
+  // update rate
+  @PATCH(ApiConstant.updateRate)
+  Future updateRate(
+      @Path('userId') String userId,
+      @Path('productId') String productId,
+      @Body() UpdateRateRequestModel updateRateRequestModel);
 }

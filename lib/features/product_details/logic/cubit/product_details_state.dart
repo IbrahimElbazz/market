@@ -20,4 +20,10 @@ class ProductDetailsState<T> with _$ProductDetailsState<T> {
   const factory ProductDetailsState.successAddRate() = SuccessAddRate;
   const factory ProductDetailsState.errorAddRate(
       {required String errorMessage}) = ErrorAddRate;
+
+  // update rate
+  const factory ProductDetailsState.loadingUpdateRate() = LoadingUpdateRate;
+  const factory ProductDetailsState.successUpdateRate() = SuccessUpdateRate;
+  const factory ProductDetailsState.errorUpdateRate(
+      {required String errorMessage}) = ErrorUpdateRate;
 }
