@@ -1,12 +1,16 @@
 import 'dart:developer';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:market/core/constant/table.dart';
+import 'package:market/features/auth/get_user_data/data/models/user_data_model.dart';
+import 'package:market/features/product_details/data/models/comments/add_comment_model.dart';
 import 'package:market/features/product_details/data/models/comments/get_comments_response_model.dart';
 import 'package:market/features/product_details/data/models/rates/add_rate_request_model.dart';
 import 'package:market/features/product_details/data/models/rates/product_details_rate_response_model.dart';
 import 'package:market/features/product_details/data/models/rates/update_rate_request_model.dart';
 import 'package:market/features/product_details/data/repo/product_details_repo.dart';
 import 'package:market/features/product_details/logic/cubit/product_details_state.dart';
+import 'package:market/market.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 class ProductDetailsCubit extends Cubit<ProductDetailsState> {
@@ -123,5 +127,31 @@ class ProductDetailsCubit extends Cubit<ProductDetailsState> {
         emit(ProductDetailsState.errorGetComments(errorMessage: message));
       },
     );
+  }
+
+  // add comment
+
+  Future<void> addComment(
+      {required String productId, required String comment}) async {
+    emit(const ProductDetailsState.loadingAddComments());
+
+    final data = await client
+        .from(TableHelper.userDataTable)
+        .select()
+        .eq('id', client.auth.currentUser!.id);
+    var name = data[0]['name'];
+    final response = await _productDetailsRepo.addComment(
+      AddCommentModel(
+        comment: comment,
+        for_product_id: productId,
+        for_user_id: Supabase.instance.client.auth.currentUser!.id,
+        user_name: name,
+      ),
+    );
+    response.when(success: (data) {
+      emit(const ProductDetailsState.successAddComments());
+    }, failure: (message) {
+      emit(ProductDetailsState.errorAddComments(errorMessage: message));
+    });
   }
 }

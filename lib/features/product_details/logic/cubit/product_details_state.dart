@@ -35,4 +35,10 @@ class ProductDetailsState<T> with _$ProductDetailsState<T> {
       SuccessGetComments<T>;
   const factory ProductDetailsState.errorGetComments(
       {required String errorMessage}) = ErrorGetComments;
+
+  // add comments
+  const factory ProductDetailsState.loadingAddComments() = LoadingAddComments;
+  const factory ProductDetailsState.successAddComments() = SuccessAddComments;
+  const factory ProductDetailsState.errorAddComments(
+      {required String errorMessage}) = ErrorAddComments;
 }

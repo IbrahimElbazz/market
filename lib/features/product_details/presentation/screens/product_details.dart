@@ -34,6 +34,7 @@ class _ProductDetailsState extends State<ProductDetails> {
     super.initState();
   }
 
+  TextEditingController addCommentController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -117,6 +118,39 @@ class _ProductDetailsState extends State<ProductDetails> {
                         ),
                       );
                     },
+                    loadingAddComments: () {
+                      showDialog(
+                        context: context,
+                        builder: (context) {
+                          return const Center(
+                              child: CircularProgressIndicator(
+                            color: Colors.blue,
+                          ));
+                        },
+                      );
+                    },
+                    successAddComments: () {
+                      Navigator.pop(context);
+                      addCommentController.clear();
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          backgroundColor: Colors.blue,
+                          content: Center(
+                            child: Text('add comment success'),
+                          ),
+                        ),
+                      );
+                    },
+                    errorAddComments: (errorMessage) {
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          backgroundColor: Colors.blue,
+                          content: Center(
+                            child: Text(errorMessage),
+                          ),
+                        ),
+                      );
+                    },
                   );
                 },
                 listenWhen: (previous, current) {
@@ -125,7 +159,10 @@ class _ProductDetailsState extends State<ProductDetails> {
                       current is SuccessAddRate ||
                       current is SuccessUpdateRate ||
                       current is ErrorUpdateRate ||
-                      current is LoadingUpdateRate;
+                      current is LoadingUpdateRate ||
+                      current is LoadingAddComments ||
+                      current is SuccessAddComments ||
+                      current is ErrorAddComments;
                 },
                 buildWhen: (previous, current) {
                   return current is LoadingGetProductDetailsRate ||
@@ -259,9 +296,15 @@ class _ProductDetailsState extends State<ProductDetails> {
                               vertical: 22.h,
                             ),
                             child: CustomTextField(
+                              controller: addCommentController,
                               hint: 'Type your feed back',
                               iconButton: IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  cub.addComment(
+                                    productId: widget.data.productId.toString(),
+                                    comment: addCommentController.text,
+                                  );
+                                },
                                 icon: const Icon(Icons.send),
                               ),
                             ),
