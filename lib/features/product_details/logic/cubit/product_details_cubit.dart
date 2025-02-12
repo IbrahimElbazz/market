@@ -1,6 +1,7 @@
 import 'dart:developer';
 
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:market/features/product_details/data/models/comments/get_comments_response_model.dart';
 import 'package:market/features/product_details/data/models/rates/add_rate_request_model.dart';
 import 'package:market/features/product_details/data/models/rates/product_details_rate_response_model.dart';
 import 'package:market/features/product_details/data/models/rates/update_rate_request_model.dart';
@@ -103,6 +104,23 @@ class ProductDetailsCubit extends Cubit<ProductDetailsState> {
       },
       failure: (message) {
         emit(ProductDetailsState.errorUpdateRate(errorMessage: message));
+      },
+    );
+  }
+
+  // get comments
+
+  Future getComments({required String productId}) async {
+    emit(const ProductDetailsState.loadingGetComments());
+
+    final response =
+        await _productDetailsRepo.getComments(productId: productId);
+    response.when(
+      success: (data) {
+        emit(ProductDetailsState.successGetComments(data));
+      },
+      failure: (message) {
+        emit(ProductDetailsState.errorGetComments(errorMessage: message));
       },
     );
   }

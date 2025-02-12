@@ -12,6 +12,7 @@ import 'package:market/features/product_details/data/models/rates/add_rate_reque
 import 'package:market/features/product_details/data/models/rates/update_rate_request_model.dart';
 import 'package:market/features/product_details/logic/cubit/product_details_cubit.dart';
 import 'package:market/features/product_details/logic/cubit/product_details_state.dart';
+import 'package:market/features/product_details/presentation/screens/comments_screen.dart';
 import 'package:market/features/product_details/presentation/widgets/comment_card.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
@@ -107,7 +108,6 @@ class _ProductDetailsState extends State<ProductDetails> {
                     successUpdateRate: () {
                       context.read<ProductDetailsCubit>().getProductDetailsRate(
                           widget.data.productId.toString());
-
                       ScaffoldMessenger.of(context).showSnackBar(
                         const SnackBar(
                           backgroundColor: Colors.blue,
@@ -259,7 +259,7 @@ class _ProductDetailsState extends State<ProductDetails> {
                               vertical: 22.h,
                             ),
                             child: CustomTextField(
-                              hint: 'Enter comment',
+                              hint: 'Type your feed back',
                               iconButton: IconButton(
                                 onPressed: () {},
                                 icon: const Icon(Icons.send),
@@ -282,17 +282,38 @@ class _ProductDetailsState extends State<ProductDetails> {
                           const GapH(
                             height: 20,
                           ),
-                          ListView.builder(
-                            itemCount: 5,
-                            shrinkWrap: true,
-                            physics: const BouncingScrollPhysics(),
-                            itemBuilder: (context, index) {
-                              return const CommentCard();
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(context, MaterialPageRoute(
+                                builder: (context) {
+                                  return CommentsScreen(
+                                    productId: widget.data.productId.toString(),
+                                  );
+                                },
+                              ));
                             },
+                            child: Container(
+                              width: 300.w,
+                              height: 60.h,
+                              decoration: BoxDecoration(
+                                borderRadius: BorderRadius.circular(16.r),
+                                color: Colors.blue.withOpacity(0.5),
+                              ),
+                              child: Center(
+                                child: Text(
+                                  'Comments Page',
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 16.sp,
+                                  ),
+                                ),
+                              ),
+                            ),
                           ),
                           const GapH(
-                            height: 50,
-                          )
+                            height: 40,
+                          ),
                         ],
                       );
                     },

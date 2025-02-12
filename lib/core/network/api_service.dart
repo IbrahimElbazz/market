@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:market/core/network/api_constant.dart';
 import 'package:market/features/home/data/models/get_product_response.dart';
+import 'package:market/features/product_details/data/models/comments/get_comments_response_model.dart';
 import 'package:market/features/product_details/data/models/rates/add_rate_request_model.dart';
 import 'package:market/features/product_details/data/models/rates/product_details_rate_response_model.dart';
 import 'package:market/features/product_details/data/models/rates/update_rate_request_model.dart';
@@ -32,4 +33,10 @@ abstract class ApiService {
       @Path('userId') String userId,
       @Path('productId') String productId,
       @Body() UpdateRateRequestModel updateRateRequestModel);
+
+  // get comments
+  @GET(ApiConstant.getComment)
+  Future<List<GetCommentsResponseModel>> getComments(
+    @Path() String id,
+  );
 }

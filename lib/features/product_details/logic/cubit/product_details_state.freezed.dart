@@ -30,6 +30,11 @@ mixin _$ProductDetailsState<T> {
     required TResult Function() loadingUpdateRate,
     required TResult Function() successUpdateRate,
     required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -45,6 +50,10 @@ mixin _$ProductDetailsState<T> {
     TResult? Function()? loadingUpdateRate,
     TResult? Function()? successUpdateRate,
     TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -60,6 +69,10 @@ mixin _$ProductDetailsState<T> {
     TResult Function()? loadingUpdateRate,
     TResult Function()? successUpdateRate,
     TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -78,6 +91,9 @@ mixin _$ProductDetailsState<T> {
     required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
     required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
     required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -95,6 +111,9 @@ mixin _$ProductDetailsState<T> {
     TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -112,6 +131,9 @@ mixin _$ProductDetailsState<T> {
     TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -192,6 +214,11 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function() loadingUpdateRate,
     required TResult Function() successUpdateRate,
     required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
   }) {
     return initial();
   }
@@ -210,6 +237,10 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function()? loadingUpdateRate,
     TResult? Function()? successUpdateRate,
     TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
   }) {
     return initial?.call();
   }
@@ -228,6 +259,10 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function()? loadingUpdateRate,
     TResult Function()? successUpdateRate,
     TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -252,6 +287,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
     required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
     required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
   }) {
     return initial(this);
   }
@@ -272,6 +310,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
   }) {
     return initial?.call(this);
   }
@@ -292,6 +333,9 @@ class _$InitialImpl<T> implements _Initial<T> {
     TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -363,6 +407,11 @@ class _$LoadingGetProductDetailsRateImpl<T>
     required TResult Function() loadingUpdateRate,
     required TResult Function() successUpdateRate,
     required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
   }) {
     return loadingGetProductDetailsRate();
   }
@@ -381,6 +430,10 @@ class _$LoadingGetProductDetailsRateImpl<T>
     TResult? Function()? loadingUpdateRate,
     TResult? Function()? successUpdateRate,
     TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
   }) {
     return loadingGetProductDetailsRate?.call();
   }
@@ -399,6 +452,10 @@ class _$LoadingGetProductDetailsRateImpl<T>
     TResult Function()? loadingUpdateRate,
     TResult Function()? successUpdateRate,
     TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
     required TResult orElse(),
   }) {
     if (loadingGetProductDetailsRate != null) {
@@ -423,6 +480,9 @@ class _$LoadingGetProductDetailsRateImpl<T>
     required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
     required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
     required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
   }) {
     return loadingGetProductDetailsRate(this);
   }
@@ -443,6 +503,9 @@ class _$LoadingGetProductDetailsRateImpl<T>
     TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
   }) {
     return loadingGetProductDetailsRate?.call(this);
   }
@@ -463,6 +526,9 @@ class _$LoadingGetProductDetailsRateImpl<T>
     TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
     required TResult orElse(),
   }) {
     if (loadingGetProductDetailsRate != null) {
@@ -573,6 +639,11 @@ class _$SuccessGetProductDetailsRateImpl<T>
     required TResult Function() loadingUpdateRate,
     required TResult Function() successUpdateRate,
     required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
   }) {
     return successGetProductDetailsRate(productDetails);
   }
@@ -591,6 +662,10 @@ class _$SuccessGetProductDetailsRateImpl<T>
     TResult? Function()? loadingUpdateRate,
     TResult? Function()? successUpdateRate,
     TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
   }) {
     return successGetProductDetailsRate?.call(productDetails);
   }
@@ -609,6 +684,10 @@ class _$SuccessGetProductDetailsRateImpl<T>
     TResult Function()? loadingUpdateRate,
     TResult Function()? successUpdateRate,
     TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
     required TResult orElse(),
   }) {
     if (successGetProductDetailsRate != null) {
@@ -633,6 +712,9 @@ class _$SuccessGetProductDetailsRateImpl<T>
     required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
     required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
     required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
   }) {
     return successGetProductDetailsRate(this);
   }
@@ -653,6 +735,9 @@ class _$SuccessGetProductDetailsRateImpl<T>
     TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
   }) {
     return successGetProductDetailsRate?.call(this);
   }
@@ -673,6 +758,9 @@ class _$SuccessGetProductDetailsRateImpl<T>
     TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
     required TResult orElse(),
   }) {
     if (successGetProductDetailsRate != null) {
@@ -785,6 +873,11 @@ class _$ErrorGetProductDetailsRateImpl<T>
     required TResult Function() loadingUpdateRate,
     required TResult Function() successUpdateRate,
     required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
   }) {
     return errorGetProductDetailsRate(errorMessage);
   }
@@ -803,6 +896,10 @@ class _$ErrorGetProductDetailsRateImpl<T>
     TResult? Function()? loadingUpdateRate,
     TResult? Function()? successUpdateRate,
     TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
   }) {
     return errorGetProductDetailsRate?.call(errorMessage);
   }
@@ -821,6 +918,10 @@ class _$ErrorGetProductDetailsRateImpl<T>
     TResult Function()? loadingUpdateRate,
     TResult Function()? successUpdateRate,
     TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
     required TResult orElse(),
   }) {
     if (errorGetProductDetailsRate != null) {
@@ -845,6 +946,9 @@ class _$ErrorGetProductDetailsRateImpl<T>
     required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
     required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
     required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
   }) {
     return errorGetProductDetailsRate(this);
   }
@@ -865,6 +969,9 @@ class _$ErrorGetProductDetailsRateImpl<T>
     TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
   }) {
     return errorGetProductDetailsRate?.call(this);
   }
@@ -885,6 +992,9 @@ class _$ErrorGetProductDetailsRateImpl<T>
     TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
     required TResult orElse(),
   }) {
     if (errorGetProductDetailsRate != null) {
@@ -962,6 +1072,11 @@ class _$LoadingAddRateImpl<T> implements LoadingAddRate<T> {
     required TResult Function() loadingUpdateRate,
     required TResult Function() successUpdateRate,
     required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
   }) {
     return loadingAddRate();
   }
@@ -980,6 +1095,10 @@ class _$LoadingAddRateImpl<T> implements LoadingAddRate<T> {
     TResult? Function()? loadingUpdateRate,
     TResult? Function()? successUpdateRate,
     TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
   }) {
     return loadingAddRate?.call();
   }
@@ -998,6 +1117,10 @@ class _$LoadingAddRateImpl<T> implements LoadingAddRate<T> {
     TResult Function()? loadingUpdateRate,
     TResult Function()? successUpdateRate,
     TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
     required TResult orElse(),
   }) {
     if (loadingAddRate != null) {
@@ -1022,6 +1145,9 @@ class _$LoadingAddRateImpl<T> implements LoadingAddRate<T> {
     required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
     required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
     required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
   }) {
     return loadingAddRate(this);
   }
@@ -1042,6 +1168,9 @@ class _$LoadingAddRateImpl<T> implements LoadingAddRate<T> {
     TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
   }) {
     return loadingAddRate?.call(this);
   }
@@ -1062,6 +1191,9 @@ class _$LoadingAddRateImpl<T> implements LoadingAddRate<T> {
     TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
     required TResult orElse(),
   }) {
     if (loadingAddRate != null) {
@@ -1128,6 +1260,11 @@ class _$SuccessAddRateImpl<T> implements SuccessAddRate<T> {
     required TResult Function() loadingUpdateRate,
     required TResult Function() successUpdateRate,
     required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
   }) {
     return successAddRate();
   }
@@ -1146,6 +1283,10 @@ class _$SuccessAddRateImpl<T> implements SuccessAddRate<T> {
     TResult? Function()? loadingUpdateRate,
     TResult? Function()? successUpdateRate,
     TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
   }) {
     return successAddRate?.call();
   }
@@ -1164,6 +1305,10 @@ class _$SuccessAddRateImpl<T> implements SuccessAddRate<T> {
     TResult Function()? loadingUpdateRate,
     TResult Function()? successUpdateRate,
     TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
     required TResult orElse(),
   }) {
     if (successAddRate != null) {
@@ -1188,6 +1333,9 @@ class _$SuccessAddRateImpl<T> implements SuccessAddRate<T> {
     required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
     required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
     required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
   }) {
     return successAddRate(this);
   }
@@ -1208,6 +1356,9 @@ class _$SuccessAddRateImpl<T> implements SuccessAddRate<T> {
     TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
   }) {
     return successAddRate?.call(this);
   }
@@ -1228,6 +1379,9 @@ class _$SuccessAddRateImpl<T> implements SuccessAddRate<T> {
     TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
     required TResult orElse(),
   }) {
     if (successAddRate != null) {
@@ -1323,6 +1477,11 @@ class _$ErrorAddRateImpl<T> implements ErrorAddRate<T> {
     required TResult Function() loadingUpdateRate,
     required TResult Function() successUpdateRate,
     required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
   }) {
     return errorAddRate(errorMessage);
   }
@@ -1341,6 +1500,10 @@ class _$ErrorAddRateImpl<T> implements ErrorAddRate<T> {
     TResult? Function()? loadingUpdateRate,
     TResult? Function()? successUpdateRate,
     TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
   }) {
     return errorAddRate?.call(errorMessage);
   }
@@ -1359,6 +1522,10 @@ class _$ErrorAddRateImpl<T> implements ErrorAddRate<T> {
     TResult Function()? loadingUpdateRate,
     TResult Function()? successUpdateRate,
     TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
     required TResult orElse(),
   }) {
     if (errorAddRate != null) {
@@ -1383,6 +1550,9 @@ class _$ErrorAddRateImpl<T> implements ErrorAddRate<T> {
     required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
     required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
     required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
   }) {
     return errorAddRate(this);
   }
@@ -1403,6 +1573,9 @@ class _$ErrorAddRateImpl<T> implements ErrorAddRate<T> {
     TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
   }) {
     return errorAddRate?.call(this);
   }
@@ -1423,6 +1596,9 @@ class _$ErrorAddRateImpl<T> implements ErrorAddRate<T> {
     TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
     required TResult orElse(),
   }) {
     if (errorAddRate != null) {
@@ -1500,6 +1676,11 @@ class _$LoadingUpdateRateImpl<T> implements LoadingUpdateRate<T> {
     required TResult Function() loadingUpdateRate,
     required TResult Function() successUpdateRate,
     required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
   }) {
     return loadingUpdateRate();
   }
@@ -1518,6 +1699,10 @@ class _$LoadingUpdateRateImpl<T> implements LoadingUpdateRate<T> {
     TResult? Function()? loadingUpdateRate,
     TResult? Function()? successUpdateRate,
     TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
   }) {
     return loadingUpdateRate?.call();
   }
@@ -1536,6 +1721,10 @@ class _$LoadingUpdateRateImpl<T> implements LoadingUpdateRate<T> {
     TResult Function()? loadingUpdateRate,
     TResult Function()? successUpdateRate,
     TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
     required TResult orElse(),
   }) {
     if (loadingUpdateRate != null) {
@@ -1560,6 +1749,9 @@ class _$LoadingUpdateRateImpl<T> implements LoadingUpdateRate<T> {
     required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
     required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
     required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
   }) {
     return loadingUpdateRate(this);
   }
@@ -1580,6 +1772,9 @@ class _$LoadingUpdateRateImpl<T> implements LoadingUpdateRate<T> {
     TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
   }) {
     return loadingUpdateRate?.call(this);
   }
@@ -1600,6 +1795,9 @@ class _$LoadingUpdateRateImpl<T> implements LoadingUpdateRate<T> {
     TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
     required TResult orElse(),
   }) {
     if (loadingUpdateRate != null) {
@@ -1668,6 +1866,11 @@ class _$SuccessUpdateRateImpl<T> implements SuccessUpdateRate<T> {
     required TResult Function() loadingUpdateRate,
     required TResult Function() successUpdateRate,
     required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
   }) {
     return successUpdateRate();
   }
@@ -1686,6 +1889,10 @@ class _$SuccessUpdateRateImpl<T> implements SuccessUpdateRate<T> {
     TResult? Function()? loadingUpdateRate,
     TResult? Function()? successUpdateRate,
     TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
   }) {
     return successUpdateRate?.call();
   }
@@ -1704,6 +1911,10 @@ class _$SuccessUpdateRateImpl<T> implements SuccessUpdateRate<T> {
     TResult Function()? loadingUpdateRate,
     TResult Function()? successUpdateRate,
     TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
     required TResult orElse(),
   }) {
     if (successUpdateRate != null) {
@@ -1728,6 +1939,9 @@ class _$SuccessUpdateRateImpl<T> implements SuccessUpdateRate<T> {
     required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
     required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
     required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
   }) {
     return successUpdateRate(this);
   }
@@ -1748,6 +1962,9 @@ class _$SuccessUpdateRateImpl<T> implements SuccessUpdateRate<T> {
     TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
   }) {
     return successUpdateRate?.call(this);
   }
@@ -1768,6 +1985,9 @@ class _$SuccessUpdateRateImpl<T> implements SuccessUpdateRate<T> {
     TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
     required TResult orElse(),
   }) {
     if (successUpdateRate != null) {
@@ -1863,6 +2083,11 @@ class _$ErrorUpdateRateImpl<T> implements ErrorUpdateRate<T> {
     required TResult Function() loadingUpdateRate,
     required TResult Function() successUpdateRate,
     required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
   }) {
     return errorUpdateRate(errorMessage);
   }
@@ -1881,6 +2106,10 @@ class _$ErrorUpdateRateImpl<T> implements ErrorUpdateRate<T> {
     TResult? Function()? loadingUpdateRate,
     TResult? Function()? successUpdateRate,
     TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
   }) {
     return errorUpdateRate?.call(errorMessage);
   }
@@ -1899,6 +2128,10 @@ class _$ErrorUpdateRateImpl<T> implements ErrorUpdateRate<T> {
     TResult Function()? loadingUpdateRate,
     TResult Function()? successUpdateRate,
     TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
     required TResult orElse(),
   }) {
     if (errorUpdateRate != null) {
@@ -1923,6 +2156,9 @@ class _$ErrorUpdateRateImpl<T> implements ErrorUpdateRate<T> {
     required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
     required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
     required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
   }) {
     return errorUpdateRate(this);
   }
@@ -1943,6 +2179,9 @@ class _$ErrorUpdateRateImpl<T> implements ErrorUpdateRate<T> {
     TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
   }) {
     return errorUpdateRate?.call(this);
   }
@@ -1963,6 +2202,9 @@ class _$ErrorUpdateRateImpl<T> implements ErrorUpdateRate<T> {
     TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
     TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
     TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
     required TResult orElse(),
   }) {
     if (errorUpdateRate != null) {
@@ -1982,5 +2224,659 @@ abstract class ErrorUpdateRate<T> implements ProductDetailsState<T> {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ErrorUpdateRateImplCopyWith<T, _$ErrorUpdateRateImpl<T>> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$LoadingGetCommentsImplCopyWith<T, $Res> {
+  factory _$$LoadingGetCommentsImplCopyWith(_$LoadingGetCommentsImpl<T> value,
+          $Res Function(_$LoadingGetCommentsImpl<T>) then) =
+      __$$LoadingGetCommentsImplCopyWithImpl<T, $Res>;
+}
+
+/// @nodoc
+class __$$LoadingGetCommentsImplCopyWithImpl<T, $Res>
+    extends _$ProductDetailsStateCopyWithImpl<T, $Res,
+        _$LoadingGetCommentsImpl<T>>
+    implements _$$LoadingGetCommentsImplCopyWith<T, $Res> {
+  __$$LoadingGetCommentsImplCopyWithImpl(_$LoadingGetCommentsImpl<T> _value,
+      $Res Function(_$LoadingGetCommentsImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ProductDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$LoadingGetCommentsImpl<T> implements LoadingGetComments<T> {
+  const _$LoadingGetCommentsImpl();
+
+  @override
+  String toString() {
+    return 'ProductDetailsState<$T>.loadingGetComments()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$LoadingGetCommentsImpl<T>);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProductDetailsRate,
+    required TResult Function(
+            List<ProductDetailsRateResponseModel> productDetails)
+        successGetProductDetailsRate,
+    required TResult Function(String errorMessage) errorGetProductDetailsRate,
+    required TResult Function() loadingAddRate,
+    required TResult Function() successAddRate,
+    required TResult Function(String errorMessage) errorAddRate,
+    required TResult Function() loadingUpdateRate,
+    required TResult Function() successUpdateRate,
+    required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
+  }) {
+    return loadingGetComments();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProductDetailsRate,
+    TResult? Function(List<ProductDetailsRateResponseModel> productDetails)?
+        successGetProductDetailsRate,
+    TResult? Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult? Function()? loadingAddRate,
+    TResult? Function()? successAddRate,
+    TResult? Function(String errorMessage)? errorAddRate,
+    TResult? Function()? loadingUpdateRate,
+    TResult? Function()? successUpdateRate,
+    TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
+  }) {
+    return loadingGetComments?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProductDetailsRate,
+    TResult Function(List<ProductDetailsRateResponseModel> productDetails)?
+        successGetProductDetailsRate,
+    TResult Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult Function()? loadingAddRate,
+    TResult Function()? successAddRate,
+    TResult Function(String errorMessage)? errorAddRate,
+    TResult Function()? loadingUpdateRate,
+    TResult Function()? successUpdateRate,
+    TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
+    required TResult orElse(),
+  }) {
+    if (loadingGetComments != null) {
+      return loadingGetComments();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(LoadingGetProductDetailsRate<T> value)
+        loadingGetProductDetailsRate,
+    required TResult Function(SuccessGetProductDetailsRate<T> value)
+        successGetProductDetailsRate,
+    required TResult Function(ErrorGetProductDetailsRate<T> value)
+        errorGetProductDetailsRate,
+    required TResult Function(LoadingAddRate<T> value) loadingAddRate,
+    required TResult Function(SuccessAddRate<T> value) successAddRate,
+    required TResult Function(ErrorAddRate<T> value) errorAddRate,
+    required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
+    required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
+    required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
+  }) {
+    return loadingGetComments(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(LoadingGetProductDetailsRate<T> value)?
+        loadingGetProductDetailsRate,
+    TResult? Function(SuccessGetProductDetailsRate<T> value)?
+        successGetProductDetailsRate,
+    TResult? Function(ErrorGetProductDetailsRate<T> value)?
+        errorGetProductDetailsRate,
+    TResult? Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult? Function(SuccessAddRate<T> value)? successAddRate,
+    TResult? Function(ErrorAddRate<T> value)? errorAddRate,
+    TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
+    TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
+    TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
+  }) {
+    return loadingGetComments?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(LoadingGetProductDetailsRate<T> value)?
+        loadingGetProductDetailsRate,
+    TResult Function(SuccessGetProductDetailsRate<T> value)?
+        successGetProductDetailsRate,
+    TResult Function(ErrorGetProductDetailsRate<T> value)?
+        errorGetProductDetailsRate,
+    TResult Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult Function(SuccessAddRate<T> value)? successAddRate,
+    TResult Function(ErrorAddRate<T> value)? errorAddRate,
+    TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
+    TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
+    TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
+    required TResult orElse(),
+  }) {
+    if (loadingGetComments != null) {
+      return loadingGetComments(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class LoadingGetComments<T> implements ProductDetailsState<T> {
+  const factory LoadingGetComments() = _$LoadingGetCommentsImpl<T>;
+}
+
+/// @nodoc
+abstract class _$$SuccessGetCommentsImplCopyWith<T, $Res> {
+  factory _$$SuccessGetCommentsImplCopyWith(_$SuccessGetCommentsImpl<T> value,
+          $Res Function(_$SuccessGetCommentsImpl<T>) then) =
+      __$$SuccessGetCommentsImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({List<GetCommentsResponseModel> getCommentsResponse});
+}
+
+/// @nodoc
+class __$$SuccessGetCommentsImplCopyWithImpl<T, $Res>
+    extends _$ProductDetailsStateCopyWithImpl<T, $Res,
+        _$SuccessGetCommentsImpl<T>>
+    implements _$$SuccessGetCommentsImplCopyWith<T, $Res> {
+  __$$SuccessGetCommentsImplCopyWithImpl(_$SuccessGetCommentsImpl<T> _value,
+      $Res Function(_$SuccessGetCommentsImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ProductDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? getCommentsResponse = null,
+  }) {
+    return _then(_$SuccessGetCommentsImpl<T>(
+      null == getCommentsResponse
+          ? _value._getCommentsResponse
+          : getCommentsResponse // ignore: cast_nullable_to_non_nullable
+              as List<GetCommentsResponseModel>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$SuccessGetCommentsImpl<T> implements SuccessGetComments<T> {
+  const _$SuccessGetCommentsImpl(
+      final List<GetCommentsResponseModel> getCommentsResponse)
+      : _getCommentsResponse = getCommentsResponse;
+
+  final List<GetCommentsResponseModel> _getCommentsResponse;
+  @override
+  List<GetCommentsResponseModel> get getCommentsResponse {
+    if (_getCommentsResponse is EqualUnmodifiableListView)
+      return _getCommentsResponse;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_getCommentsResponse);
+  }
+
+  @override
+  String toString() {
+    return 'ProductDetailsState<$T>.successGetComments(getCommentsResponse: $getCommentsResponse)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SuccessGetCommentsImpl<T> &&
+            const DeepCollectionEquality()
+                .equals(other._getCommentsResponse, _getCommentsResponse));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_getCommentsResponse));
+
+  /// Create a copy of ProductDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SuccessGetCommentsImplCopyWith<T, _$SuccessGetCommentsImpl<T>>
+      get copyWith => __$$SuccessGetCommentsImplCopyWithImpl<T,
+          _$SuccessGetCommentsImpl<T>>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProductDetailsRate,
+    required TResult Function(
+            List<ProductDetailsRateResponseModel> productDetails)
+        successGetProductDetailsRate,
+    required TResult Function(String errorMessage) errorGetProductDetailsRate,
+    required TResult Function() loadingAddRate,
+    required TResult Function() successAddRate,
+    required TResult Function(String errorMessage) errorAddRate,
+    required TResult Function() loadingUpdateRate,
+    required TResult Function() successUpdateRate,
+    required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
+  }) {
+    return successGetComments(getCommentsResponse);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProductDetailsRate,
+    TResult? Function(List<ProductDetailsRateResponseModel> productDetails)?
+        successGetProductDetailsRate,
+    TResult? Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult? Function()? loadingAddRate,
+    TResult? Function()? successAddRate,
+    TResult? Function(String errorMessage)? errorAddRate,
+    TResult? Function()? loadingUpdateRate,
+    TResult? Function()? successUpdateRate,
+    TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
+  }) {
+    return successGetComments?.call(getCommentsResponse);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProductDetailsRate,
+    TResult Function(List<ProductDetailsRateResponseModel> productDetails)?
+        successGetProductDetailsRate,
+    TResult Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult Function()? loadingAddRate,
+    TResult Function()? successAddRate,
+    TResult Function(String errorMessage)? errorAddRate,
+    TResult Function()? loadingUpdateRate,
+    TResult Function()? successUpdateRate,
+    TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
+    required TResult orElse(),
+  }) {
+    if (successGetComments != null) {
+      return successGetComments(getCommentsResponse);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(LoadingGetProductDetailsRate<T> value)
+        loadingGetProductDetailsRate,
+    required TResult Function(SuccessGetProductDetailsRate<T> value)
+        successGetProductDetailsRate,
+    required TResult Function(ErrorGetProductDetailsRate<T> value)
+        errorGetProductDetailsRate,
+    required TResult Function(LoadingAddRate<T> value) loadingAddRate,
+    required TResult Function(SuccessAddRate<T> value) successAddRate,
+    required TResult Function(ErrorAddRate<T> value) errorAddRate,
+    required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
+    required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
+    required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
+  }) {
+    return successGetComments(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(LoadingGetProductDetailsRate<T> value)?
+        loadingGetProductDetailsRate,
+    TResult? Function(SuccessGetProductDetailsRate<T> value)?
+        successGetProductDetailsRate,
+    TResult? Function(ErrorGetProductDetailsRate<T> value)?
+        errorGetProductDetailsRate,
+    TResult? Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult? Function(SuccessAddRate<T> value)? successAddRate,
+    TResult? Function(ErrorAddRate<T> value)? errorAddRate,
+    TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
+    TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
+    TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
+  }) {
+    return successGetComments?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(LoadingGetProductDetailsRate<T> value)?
+        loadingGetProductDetailsRate,
+    TResult Function(SuccessGetProductDetailsRate<T> value)?
+        successGetProductDetailsRate,
+    TResult Function(ErrorGetProductDetailsRate<T> value)?
+        errorGetProductDetailsRate,
+    TResult Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult Function(SuccessAddRate<T> value)? successAddRate,
+    TResult Function(ErrorAddRate<T> value)? errorAddRate,
+    TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
+    TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
+    TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
+    required TResult orElse(),
+  }) {
+    if (successGetComments != null) {
+      return successGetComments(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessGetComments<T> implements ProductDetailsState<T> {
+  const factory SuccessGetComments(
+          final List<GetCommentsResponseModel> getCommentsResponse) =
+      _$SuccessGetCommentsImpl<T>;
+
+  List<GetCommentsResponseModel> get getCommentsResponse;
+
+  /// Create a copy of ProductDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$SuccessGetCommentsImplCopyWith<T, _$SuccessGetCommentsImpl<T>>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$ErrorGetCommentsImplCopyWith<T, $Res> {
+  factory _$$ErrorGetCommentsImplCopyWith(_$ErrorGetCommentsImpl<T> value,
+          $Res Function(_$ErrorGetCommentsImpl<T>) then) =
+      __$$ErrorGetCommentsImplCopyWithImpl<T, $Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$ErrorGetCommentsImplCopyWithImpl<T, $Res>
+    extends _$ProductDetailsStateCopyWithImpl<T, $Res,
+        _$ErrorGetCommentsImpl<T>>
+    implements _$$ErrorGetCommentsImplCopyWith<T, $Res> {
+  __$$ErrorGetCommentsImplCopyWithImpl(_$ErrorGetCommentsImpl<T> _value,
+      $Res Function(_$ErrorGetCommentsImpl<T>) _then)
+      : super(_value, _then);
+
+  /// Create a copy of ProductDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$ErrorGetCommentsImpl<T>(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorGetCommentsImpl<T> implements ErrorGetComments<T> {
+  const _$ErrorGetCommentsImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'ProductDetailsState<$T>.errorGetComments(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorGetCommentsImpl<T> &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of ProductDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorGetCommentsImplCopyWith<T, _$ErrorGetCommentsImpl<T>> get copyWith =>
+      __$$ErrorGetCommentsImplCopyWithImpl<T, _$ErrorGetCommentsImpl<T>>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProductDetailsRate,
+    required TResult Function(
+            List<ProductDetailsRateResponseModel> productDetails)
+        successGetProductDetailsRate,
+    required TResult Function(String errorMessage) errorGetProductDetailsRate,
+    required TResult Function() loadingAddRate,
+    required TResult Function() successAddRate,
+    required TResult Function(String errorMessage) errorAddRate,
+    required TResult Function() loadingUpdateRate,
+    required TResult Function() successUpdateRate,
+    required TResult Function(String errorMessage) errorUpdateRate,
+    required TResult Function() loadingGetComments,
+    required TResult Function(
+            List<GetCommentsResponseModel> getCommentsResponse)
+        successGetComments,
+    required TResult Function(String errorMessage) errorGetComments,
+  }) {
+    return errorGetComments(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProductDetailsRate,
+    TResult? Function(List<ProductDetailsRateResponseModel> productDetails)?
+        successGetProductDetailsRate,
+    TResult? Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult? Function()? loadingAddRate,
+    TResult? Function()? successAddRate,
+    TResult? Function(String errorMessage)? errorAddRate,
+    TResult? Function()? loadingUpdateRate,
+    TResult? Function()? successUpdateRate,
+    TResult? Function(String errorMessage)? errorUpdateRate,
+    TResult? Function()? loadingGetComments,
+    TResult? Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult? Function(String errorMessage)? errorGetComments,
+  }) {
+    return errorGetComments?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProductDetailsRate,
+    TResult Function(List<ProductDetailsRateResponseModel> productDetails)?
+        successGetProductDetailsRate,
+    TResult Function(String errorMessage)? errorGetProductDetailsRate,
+    TResult Function()? loadingAddRate,
+    TResult Function()? successAddRate,
+    TResult Function(String errorMessage)? errorAddRate,
+    TResult Function()? loadingUpdateRate,
+    TResult Function()? successUpdateRate,
+    TResult Function(String errorMessage)? errorUpdateRate,
+    TResult Function()? loadingGetComments,
+    TResult Function(List<GetCommentsResponseModel> getCommentsResponse)?
+        successGetComments,
+    TResult Function(String errorMessage)? errorGetComments,
+    required TResult orElse(),
+  }) {
+    if (errorGetComments != null) {
+      return errorGetComments(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial<T> value) initial,
+    required TResult Function(LoadingGetProductDetailsRate<T> value)
+        loadingGetProductDetailsRate,
+    required TResult Function(SuccessGetProductDetailsRate<T> value)
+        successGetProductDetailsRate,
+    required TResult Function(ErrorGetProductDetailsRate<T> value)
+        errorGetProductDetailsRate,
+    required TResult Function(LoadingAddRate<T> value) loadingAddRate,
+    required TResult Function(SuccessAddRate<T> value) successAddRate,
+    required TResult Function(ErrorAddRate<T> value) errorAddRate,
+    required TResult Function(LoadingUpdateRate<T> value) loadingUpdateRate,
+    required TResult Function(SuccessUpdateRate<T> value) successUpdateRate,
+    required TResult Function(ErrorUpdateRate<T> value) errorUpdateRate,
+    required TResult Function(LoadingGetComments<T> value) loadingGetComments,
+    required TResult Function(SuccessGetComments<T> value) successGetComments,
+    required TResult Function(ErrorGetComments<T> value) errorGetComments,
+  }) {
+    return errorGetComments(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial<T> value)? initial,
+    TResult? Function(LoadingGetProductDetailsRate<T> value)?
+        loadingGetProductDetailsRate,
+    TResult? Function(SuccessGetProductDetailsRate<T> value)?
+        successGetProductDetailsRate,
+    TResult? Function(ErrorGetProductDetailsRate<T> value)?
+        errorGetProductDetailsRate,
+    TResult? Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult? Function(SuccessAddRate<T> value)? successAddRate,
+    TResult? Function(ErrorAddRate<T> value)? errorAddRate,
+    TResult? Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
+    TResult? Function(SuccessUpdateRate<T> value)? successUpdateRate,
+    TResult? Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult? Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult? Function(SuccessGetComments<T> value)? successGetComments,
+    TResult? Function(ErrorGetComments<T> value)? errorGetComments,
+  }) {
+    return errorGetComments?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial<T> value)? initial,
+    TResult Function(LoadingGetProductDetailsRate<T> value)?
+        loadingGetProductDetailsRate,
+    TResult Function(SuccessGetProductDetailsRate<T> value)?
+        successGetProductDetailsRate,
+    TResult Function(ErrorGetProductDetailsRate<T> value)?
+        errorGetProductDetailsRate,
+    TResult Function(LoadingAddRate<T> value)? loadingAddRate,
+    TResult Function(SuccessAddRate<T> value)? successAddRate,
+    TResult Function(ErrorAddRate<T> value)? errorAddRate,
+    TResult Function(LoadingUpdateRate<T> value)? loadingUpdateRate,
+    TResult Function(SuccessUpdateRate<T> value)? successUpdateRate,
+    TResult Function(ErrorUpdateRate<T> value)? errorUpdateRate,
+    TResult Function(LoadingGetComments<T> value)? loadingGetComments,
+    TResult Function(SuccessGetComments<T> value)? successGetComments,
+    TResult Function(ErrorGetComments<T> value)? errorGetComments,
+    required TResult orElse(),
+  }) {
+    if (errorGetComments != null) {
+      return errorGetComments(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorGetComments<T> implements ProductDetailsState<T> {
+  const factory ErrorGetComments({required final String errorMessage}) =
+      _$ErrorGetCommentsImpl<T>;
+
+  String get errorMessage;
+
+  /// Create a copy of ProductDetailsState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ErrorGetCommentsImplCopyWith<T, _$ErrorGetCommentsImpl<T>> get copyWith =>
       throw _privateConstructorUsedError;
 }

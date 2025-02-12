@@ -1,4 +1,5 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
+import 'package:market/features/product_details/data/models/comments/get_comments_response_model.dart';
 import 'package:market/features/product_details/data/models/rates/product_details_rate_response_model.dart';
 part 'product_details_state.freezed.dart';
 
@@ -26,4 +27,12 @@ class ProductDetailsState<T> with _$ProductDetailsState<T> {
   const factory ProductDetailsState.successUpdateRate() = SuccessUpdateRate;
   const factory ProductDetailsState.errorUpdateRate(
       {required String errorMessage}) = ErrorUpdateRate;
+
+  // get comments
+  const factory ProductDetailsState.loadingGetComments() = LoadingGetComments;
+  const factory ProductDetailsState.successGetComments(
+          List<GetCommentsResponseModel> getCommentsResponse) =
+      SuccessGetComments<T>;
+  const factory ProductDetailsState.errorGetComments(
+      {required String errorMessage}) = ErrorGetComments;
 }
