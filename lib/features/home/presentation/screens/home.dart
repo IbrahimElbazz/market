@@ -10,6 +10,7 @@ import 'package:market/features/home/logic/cubit/home_state.dart';
 import 'package:market/features/home/presentation/widgets/list_category.dart';
 import 'package:market/features/product_details/logic/cubit/product_details_cubit.dart';
 import 'package:market/features/product_details/presentation/screens/product_details.dart';
+import 'package:market/features/search/presentation/screens/search.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -34,12 +35,21 @@ class _HomeState extends State<Home> {
           child: Column(
             children: [
               const GapH(height: 20),
-              const CustomTextField(
-                enable: false,
-                hint: 'search now',
-                iconButton: Icon(
-                  Icons.search,
-                  color: Colors.black,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context, MaterialPageRoute(
+                    builder: (context) {
+                      return const Search();
+                    },
+                  ));
+                },
+                child: const CustomTextField(
+                  enable: false,
+                  hint: 'search now',
+                  iconButton: Icon(
+                    Icons.search,
+                    color: Colors.black,
+                  ),
                 ),
               ),
               const GapH(height: 20),

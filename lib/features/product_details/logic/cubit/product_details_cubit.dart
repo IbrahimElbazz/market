@@ -1,10 +1,6 @@
-import 'dart:developer';
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:market/core/constant/table.dart';
-import 'package:market/features/auth/get_user_data/data/models/user_data_model.dart';
 import 'package:market/features/product_details/data/models/comments/add_comment_model.dart';
-import 'package:market/features/product_details/data/models/comments/get_comments_response_model.dart';
 import 'package:market/features/product_details/data/models/rates/add_rate_request_model.dart';
 import 'package:market/features/product_details/data/models/rates/product_details_rate_response_model.dart';
 import 'package:market/features/product_details/data/models/rates/update_rate_request_model.dart';
@@ -131,8 +127,10 @@ class ProductDetailsCubit extends Cubit<ProductDetailsState> {
 
   // add comment
 
-  Future<void> addComment(
-      {required String productId, required String comment}) async {
+  Future<void> addComment({
+    required String productId,
+    required String comment,
+  }) async {
     emit(const ProductDetailsState.loadingAddComments());
 
     final data = await client

@@ -31,7 +31,7 @@ class market extends StatelessWidget {
             create: (context) => RegisterCubit(),
           ),
           BlocProvider(
-            create: (context) => GetUserDataCubit()..getUserData(),
+            create: (context) => GetUserDataCubit(),
           ),
           BlocProvider(
             create: (context) => getIt<HomeCubit>(),
