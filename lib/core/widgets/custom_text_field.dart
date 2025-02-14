@@ -9,12 +9,14 @@ class CustomTextField extends StatelessWidget {
     this.iconButton,
     this.enable,
     this.isPassword,
+    this.onChanged,
   });
   final String? hint;
   final TextEditingController? controller;
   final Widget? iconButton;
   final bool? enable;
   final bool? isPassword;
+  final void Function(String)? onChanged;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
@@ -24,6 +26,7 @@ class CustomTextField extends StatelessWidget {
         }
         return null;
       },
+      onChanged: onChanged,
       enabled: enable,
       controller: controller,
       obscureText: isPassword ?? false,

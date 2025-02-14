@@ -1,3 +1,5 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -8,9 +10,8 @@ import 'package:market/core/widgets/product_card.dart';
 import 'package:market/features/home/logic/cubit/home_cubit.dart';
 import 'package:market/features/home/logic/cubit/home_state.dart';
 import 'package:market/features/home/presentation/widgets/list_category.dart';
-import 'package:market/features/product_details/logic/cubit/product_details_cubit.dart';
 import 'package:market/features/product_details/presentation/screens/product_details.dart';
-import 'package:market/features/search/presentation/screens/search.dart';
+import 'package:market/features/search/presentation/screens/search_delegate.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -37,11 +38,10 @@ class _HomeState extends State<Home> {
               const GapH(height: 20),
               GestureDetector(
                 onTap: () {
-                  Navigator.push(context, MaterialPageRoute(
-                    builder: (context) {
-                      return const Search();
-                    },
-                  ));
+                  showSearch(
+                    context: context,
+                    delegate: SearchDelegateScreen(),
+                  );
                 },
                 child: const CustomTextField(
                   enable: false,

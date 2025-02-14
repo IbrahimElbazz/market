@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:market/features/home/logic/cubit/home_cubit.dart';
+import 'package:market/features/home/presentation/screens/product_screen.dart';
 
 class ListCategory extends StatelessWidget {
   const ListCategory({
@@ -17,25 +20,37 @@ class ListCategory extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         scrollDirection: Axis.horizontal,
         itemBuilder: (context, index) {
-          return Column(
-            children: [
-              Container(
-                margin: EdgeInsets.symmetric(horizontal: 9.w, vertical: 2.h),
-                width: 60.w,
-                height: 60.h,
-                decoration: BoxDecoration(
-                  color: Colors.blue,
-                  borderRadius: BorderRadius.circular(50),
+          return GestureDetector(
+            onTap: () {
+              // Navigator.push(context, MaterialPageRoute(
+              //   builder: (context) {
+              //     return ProductScreen(
+              //       productList: context.read<HomeCubit>().categoryList,
+              //       category: listCategory[index]["name"],
+              //     );
+              //   },
+              // ));
+            },
+            child: Column(
+              children: [
+                Container(
+                  margin: EdgeInsets.symmetric(horizontal: 9.w, vertical: 2.h),
+                  width: 60.w,
+                  height: 60.h,
+                  decoration: BoxDecoration(
+                    color: Colors.blue,
+                    borderRadius: BorderRadius.circular(50),
+                  ),
+                  child: Icon(
+                    listCategory[index]['icon'],
+                    color: Colors.white,
+                  ),
                 ),
-                child: Icon(
-                  listCategory[index]['icon'],
-                  color: Colors.white,
-                ),
-              ),
-              Text(
-                '${listCategory[index]['name']}',
-              )
-            ],
+                Text(
+                  '${listCategory[index]['name']}',
+                )
+              ],
+            ),
           );
         },
       ),
@@ -45,8 +60,8 @@ class ListCategory extends StatelessWidget {
 
 List listCategory = [
   {
-    'name': 'Sports',
-    'icon': Icons.sports,
+    'name': 'All',
+    'icon': Icons.shopping_bag_rounded,
   },
   {
     'name': 'Collections',
@@ -55,25 +70,5 @@ List listCategory = [
   {
     'name': 'Books',
     'icon': Icons.book,
-  },
-  {
-    'name': 'Games',
-    'icon': Icons.games,
-  },
-  {
-    'name': 'Sports',
-    'icon': Icons.sports,
-  },
-  {
-    'name': 'Collections',
-    'icon': Icons.collections,
-  },
-  {
-    'name': 'Books',
-    'icon': Icons.book,
-  },
-  {
-    'name': 'Games',
-    'icon': Icons.games,
   },
 ];
