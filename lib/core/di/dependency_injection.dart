@@ -2,6 +2,8 @@ import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
 import 'package:market/core/network/api_service.dart';
 import 'package:market/core/network/dio_factory.dart';
+import 'package:market/features/favorite/data/repo/fav_repo.dart';
+import 'package:market/features/favorite/logic/cubit/fav_cubit.dart';
 import 'package:market/features/home/data/repos/home_repo.dart';
 import 'package:market/features/home/logic/cubit/home_cubit.dart';
 import 'package:market/features/product_details/data/repo/product_details_repo.dart';
@@ -22,4 +24,8 @@ Future<void> setupGetIt() async {
   getIt.registerLazySingleton<ProductDetailsCubit>(
       () => ProductDetailsCubit(getIt()));
   getIt.registerFactory<ProductDetailsRepo>(() => ProductDetailsRepo(getIt()));
+
+  //get  fav
+  getIt.registerLazySingleton<FavCubit>(() => FavCubit(getIt()));
+  getIt.registerFactory<FavRepo>(() => FavRepo(getIt()));
 }

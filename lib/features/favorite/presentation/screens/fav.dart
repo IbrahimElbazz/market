@@ -1,27 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/core/widgets/product_card.dart';
-import 'package:market/features/home/data/models/get_product_response.dart';
+import 'package:market/features/favorite/logic/cubit/fav_cubit.dart';
+import 'package:market/features/favorite/logic/cubit/fav_state.dart';
 import 'package:market/features/home/logic/cubit/home_cubit.dart';
 import 'package:market/features/home/logic/cubit/home_state.dart';
 import 'package:market/features/product_details/presentation/screens/product_details.dart';
-import 'package:market/features/search/presentation/screens/search_delegate.dart';
 
-class Store extends StatefulWidget {
-  const Store({super.key});
+class Fav extends StatefulWidget {
+  const Fav({super.key});
 
   @override
-  State<Store> createState() => _StoreState();
+  State<Fav> createState() => _FavState();
 }
 
-class _StoreState extends State<Store> {
-  final GetProductResponse _response = GetProductResponse();
+class _FavState extends State<Fav> {
   @override
   void initState() {
-    context.read<HomeCubit>().getProducts();
+    context.read<FavCubit>().getFavorite();
     super.initState();
   }
 
@@ -34,90 +32,47 @@ class _StoreState extends State<Store> {
           child: Column(
             children: [
               const GapH(height: 20),
-              GestureDetector(
-                onTap: () {
-                  showSearch(
-                    context: context,
-                    delegate: SearchDelegateScreen(),
-                  );
-                },
-                child: const CustomTextField(
-                  enable: false,
-                  hint: 'search now ',
-                  iconButton: Icon(
-                    Icons.search,
-                    color: Colors.black,
-                  ),
+              Text(
+                'Your Favorite products',
+                style: TextStyle(
+                  color: Colors.blue,
+                  fontSize: 24.sp,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
-              const GapH(height: 20),
-              Row(
-                children: [
-                  Text(
-                    'Products',
-                    style: TextStyle(
-                      fontSize: 21.sp,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ],
-              ),
               const GapH(height: 10),
-              BlocConsumer<HomeCubit, HomeState>(
-                listener: (context, state) {
-                  state.maybeWhen(
-                    orElse: () {},
-                    successDeleteFavorite: () {
-                      return ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Center(child: Text('deleted favorite')),
-                          backgroundColor: Colors.red,
-                        ),
-                      );
-                    },
-                    successAddFavorite: () {
-                      return ScaffoldMessenger.of(context).showSnackBar(
-                        const SnackBar(
-                          content: Center(child: Text('added favorite')),
-                          backgroundColor: Colors.green,
-                        ),
-                      );
-                    },
-                  );
-                },
-                listenWhen: (previous, current) {
-                  return current is ErrorAddFavorite ||
-                      current is SuccessAddFavorite ||
-                      current is loadingAddFavorite ||
-                      current is ErrorDeleteFavorite ||
-                      current is SuccessDeleteFavorite ||
-                      current is loadingDeleteFavorite;
-                },
+              BlocBuilder<FavCubit, FavState>(
                 buildWhen: (previous, current) {
-                  return current is ErrorGetProduct ||
-                      current is SuccessGetProduct ||
-                      current is loadingGetProduct;
+                  return current is ErrorGetVaf ||
+                      current is LoadingGetVaf ||
+                      current is SuccessGetVaf;
                 },
                 builder: (context, state) {
                   return state.maybeWhen(
                     orElse: () {
                       return const SizedBox.shrink();
                     },
-                    loadingGetProduct: () {
-                      return const CircularProgressIndicator(
-                        color: Colors.blue,
+                    loadingGetVaf: () {
+                      return SizedBox(
+                        height: 350.h,
+                        child: const Center(
+                          child: CircularProgressIndicator(
+                            color: Colors.blue,
+                          ),
+                        ),
                       );
                     },
-                    errorGetProduct: (errorMessage) {
+                    errorGetVaf: (errorMessage) {
                       return Text(errorMessage);
                     },
-                    successGetProduct: (getProductResponse) {
+                    successGetVaf: (getProductResponse) {
                       return getProductResponse.isEmpty
                           ? SizedBox(
-                              height: 100.h,
+                              height: 350.h,
+                              width: double.infinity,
                               child: Center(
                                 child: Text(
-                                  'not fount product !!!',
+                                  'not found favorite...!',
                                   style: TextStyle(
                                     fontSize: 20.sp,
                                     color: Colors.red,
@@ -138,13 +93,55 @@ class _StoreState extends State<Store> {
                                       MaterialPageRoute(
                                         builder: (context) {
                                           return ProductDetails(
-                                            data: getProductResponse[index],
+                                            data: getProductResponse[index]
+                                                .productes,
                                           );
                                         },
                                       ),
                                     );
                                   },
-                                  icon: BlocBuilder<HomeCubit, HomeState>(
+                                  icon: BlocConsumer<HomeCubit, HomeState>(
+                                    listener: (context, state) {
+                                      state.maybeWhen(
+                                        orElse: () {},
+                                        successDeleteFavorite: () {
+                                          context
+                                              .read<FavCubit>()
+                                              .getFavorite();
+                                          return ScaffoldMessenger.of(context)
+                                              .showSnackBar(
+                                            const SnackBar(
+                                              content: Center(
+                                                  child:
+                                                      Text('deleted favorite')),
+                                              backgroundColor: Colors.red,
+                                            ),
+                                          );
+                                        },
+                                        successAddFavorite: () {
+                                          context
+                                              .read<FavCubit>()
+                                              .getFavorite();
+                                          return ScaffoldMessenger.of(context)
+                                              .showSnackBar(
+                                            const SnackBar(
+                                              content: Center(
+                                                  child:
+                                                      Text('added favorite')),
+                                              backgroundColor: Colors.green,
+                                            ),
+                                          );
+                                        },
+                                      );
+                                    },
+                                    listenWhen: (previous, current) {
+                                      return current is ErrorAddFavorite ||
+                                          current is SuccessAddFavorite ||
+                                          current is loadingAddFavorite ||
+                                          current is ErrorDeleteFavorite ||
+                                          current is SuccessDeleteFavorite ||
+                                          current is loadingDeleteFavorite;
+                                    },
                                     builder: (context, state) {
                                       return IconButton(
                                         onPressed: () {
@@ -152,12 +149,14 @@ class _StoreState extends State<Store> {
                                               .read<HomeCubit>()
                                               .checkFavorite(
                                                   getProductResponse[index]
+                                                      .productes
                                                       .productId
                                                       .toString())) {
                                             context
                                                 .read<HomeCubit>()
                                                 .deleteFavorite(
                                                   getProductResponse[index]
+                                                      .productes
                                                       .productId
                                                       .toString(),
                                                 );
@@ -166,6 +165,7 @@ class _StoreState extends State<Store> {
                                                 .read<HomeCubit>()
                                                 .addFavorite(
                                                   getProductResponse[index]
+                                                      .productes
                                                       .productId
                                                       .toString(),
                                                 );
@@ -177,6 +177,7 @@ class _StoreState extends State<Store> {
                                                   .read<HomeCubit>()
                                                   .checkFavorite(
                                                     getProductResponse[index]
+                                                        .productes
                                                         .productId
                                                         .toString(),
                                                   )
@@ -186,14 +187,15 @@ class _StoreState extends State<Store> {
                                       );
                                     },
                                   ),
-                                  dataProduct: getProductResponse[index],
+                                  dataProduct:
+                                      getProductResponse[index].productes,
                                 ),
                               ),
                             );
                     },
                   );
                 },
-              ),
+              )
             ],
           ),
         ),

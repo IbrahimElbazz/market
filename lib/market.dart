@@ -7,6 +7,7 @@ import 'package:market/features/auth/get_user_data/logic/cubit/get_user_data_cub
 import 'package:market/features/auth/login/logic/cubit/login_cubit.dart';
 import 'package:market/features/auth/login/presentation/screens/login_screen.dart';
 import 'package:market/features/auth/register/logic/cubit/register_cubit.dart';
+import 'package:market/features/favorite/logic/cubit/fav_cubit.dart';
 import 'package:market/features/home/logic/cubit/home_cubit.dart';
 import 'package:market/features/product_details/logic/cubit/product_details_cubit.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -38,6 +39,9 @@ class market extends StatelessWidget {
           ),
           BlocProvider(
             create: (context) => getIt<ProductDetailsCubit>(),
+          ),
+          BlocProvider(
+            create: (context) => getIt<FavCubit>(),
           ),
         ],
         child: MaterialApp(

@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:market/core/network/api_constant.dart';
+import 'package:market/features/favorite/data/models/get_fav_model.dart';
 import 'package:market/features/home/data/models/add_favorite.dart';
 import 'package:market/features/home/data/models/get_product_response.dart';
 import 'package:market/features/product_details/data/models/comments/add_comment_model.dart';
@@ -68,4 +69,7 @@ abstract class ApiService {
     @Path('userId') String userId,
     @Path('productId') String productId,
   );
+
+  @GET(ApiConstant.getFavorite)
+  Future<List<getFavoriteModel>> getFavorite();
 }

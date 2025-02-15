@@ -16,4 +16,5 @@ class ApiConstant {
   static const addFavorite = 'favorite_product';
   static const deleteFavorite =
       'favorite_product?for_user_id=eq.{userId}&for_product_id=eq.{productId}';
+  static const getFavorite = 'favorite_product?select=*,productes(*)';
 }
