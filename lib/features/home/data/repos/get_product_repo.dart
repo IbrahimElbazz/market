@@ -14,4 +14,15 @@ class GetProductRepo {
       return ApiResult.failure(e.toString());
     }
   }
+
+  // get Category
+  Future<ApiResult<List<GetProductResponse>>> getCategory(
+      String categoryName) async {
+    try {
+      final response = await _apiService.getCategory(categoryName);
+      return ApiResult.success(response);
+    } catch (e) {
+      return ApiResult.failure(e.toString());
+    }
+  }
 }

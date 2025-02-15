@@ -1,13 +1,22 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/features/home/logic/cubit/home_cubit.dart';
 import 'package:market/features/home/presentation/screens/product_screen.dart';
 
-class ListCategory extends StatelessWidget {
+class ListCategory extends StatefulWidget {
   const ListCategory({
     super.key,
   });
+
+  @override
+  State<ListCategory> createState() => _ListCategoryState();
+}
+
+class _ListCategoryState extends State<ListCategory> {
+  int active = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -22,14 +31,15 @@ class ListCategory extends StatelessWidget {
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
-              // Navigator.push(context, MaterialPageRoute(
-              //   builder: (context) {
-              //     return ProductScreen(
-              //       productList: context.read<HomeCubit>().categoryList,
-              //       category: listCategory[index]["name"],
-              //     );
-              //   },
-              // ));
+              setState(() {
+                active = index;
+              });
+
+              listCategory[index]['name'] == 'All'
+                  ? context.read<HomeCubit>().getProducts()
+                  : context.read<HomeCubit>().getCategory(
+                        listCategory[index]['name'],
+                      );
             },
             child: Column(
               children: [
@@ -38,7 +48,9 @@ class ListCategory extends StatelessWidget {
                   width: 60.w,
                   height: 60.h,
                   decoration: BoxDecoration(
-                    color: Colors.blue,
+                    color: active == index
+                        ? Colors.blue.withOpacity(0.5)
+                        : Colors.blue.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(50),
                   ),
                   child: Icon(
@@ -48,6 +60,9 @@ class ListCategory extends StatelessWidget {
                 ),
                 Text(
                   '${listCategory[index]['name']}',
+                  style: TextStyle(
+                    color: active == index ? Colors.blue : Colors.grey,
+                  ),
                 )
               ],
             ),
@@ -64,7 +79,7 @@ List listCategory = [
     'icon': Icons.shopping_bag_rounded,
   },
   {
-    'name': 'Collections',
+    'name': 'Home appliances',
     'icon': Icons.collections,
   },
   {

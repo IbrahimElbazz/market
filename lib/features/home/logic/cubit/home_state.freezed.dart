@@ -23,6 +23,10 @@ mixin _$HomeState {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetProduct,
     required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -32,6 +36,10 @@ mixin _$HomeState {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetProduct,
     TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -41,6 +49,10 @@ mixin _$HomeState {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetProduct,
     TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -50,6 +62,9 @@ mixin _$HomeState {
     required TResult Function(loadingGetProduct value) loadingGetProduct,
     required TResult Function(SuccessGetProduct value) successGetProduct,
     required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -58,6 +73,9 @@ mixin _$HomeState {
     TResult? Function(loadingGetProduct value)? loadingGetProduct,
     TResult? Function(SuccessGetProduct value)? successGetProduct,
     TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -66,6 +84,9 @@ mixin _$HomeState {
     TResult Function(loadingGetProduct value)? loadingGetProduct,
     TResult Function(SuccessGetProduct value)? successGetProduct,
     TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -137,6 +158,10 @@ class _$InitialImpl implements _Initial {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetProduct,
     required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
   }) {
     return initial();
   }
@@ -149,6 +174,10 @@ class _$InitialImpl implements _Initial {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetProduct,
     TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
   }) {
     return initial?.call();
   }
@@ -161,6 +190,10 @@ class _$InitialImpl implements _Initial {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetProduct,
     TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -176,6 +209,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function(loadingGetProduct value) loadingGetProduct,
     required TResult Function(SuccessGetProduct value) successGetProduct,
     required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
   }) {
     return initial(this);
   }
@@ -187,6 +223,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function(loadingGetProduct value)? loadingGetProduct,
     TResult? Function(SuccessGetProduct value)? successGetProduct,
     TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
   }) {
     return initial?.call(this);
   }
@@ -198,6 +237,9 @@ class _$InitialImpl implements _Initial {
     TResult Function(loadingGetProduct value)? loadingGetProduct,
     TResult Function(SuccessGetProduct value)? successGetProduct,
     TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -257,6 +299,10 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetProduct,
     required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
   }) {
     return loadingGetProduct();
   }
@@ -269,6 +315,10 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetProduct,
     TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
   }) {
     return loadingGetProduct?.call();
   }
@@ -281,6 +331,10 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetProduct,
     TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
     required TResult orElse(),
   }) {
     if (loadingGetProduct != null) {
@@ -296,6 +350,9 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     required TResult Function(loadingGetProduct value) loadingGetProduct,
     required TResult Function(SuccessGetProduct value) successGetProduct,
     required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
   }) {
     return loadingGetProduct(this);
   }
@@ -307,6 +364,9 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     TResult? Function(loadingGetProduct value)? loadingGetProduct,
     TResult? Function(SuccessGetProduct value)? successGetProduct,
     TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
   }) {
     return loadingGetProduct?.call(this);
   }
@@ -318,6 +378,9 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     TResult Function(loadingGetProduct value)? loadingGetProduct,
     TResult Function(SuccessGetProduct value)? successGetProduct,
     TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
     required TResult orElse(),
   }) {
     if (loadingGetProduct != null) {
@@ -415,6 +478,10 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetProduct,
     required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
   }) {
     return successGetProduct(getProductResponse);
   }
@@ -427,6 +494,10 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetProduct,
     TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
   }) {
     return successGetProduct?.call(getProductResponse);
   }
@@ -439,6 +510,10 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetProduct,
     TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
     required TResult orElse(),
   }) {
     if (successGetProduct != null) {
@@ -454,6 +529,9 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     required TResult Function(loadingGetProduct value) loadingGetProduct,
     required TResult Function(SuccessGetProduct value) successGetProduct,
     required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
   }) {
     return successGetProduct(this);
   }
@@ -465,6 +543,9 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     TResult? Function(loadingGetProduct value)? loadingGetProduct,
     TResult? Function(SuccessGetProduct value)? successGetProduct,
     TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
   }) {
     return successGetProduct?.call(this);
   }
@@ -476,6 +557,9 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     TResult Function(loadingGetProduct value)? loadingGetProduct,
     TResult Function(SuccessGetProduct value)? successGetProduct,
     TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
     required TResult orElse(),
   }) {
     if (successGetProduct != null) {
@@ -574,6 +658,10 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetProduct,
     required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
   }) {
     return errorGetProduct(errorMessage);
   }
@@ -586,6 +674,10 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetProduct,
     TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
   }) {
     return errorGetProduct?.call(errorMessage);
   }
@@ -598,6 +690,10 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetProduct,
     TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
     required TResult orElse(),
   }) {
     if (errorGetProduct != null) {
@@ -613,6 +709,9 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     required TResult Function(loadingGetProduct value) loadingGetProduct,
     required TResult Function(SuccessGetProduct value) successGetProduct,
     required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
   }) {
     return errorGetProduct(this);
   }
@@ -624,6 +723,9 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     TResult? Function(loadingGetProduct value)? loadingGetProduct,
     TResult? Function(SuccessGetProduct value)? successGetProduct,
     TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
   }) {
     return errorGetProduct?.call(this);
   }
@@ -635,6 +737,9 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     TResult Function(loadingGetProduct value)? loadingGetProduct,
     TResult Function(SuccessGetProduct value)? successGetProduct,
     TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
     required TResult orElse(),
   }) {
     if (errorGetProduct != null) {
@@ -654,5 +759,514 @@ abstract class ErrorGetProduct implements HomeState {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ErrorGetProductImplCopyWith<_$ErrorGetProductImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$loadingGetCategoryImplCopyWith<$Res> {
+  factory _$$loadingGetCategoryImplCopyWith(_$loadingGetCategoryImpl value,
+          $Res Function(_$loadingGetCategoryImpl) then) =
+      __$$loadingGetCategoryImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$loadingGetCategoryImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$loadingGetCategoryImpl>
+    implements _$$loadingGetCategoryImplCopyWith<$Res> {
+  __$$loadingGetCategoryImplCopyWithImpl(_$loadingGetCategoryImpl _value,
+      $Res Function(_$loadingGetCategoryImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$loadingGetCategoryImpl implements loadingGetCategory {
+  const _$loadingGetCategoryImpl();
+
+  @override
+  String toString() {
+    return 'HomeState.loadingGetCategory()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$loadingGetCategoryImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProduct,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetProduct,
+    required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
+  }) {
+    return loadingGetCategory();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProduct,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
+  }) {
+    return loadingGetCategory?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProduct,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
+    required TResult orElse(),
+  }) {
+    if (loadingGetCategory != null) {
+      return loadingGetCategory();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(loadingGetProduct value) loadingGetProduct,
+    required TResult Function(SuccessGetProduct value) successGetProduct,
+    required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
+  }) {
+    return loadingGetCategory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(loadingGetProduct value)? loadingGetProduct,
+    TResult? Function(SuccessGetProduct value)? successGetProduct,
+    TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
+  }) {
+    return loadingGetCategory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(loadingGetProduct value)? loadingGetProduct,
+    TResult Function(SuccessGetProduct value)? successGetProduct,
+    TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
+    required TResult orElse(),
+  }) {
+    if (loadingGetCategory != null) {
+      return loadingGetCategory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class loadingGetCategory implements HomeState {
+  const factory loadingGetCategory() = _$loadingGetCategoryImpl;
+}
+
+/// @nodoc
+abstract class _$$SuccessGetCategoryImplCopyWith<$Res> {
+  factory _$$SuccessGetCategoryImplCopyWith(_$SuccessGetCategoryImpl value,
+          $Res Function(_$SuccessGetCategoryImpl) then) =
+      __$$SuccessGetCategoryImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({List<GetProductResponse> getProductResponse});
+}
+
+/// @nodoc
+class __$$SuccessGetCategoryImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$SuccessGetCategoryImpl>
+    implements _$$SuccessGetCategoryImplCopyWith<$Res> {
+  __$$SuccessGetCategoryImplCopyWithImpl(_$SuccessGetCategoryImpl _value,
+      $Res Function(_$SuccessGetCategoryImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? getProductResponse = null,
+  }) {
+    return _then(_$SuccessGetCategoryImpl(
+      null == getProductResponse
+          ? _value._getProductResponse
+          : getProductResponse // ignore: cast_nullable_to_non_nullable
+              as List<GetProductResponse>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$SuccessGetCategoryImpl implements SuccessGetCategory {
+  const _$SuccessGetCategoryImpl(
+      final List<GetProductResponse> getProductResponse)
+      : _getProductResponse = getProductResponse;
+
+  final List<GetProductResponse> _getProductResponse;
+  @override
+  List<GetProductResponse> get getProductResponse {
+    if (_getProductResponse is EqualUnmodifiableListView)
+      return _getProductResponse;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_getProductResponse);
+  }
+
+  @override
+  String toString() {
+    return 'HomeState.successGetCategory(getProductResponse: $getProductResponse)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SuccessGetCategoryImpl &&
+            const DeepCollectionEquality()
+                .equals(other._getProductResponse, _getProductResponse));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_getProductResponse));
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SuccessGetCategoryImplCopyWith<_$SuccessGetCategoryImpl> get copyWith =>
+      __$$SuccessGetCategoryImplCopyWithImpl<_$SuccessGetCategoryImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProduct,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetProduct,
+    required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
+  }) {
+    return successGetCategory(getProductResponse);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProduct,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
+  }) {
+    return successGetCategory?.call(getProductResponse);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProduct,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
+    required TResult orElse(),
+  }) {
+    if (successGetCategory != null) {
+      return successGetCategory(getProductResponse);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(loadingGetProduct value) loadingGetProduct,
+    required TResult Function(SuccessGetProduct value) successGetProduct,
+    required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
+  }) {
+    return successGetCategory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(loadingGetProduct value)? loadingGetProduct,
+    TResult? Function(SuccessGetProduct value)? successGetProduct,
+    TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
+  }) {
+    return successGetCategory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(loadingGetProduct value)? loadingGetProduct,
+    TResult Function(SuccessGetProduct value)? successGetProduct,
+    TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
+    required TResult orElse(),
+  }) {
+    if (successGetCategory != null) {
+      return successGetCategory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessGetCategory implements HomeState {
+  const factory SuccessGetCategory(
+          final List<GetProductResponse> getProductResponse) =
+      _$SuccessGetCategoryImpl;
+
+  List<GetProductResponse> get getProductResponse;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$SuccessGetCategoryImplCopyWith<_$SuccessGetCategoryImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$ErrorGetCategoryImplCopyWith<$Res> {
+  factory _$$ErrorGetCategoryImplCopyWith(_$ErrorGetCategoryImpl value,
+          $Res Function(_$ErrorGetCategoryImpl) then) =
+      __$$ErrorGetCategoryImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$ErrorGetCategoryImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$ErrorGetCategoryImpl>
+    implements _$$ErrorGetCategoryImplCopyWith<$Res> {
+  __$$ErrorGetCategoryImplCopyWithImpl(_$ErrorGetCategoryImpl _value,
+      $Res Function(_$ErrorGetCategoryImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$ErrorGetCategoryImpl(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorGetCategoryImpl implements ErrorGetCategory {
+  const _$ErrorGetCategoryImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'HomeState.errorGetCategory(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorGetCategoryImpl &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorGetCategoryImplCopyWith<_$ErrorGetCategoryImpl> get copyWith =>
+      __$$ErrorGetCategoryImplCopyWithImpl<_$ErrorGetCategoryImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProduct,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetProduct,
+    required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
+  }) {
+    return errorGetCategory(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProduct,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
+  }) {
+    return errorGetCategory?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProduct,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
+    required TResult orElse(),
+  }) {
+    if (errorGetCategory != null) {
+      return errorGetCategory(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(loadingGetProduct value) loadingGetProduct,
+    required TResult Function(SuccessGetProduct value) successGetProduct,
+    required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
+  }) {
+    return errorGetCategory(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(loadingGetProduct value)? loadingGetProduct,
+    TResult? Function(SuccessGetProduct value)? successGetProduct,
+    TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
+  }) {
+    return errorGetCategory?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(loadingGetProduct value)? loadingGetProduct,
+    TResult Function(SuccessGetProduct value)? successGetProduct,
+    TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
+    required TResult orElse(),
+  }) {
+    if (errorGetCategory != null) {
+      return errorGetCategory(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorGetCategory implements HomeState {
+  const factory ErrorGetCategory({required final String errorMessage}) =
+      _$ErrorGetCategoryImpl;
+
+  String get errorMessage;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ErrorGetCategoryImplCopyWith<_$ErrorGetCategoryImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

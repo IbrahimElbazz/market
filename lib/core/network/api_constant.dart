@@ -10,4 +10,6 @@ class ApiConstant {
   static const getComment = 'comments_table?select=*&for_product_id=eq.{id}';
 
   static const addComment = 'comments_table';
+
+  static const getCategory = 'productes?select=*&category=eq.{category}';
 }

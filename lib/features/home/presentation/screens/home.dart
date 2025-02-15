@@ -69,7 +69,7 @@ class _HomeState extends State<Home> {
                 ],
               ),
               const GapH(height: 10),
-              const ListCategory(),
+              ListCategory(),
               const GapH(height: 10),
               BlocBuilder<HomeCubit, HomeState>(
                 buildWhen: (previous, current) {
@@ -91,6 +91,68 @@ class _HomeState extends State<Home> {
                       return Text(errorMessage);
                     },
                     successGetProduct: (getProductResponse) {
+                      return getProductResponse.isEmpty
+                          ? SizedBox(
+                              height: 100.h,
+                              child: Center(
+                                child: Text(
+                                  'not fount product !!!',
+                                  style: TextStyle(
+                                    fontSize: 20.sp,
+                                    color: Colors.red,
+                                  ),
+                                ),
+                              ),
+                            )
+                          : ListView.builder(
+                              physics: const NeverScrollableScrollPhysics(),
+                              shrinkWrap: true,
+                              itemCount: getProductResponse.length,
+                              itemBuilder: (context, index) => Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: GestureDetector(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) {
+                                          return ProductDetails(
+                                            data: getProductResponse[index],
+                                          );
+                                        },
+                                      ),
+                                    );
+                                  },
+                                  child: ProductCard(
+                                    dataProduct: getProductResponse[index],
+                                  ),
+                                ),
+                              ),
+                            );
+                    },
+                  );
+                },
+              ),
+              BlocBuilder<HomeCubit, HomeState>(
+                buildWhen: (previous, current) {
+                  return current is ErrorGetCategory ||
+                      current is SuccessGetCategory ||
+                      current is loadingGetCategory;
+                },
+                builder: (context, state) {
+                  return state.maybeWhen(
+                    orElse: () {
+                      return const SizedBox.shrink();
+                    },
+                    loadingGetCategory: () {
+                      return const CircularProgressIndicator(
+                        color: Colors.blue,
+                      );
+                    },
+                    errorGetCategory: (errorMessage) {
+                      return Text(errorMessage);
+                    },
+                    successGetCategory: (getProductResponse) {
                       return ListView.builder(
                         physics: const NeverScrollableScrollPhysics(),
                         shrinkWrap: true,
@@ -119,7 +181,7 @@ class _HomeState extends State<Home> {
                     },
                   );
                 },
-              )
+              ),
             ],
           ),
         ),

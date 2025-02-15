@@ -24,4 +24,18 @@ class HomeCubit extends Cubit<HomeState> {
       },
     );
   }
+
+  // get Category
+  void getCategory(String categoryName) async {
+    emit(const HomeState.loadingGetProduct());
+    final response = await _getProductRepo.getCategory(categoryName);
+    response.when(
+      success: (productData) {
+        emit(HomeState.successGetProduct(productData));
+      },
+      failure: (message) {
+        emit(HomeState.errorGetProduct(errorMessage: message));
+      },
+    );
+  }
 }

@@ -47,4 +47,11 @@ abstract class ApiService {
   Future addComment(
     @Body() AddCommentModel addCommentModel,
   );
+
+  // get category
+
+  @GET(ApiConstant.getCategory)
+  Future<List<GetProductResponse>> getCategory(
+    @Path('category') String categoryName,
+  );
 }

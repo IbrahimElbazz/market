@@ -13,4 +13,11 @@ class HomeState with _$HomeState {
       List<GetProductResponse> getProductResponse) = SuccessGetProduct;
   const factory HomeState.errorGetProduct({required String errorMessage}) =
       ErrorGetProduct;
+
+  // get category
+  const factory HomeState.loadingGetCategory() = loadingGetCategory;
+  const factory HomeState.successGetCategory(
+      List<GetProductResponse> getProductResponse) = SuccessGetCategory;
+  const factory HomeState.errorGetCategory({required String errorMessage}) =
+      ErrorGetCategory;
 }
