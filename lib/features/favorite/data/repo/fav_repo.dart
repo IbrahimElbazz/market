@@ -7,9 +7,9 @@ class FavRepo {
 
   FavRepo(ApiService apiService) : _apiService = apiService;
 
-  Future<ApiResult<List<getFavoriteModel>>> getFav() async {
+  Future<ApiResult<List<getFavoriteModel>>> getFav(String userId) async {
     try {
-      final response = await _apiService.getFavorite();
+      final response = await _apiService.getFavorite(userId);
       return ApiResult.success(response);
     } catch (e) {
       return ApiResult.failure(e.toString());

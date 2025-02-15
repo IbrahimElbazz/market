@@ -316,7 +316,7 @@ class _ApiService implements ApiService {
   }
 
   @override
-  Future<List<getFavoriteModel>> getFavorite() async {
+  Future<List<getFavoriteModel>> getFavorite(String id) async {
     final _extra = <String, dynamic>{};
     final queryParameters = <String, dynamic>{};
     final _headers = <String, dynamic>{};
@@ -328,7 +328,7 @@ class _ApiService implements ApiService {
     )
         .compose(
           _dio.options,
-          'favorite_product?select=*,productes(*)',
+          'favorite_product?select=*,productes(*)&for_user_id=eq.${id}',
           queryParameters: queryParameters,
           data: _data,
         )

@@ -71,5 +71,7 @@ abstract class ApiService {
   );
 
   @GET(ApiConstant.getFavorite)
-  Future<List<getFavoriteModel>> getFavorite();
+  Future<List<getFavoriteModel>> getFavorite(
+    @Path('id') String id,
+  );
 }
