@@ -1,5 +1,6 @@
 import 'package:dio/dio.dart';
 import 'package:market/core/network/api_constant.dart';
+import 'package:market/features/home/data/models/add_favorite.dart';
 import 'package:market/features/home/data/models/get_product_response.dart';
 import 'package:market/features/product_details/data/models/comments/add_comment_model.dart';
 import 'package:market/features/product_details/data/models/comments/get_comments_response_model.dart';
@@ -53,5 +54,18 @@ abstract class ApiService {
   @GET(ApiConstant.getCategory)
   Future<List<GetProductResponse>> getCategory(
     @Path('category') String categoryName,
+  );
+
+  // add favorite
+
+  @POST(ApiConstant.addFavorite)
+  Future addFavorite(
+    @Body() AddFavorite addFavoriteModel,
+  );
+
+  @DELETE(ApiConstant.deleteFavorite)
+  Future deleteFavorite(
+    @Path('userId') String userId,
+    @Path('productId') String productId,
   );
 }

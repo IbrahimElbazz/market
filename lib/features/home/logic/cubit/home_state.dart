@@ -20,4 +20,16 @@ class HomeState with _$HomeState {
       List<GetProductResponse> getProductResponse) = SuccessGetCategory;
   const factory HomeState.errorGetCategory({required String errorMessage}) =
       ErrorGetCategory;
+
+  // add favorite
+  const factory HomeState.loadingAddFavorite() = loadingAddFavorite;
+  const factory HomeState.successAddFavorite() = SuccessAddFavorite;
+  const factory HomeState.errorAddFavorite({required String errorMessage}) =
+      ErrorAddFavorite;
+
+  // delete favorite
+  const factory HomeState.loadingDeleteFavorite() = loadingDeleteFavorite;
+  const factory HomeState.successDeleteFavorite() = SuccessDeleteFavorite;
+  const factory HomeState.errorDeleteFavorite({required String errorMessage}) =
+      ErrorDeleteFavorite;
 }

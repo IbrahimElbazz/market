@@ -69,9 +69,38 @@ class _HomeState extends State<Home> {
                 ],
               ),
               const GapH(height: 10),
-              ListCategory(),
+              const ListCategory(),
               const GapH(height: 10),
-              BlocBuilder<HomeCubit, HomeState>(
+              BlocConsumer<HomeCubit, HomeState>(
+                listener: (context, state) {
+                  state.maybeWhen(
+                    orElse: () {},
+                    successDeleteFavorite: () {
+                      return ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Center(child: Text('deleted favorite')),
+                          backgroundColor: Colors.red,
+                        ),
+                      );
+                    },
+                    successAddFavorite: () {
+                      return ScaffoldMessenger.of(context).showSnackBar(
+                        const SnackBar(
+                          content: Center(child: Text('added favorite')),
+                          backgroundColor: Colors.green,
+                        ),
+                      );
+                    },
+                  );
+                },
+                listenWhen: (previous, current) {
+                  return current is ErrorAddFavorite ||
+                      current is SuccessAddFavorite ||
+                      current is loadingAddFavorite ||
+                      current is ErrorDeleteFavorite ||
+                      current is SuccessDeleteFavorite ||
+                      current is loadingDeleteFavorite;
+                },
                 buildWhen: (previous, current) {
                   return current is ErrorGetProduct ||
                       current is SuccessGetProduct ||
@@ -110,7 +139,7 @@ class _HomeState extends State<Home> {
                               itemCount: getProductResponse.length,
                               itemBuilder: (context, index) => Padding(
                                 padding: const EdgeInsets.all(8.0),
-                                child: GestureDetector(
+                                child: ProductCard(
                                   onTap: () {
                                     Navigator.push(
                                       context,
@@ -123,9 +152,49 @@ class _HomeState extends State<Home> {
                                       ),
                                     );
                                   },
-                                  child: ProductCard(
-                                    dataProduct: getProductResponse[index],
+                                  icon: BlocBuilder<HomeCubit, HomeState>(
+                                    builder: (context, state) {
+                                      return IconButton(
+                                        onPressed: () {
+                                          if (context
+                                              .read<HomeCubit>()
+                                              .checkFavorite(
+                                                  getProductResponse[index]
+                                                      .productId
+                                                      .toString())) {
+                                            context
+                                                .read<HomeCubit>()
+                                                .deleteFavorite(
+                                                  getProductResponse[index]
+                                                      .productId
+                                                      .toString(),
+                                                );
+                                          } else {
+                                            context
+                                                .read<HomeCubit>()
+                                                .addFavorite(
+                                                  getProductResponse[index]
+                                                      .productId
+                                                      .toString(),
+                                                );
+                                          }
+                                        },
+                                        icon: Icon(
+                                          Icons.favorite,
+                                          color: context
+                                                  .read<HomeCubit>()
+                                                  .checkFavorite(
+                                                    getProductResponse[index]
+                                                        .productId
+                                                        .toString(),
+                                                  )
+                                              ? Colors.red
+                                              : Colors.grey,
+                                        ),
+                                      );
+                                    },
                                   ),
+                                  dataProduct: getProductResponse[index],
                                 ),
                               ),
                             );

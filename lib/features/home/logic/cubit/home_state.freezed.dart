@@ -27,6 +27,12 @@ mixin _$HomeState {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetCategory,
     required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -40,6 +46,12 @@ mixin _$HomeState {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -53,6 +65,12 @@ mixin _$HomeState {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -65,6 +83,14 @@ mixin _$HomeState {
     required TResult Function(loadingGetCategory value) loadingGetCategory,
     required TResult Function(SuccessGetCategory value) successGetCategory,
     required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -76,6 +102,12 @@ mixin _$HomeState {
     TResult? Function(loadingGetCategory value)? loadingGetCategory,
     TResult? Function(SuccessGetCategory value)? successGetCategory,
     TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -87,6 +119,12 @@ mixin _$HomeState {
     TResult Function(loadingGetCategory value)? loadingGetCategory,
     TResult Function(SuccessGetCategory value)? successGetCategory,
     TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -162,6 +200,12 @@ class _$InitialImpl implements _Initial {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetCategory,
     required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
   }) {
     return initial();
   }
@@ -178,6 +222,12 @@ class _$InitialImpl implements _Initial {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
   }) {
     return initial?.call();
   }
@@ -194,6 +244,12 @@ class _$InitialImpl implements _Initial {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -212,6 +268,14 @@ class _$InitialImpl implements _Initial {
     required TResult Function(loadingGetCategory value) loadingGetCategory,
     required TResult Function(SuccessGetCategory value) successGetCategory,
     required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
   }) {
     return initial(this);
   }
@@ -226,6 +290,12 @@ class _$InitialImpl implements _Initial {
     TResult? Function(loadingGetCategory value)? loadingGetCategory,
     TResult? Function(SuccessGetCategory value)? successGetCategory,
     TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
   }) {
     return initial?.call(this);
   }
@@ -240,6 +310,12 @@ class _$InitialImpl implements _Initial {
     TResult Function(loadingGetCategory value)? loadingGetCategory,
     TResult Function(SuccessGetCategory value)? successGetCategory,
     TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -303,6 +379,12 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetCategory,
     required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
   }) {
     return loadingGetProduct();
   }
@@ -319,6 +401,12 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
   }) {
     return loadingGetProduct?.call();
   }
@@ -335,6 +423,12 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (loadingGetProduct != null) {
@@ -353,6 +447,14 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     required TResult Function(loadingGetCategory value) loadingGetCategory,
     required TResult Function(SuccessGetCategory value) successGetCategory,
     required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
   }) {
     return loadingGetProduct(this);
   }
@@ -367,6 +469,12 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     TResult? Function(loadingGetCategory value)? loadingGetCategory,
     TResult? Function(SuccessGetCategory value)? successGetCategory,
     TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
   }) {
     return loadingGetProduct?.call(this);
   }
@@ -381,6 +489,12 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     TResult Function(loadingGetCategory value)? loadingGetCategory,
     TResult Function(SuccessGetCategory value)? successGetCategory,
     TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (loadingGetProduct != null) {
@@ -482,6 +596,12 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetCategory,
     required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
   }) {
     return successGetProduct(getProductResponse);
   }
@@ -498,6 +618,12 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
   }) {
     return successGetProduct?.call(getProductResponse);
   }
@@ -514,6 +640,12 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (successGetProduct != null) {
@@ -532,6 +664,14 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     required TResult Function(loadingGetCategory value) loadingGetCategory,
     required TResult Function(SuccessGetCategory value) successGetCategory,
     required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
   }) {
     return successGetProduct(this);
   }
@@ -546,6 +686,12 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     TResult? Function(loadingGetCategory value)? loadingGetCategory,
     TResult? Function(SuccessGetCategory value)? successGetCategory,
     TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
   }) {
     return successGetProduct?.call(this);
   }
@@ -560,6 +706,12 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     TResult Function(loadingGetCategory value)? loadingGetCategory,
     TResult Function(SuccessGetCategory value)? successGetCategory,
     TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (successGetProduct != null) {
@@ -662,6 +814,12 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetCategory,
     required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
   }) {
     return errorGetProduct(errorMessage);
   }
@@ -678,6 +836,12 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
   }) {
     return errorGetProduct?.call(errorMessage);
   }
@@ -694,6 +858,12 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (errorGetProduct != null) {
@@ -712,6 +882,14 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     required TResult Function(loadingGetCategory value) loadingGetCategory,
     required TResult Function(SuccessGetCategory value) successGetCategory,
     required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
   }) {
     return errorGetProduct(this);
   }
@@ -726,6 +904,12 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     TResult? Function(loadingGetCategory value)? loadingGetCategory,
     TResult? Function(SuccessGetCategory value)? successGetCategory,
     TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
   }) {
     return errorGetProduct?.call(this);
   }
@@ -740,6 +924,12 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     TResult Function(loadingGetCategory value)? loadingGetCategory,
     TResult Function(SuccessGetCategory value)? successGetCategory,
     TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (errorGetProduct != null) {
@@ -812,6 +1002,12 @@ class _$loadingGetCategoryImpl implements loadingGetCategory {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetCategory,
     required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
   }) {
     return loadingGetCategory();
   }
@@ -828,6 +1024,12 @@ class _$loadingGetCategoryImpl implements loadingGetCategory {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
   }) {
     return loadingGetCategory?.call();
   }
@@ -844,6 +1046,12 @@ class _$loadingGetCategoryImpl implements loadingGetCategory {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (loadingGetCategory != null) {
@@ -862,6 +1070,14 @@ class _$loadingGetCategoryImpl implements loadingGetCategory {
     required TResult Function(loadingGetCategory value) loadingGetCategory,
     required TResult Function(SuccessGetCategory value) successGetCategory,
     required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
   }) {
     return loadingGetCategory(this);
   }
@@ -876,6 +1092,12 @@ class _$loadingGetCategoryImpl implements loadingGetCategory {
     TResult? Function(loadingGetCategory value)? loadingGetCategory,
     TResult? Function(SuccessGetCategory value)? successGetCategory,
     TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
   }) {
     return loadingGetCategory?.call(this);
   }
@@ -890,6 +1112,12 @@ class _$loadingGetCategoryImpl implements loadingGetCategory {
     TResult Function(loadingGetCategory value)? loadingGetCategory,
     TResult Function(SuccessGetCategory value)? successGetCategory,
     TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (loadingGetCategory != null) {
@@ -991,6 +1219,12 @@ class _$SuccessGetCategoryImpl implements SuccessGetCategory {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetCategory,
     required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
   }) {
     return successGetCategory(getProductResponse);
   }
@@ -1007,6 +1241,12 @@ class _$SuccessGetCategoryImpl implements SuccessGetCategory {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
   }) {
     return successGetCategory?.call(getProductResponse);
   }
@@ -1023,6 +1263,12 @@ class _$SuccessGetCategoryImpl implements SuccessGetCategory {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (successGetCategory != null) {
@@ -1041,6 +1287,14 @@ class _$SuccessGetCategoryImpl implements SuccessGetCategory {
     required TResult Function(loadingGetCategory value) loadingGetCategory,
     required TResult Function(SuccessGetCategory value) successGetCategory,
     required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
   }) {
     return successGetCategory(this);
   }
@@ -1055,6 +1309,12 @@ class _$SuccessGetCategoryImpl implements SuccessGetCategory {
     TResult? Function(loadingGetCategory value)? loadingGetCategory,
     TResult? Function(SuccessGetCategory value)? successGetCategory,
     TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
   }) {
     return successGetCategory?.call(this);
   }
@@ -1069,6 +1329,12 @@ class _$SuccessGetCategoryImpl implements SuccessGetCategory {
     TResult Function(loadingGetCategory value)? loadingGetCategory,
     TResult Function(SuccessGetCategory value)? successGetCategory,
     TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (successGetCategory != null) {
@@ -1171,6 +1437,12 @@ class _$ErrorGetCategoryImpl implements ErrorGetCategory {
     required TResult Function(List<GetProductResponse> getProductResponse)
         successGetCategory,
     required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
   }) {
     return errorGetCategory(errorMessage);
   }
@@ -1187,6 +1459,12 @@ class _$ErrorGetCategoryImpl implements ErrorGetCategory {
     TResult? Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
   }) {
     return errorGetCategory?.call(errorMessage);
   }
@@ -1203,6 +1481,12 @@ class _$ErrorGetCategoryImpl implements ErrorGetCategory {
     TResult Function(List<GetProductResponse> getProductResponse)?
         successGetCategory,
     TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (errorGetCategory != null) {
@@ -1221,6 +1505,14 @@ class _$ErrorGetCategoryImpl implements ErrorGetCategory {
     required TResult Function(loadingGetCategory value) loadingGetCategory,
     required TResult Function(SuccessGetCategory value) successGetCategory,
     required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
   }) {
     return errorGetCategory(this);
   }
@@ -1235,6 +1527,12 @@ class _$ErrorGetCategoryImpl implements ErrorGetCategory {
     TResult? Function(loadingGetCategory value)? loadingGetCategory,
     TResult? Function(SuccessGetCategory value)? successGetCategory,
     TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
   }) {
     return errorGetCategory?.call(this);
   }
@@ -1249,6 +1547,12 @@ class _$ErrorGetCategoryImpl implements ErrorGetCategory {
     TResult Function(loadingGetCategory value)? loadingGetCategory,
     TResult Function(SuccessGetCategory value)? successGetCategory,
     TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
     required TResult orElse(),
   }) {
     if (errorGetCategory != null) {
@@ -1268,5 +1572,1159 @@ abstract class ErrorGetCategory implements HomeState {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ErrorGetCategoryImplCopyWith<_$ErrorGetCategoryImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$loadingAddFavoriteImplCopyWith<$Res> {
+  factory _$$loadingAddFavoriteImplCopyWith(_$loadingAddFavoriteImpl value,
+          $Res Function(_$loadingAddFavoriteImpl) then) =
+      __$$loadingAddFavoriteImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$loadingAddFavoriteImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$loadingAddFavoriteImpl>
+    implements _$$loadingAddFavoriteImplCopyWith<$Res> {
+  __$$loadingAddFavoriteImplCopyWithImpl(_$loadingAddFavoriteImpl _value,
+      $Res Function(_$loadingAddFavoriteImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$loadingAddFavoriteImpl implements loadingAddFavorite {
+  const _$loadingAddFavoriteImpl();
+
+  @override
+  String toString() {
+    return 'HomeState.loadingAddFavorite()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$loadingAddFavoriteImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProduct,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetProduct,
+    required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
+  }) {
+    return loadingAddFavorite();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProduct,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
+  }) {
+    return loadingAddFavorite?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProduct,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
+    required TResult orElse(),
+  }) {
+    if (loadingAddFavorite != null) {
+      return loadingAddFavorite();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(loadingGetProduct value) loadingGetProduct,
+    required TResult Function(SuccessGetProduct value) successGetProduct,
+    required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+  }) {
+    return loadingAddFavorite(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(loadingGetProduct value)? loadingGetProduct,
+    TResult? Function(SuccessGetProduct value)? successGetProduct,
+    TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+  }) {
+    return loadingAddFavorite?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(loadingGetProduct value)? loadingGetProduct,
+    TResult Function(SuccessGetProduct value)? successGetProduct,
+    TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    required TResult orElse(),
+  }) {
+    if (loadingAddFavorite != null) {
+      return loadingAddFavorite(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class loadingAddFavorite implements HomeState {
+  const factory loadingAddFavorite() = _$loadingAddFavoriteImpl;
+}
+
+/// @nodoc
+abstract class _$$SuccessAddFavoriteImplCopyWith<$Res> {
+  factory _$$SuccessAddFavoriteImplCopyWith(_$SuccessAddFavoriteImpl value,
+          $Res Function(_$SuccessAddFavoriteImpl) then) =
+      __$$SuccessAddFavoriteImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$SuccessAddFavoriteImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$SuccessAddFavoriteImpl>
+    implements _$$SuccessAddFavoriteImplCopyWith<$Res> {
+  __$$SuccessAddFavoriteImplCopyWithImpl(_$SuccessAddFavoriteImpl _value,
+      $Res Function(_$SuccessAddFavoriteImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$SuccessAddFavoriteImpl implements SuccessAddFavorite {
+  const _$SuccessAddFavoriteImpl();
+
+  @override
+  String toString() {
+    return 'HomeState.successAddFavorite()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SuccessAddFavoriteImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProduct,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetProduct,
+    required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
+  }) {
+    return successAddFavorite();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProduct,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
+  }) {
+    return successAddFavorite?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProduct,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
+    required TResult orElse(),
+  }) {
+    if (successAddFavorite != null) {
+      return successAddFavorite();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(loadingGetProduct value) loadingGetProduct,
+    required TResult Function(SuccessGetProduct value) successGetProduct,
+    required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+  }) {
+    return successAddFavorite(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(loadingGetProduct value)? loadingGetProduct,
+    TResult? Function(SuccessGetProduct value)? successGetProduct,
+    TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+  }) {
+    return successAddFavorite?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(loadingGetProduct value)? loadingGetProduct,
+    TResult Function(SuccessGetProduct value)? successGetProduct,
+    TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    required TResult orElse(),
+  }) {
+    if (successAddFavorite != null) {
+      return successAddFavorite(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessAddFavorite implements HomeState {
+  const factory SuccessAddFavorite() = _$SuccessAddFavoriteImpl;
+}
+
+/// @nodoc
+abstract class _$$ErrorAddFavoriteImplCopyWith<$Res> {
+  factory _$$ErrorAddFavoriteImplCopyWith(_$ErrorAddFavoriteImpl value,
+          $Res Function(_$ErrorAddFavoriteImpl) then) =
+      __$$ErrorAddFavoriteImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$ErrorAddFavoriteImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$ErrorAddFavoriteImpl>
+    implements _$$ErrorAddFavoriteImplCopyWith<$Res> {
+  __$$ErrorAddFavoriteImplCopyWithImpl(_$ErrorAddFavoriteImpl _value,
+      $Res Function(_$ErrorAddFavoriteImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$ErrorAddFavoriteImpl(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorAddFavoriteImpl implements ErrorAddFavorite {
+  const _$ErrorAddFavoriteImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'HomeState.errorAddFavorite(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorAddFavoriteImpl &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorAddFavoriteImplCopyWith<_$ErrorAddFavoriteImpl> get copyWith =>
+      __$$ErrorAddFavoriteImplCopyWithImpl<_$ErrorAddFavoriteImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProduct,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetProduct,
+    required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
+  }) {
+    return errorAddFavorite(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProduct,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
+  }) {
+    return errorAddFavorite?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProduct,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
+    required TResult orElse(),
+  }) {
+    if (errorAddFavorite != null) {
+      return errorAddFavorite(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(loadingGetProduct value) loadingGetProduct,
+    required TResult Function(SuccessGetProduct value) successGetProduct,
+    required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+  }) {
+    return errorAddFavorite(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(loadingGetProduct value)? loadingGetProduct,
+    TResult? Function(SuccessGetProduct value)? successGetProduct,
+    TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+  }) {
+    return errorAddFavorite?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(loadingGetProduct value)? loadingGetProduct,
+    TResult Function(SuccessGetProduct value)? successGetProduct,
+    TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    required TResult orElse(),
+  }) {
+    if (errorAddFavorite != null) {
+      return errorAddFavorite(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorAddFavorite implements HomeState {
+  const factory ErrorAddFavorite({required final String errorMessage}) =
+      _$ErrorAddFavoriteImpl;
+
+  String get errorMessage;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ErrorAddFavoriteImplCopyWith<_$ErrorAddFavoriteImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$loadingDeleteFavoriteImplCopyWith<$Res> {
+  factory _$$loadingDeleteFavoriteImplCopyWith(
+          _$loadingDeleteFavoriteImpl value,
+          $Res Function(_$loadingDeleteFavoriteImpl) then) =
+      __$$loadingDeleteFavoriteImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$loadingDeleteFavoriteImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$loadingDeleteFavoriteImpl>
+    implements _$$loadingDeleteFavoriteImplCopyWith<$Res> {
+  __$$loadingDeleteFavoriteImplCopyWithImpl(_$loadingDeleteFavoriteImpl _value,
+      $Res Function(_$loadingDeleteFavoriteImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$loadingDeleteFavoriteImpl implements loadingDeleteFavorite {
+  const _$loadingDeleteFavoriteImpl();
+
+  @override
+  String toString() {
+    return 'HomeState.loadingDeleteFavorite()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$loadingDeleteFavoriteImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProduct,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetProduct,
+    required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
+  }) {
+    return loadingDeleteFavorite();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProduct,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
+  }) {
+    return loadingDeleteFavorite?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProduct,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
+    required TResult orElse(),
+  }) {
+    if (loadingDeleteFavorite != null) {
+      return loadingDeleteFavorite();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(loadingGetProduct value) loadingGetProduct,
+    required TResult Function(SuccessGetProduct value) successGetProduct,
+    required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+  }) {
+    return loadingDeleteFavorite(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(loadingGetProduct value)? loadingGetProduct,
+    TResult? Function(SuccessGetProduct value)? successGetProduct,
+    TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+  }) {
+    return loadingDeleteFavorite?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(loadingGetProduct value)? loadingGetProduct,
+    TResult Function(SuccessGetProduct value)? successGetProduct,
+    TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    required TResult orElse(),
+  }) {
+    if (loadingDeleteFavorite != null) {
+      return loadingDeleteFavorite(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class loadingDeleteFavorite implements HomeState {
+  const factory loadingDeleteFavorite() = _$loadingDeleteFavoriteImpl;
+}
+
+/// @nodoc
+abstract class _$$SuccessDeleteFavoriteImplCopyWith<$Res> {
+  factory _$$SuccessDeleteFavoriteImplCopyWith(
+          _$SuccessDeleteFavoriteImpl value,
+          $Res Function(_$SuccessDeleteFavoriteImpl) then) =
+      __$$SuccessDeleteFavoriteImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$SuccessDeleteFavoriteImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$SuccessDeleteFavoriteImpl>
+    implements _$$SuccessDeleteFavoriteImplCopyWith<$Res> {
+  __$$SuccessDeleteFavoriteImplCopyWithImpl(_$SuccessDeleteFavoriteImpl _value,
+      $Res Function(_$SuccessDeleteFavoriteImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$SuccessDeleteFavoriteImpl implements SuccessDeleteFavorite {
+  const _$SuccessDeleteFavoriteImpl();
+
+  @override
+  String toString() {
+    return 'HomeState.successDeleteFavorite()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SuccessDeleteFavoriteImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProduct,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetProduct,
+    required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
+  }) {
+    return successDeleteFavorite();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProduct,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
+  }) {
+    return successDeleteFavorite?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProduct,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
+    required TResult orElse(),
+  }) {
+    if (successDeleteFavorite != null) {
+      return successDeleteFavorite();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(loadingGetProduct value) loadingGetProduct,
+    required TResult Function(SuccessGetProduct value) successGetProduct,
+    required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+  }) {
+    return successDeleteFavorite(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(loadingGetProduct value)? loadingGetProduct,
+    TResult? Function(SuccessGetProduct value)? successGetProduct,
+    TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+  }) {
+    return successDeleteFavorite?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(loadingGetProduct value)? loadingGetProduct,
+    TResult Function(SuccessGetProduct value)? successGetProduct,
+    TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    required TResult orElse(),
+  }) {
+    if (successDeleteFavorite != null) {
+      return successDeleteFavorite(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessDeleteFavorite implements HomeState {
+  const factory SuccessDeleteFavorite() = _$SuccessDeleteFavoriteImpl;
+}
+
+/// @nodoc
+abstract class _$$ErrorDeleteFavoriteImplCopyWith<$Res> {
+  factory _$$ErrorDeleteFavoriteImplCopyWith(_$ErrorDeleteFavoriteImpl value,
+          $Res Function(_$ErrorDeleteFavoriteImpl) then) =
+      __$$ErrorDeleteFavoriteImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$ErrorDeleteFavoriteImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$ErrorDeleteFavoriteImpl>
+    implements _$$ErrorDeleteFavoriteImplCopyWith<$Res> {
+  __$$ErrorDeleteFavoriteImplCopyWithImpl(_$ErrorDeleteFavoriteImpl _value,
+      $Res Function(_$ErrorDeleteFavoriteImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$ErrorDeleteFavoriteImpl(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorDeleteFavoriteImpl implements ErrorDeleteFavorite {
+  const _$ErrorDeleteFavoriteImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'HomeState.errorDeleteFavorite(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorDeleteFavoriteImpl &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorDeleteFavoriteImplCopyWith<_$ErrorDeleteFavoriteImpl> get copyWith =>
+      __$$ErrorDeleteFavoriteImplCopyWithImpl<_$ErrorDeleteFavoriteImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProduct,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetProduct,
+    required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
+  }) {
+    return errorDeleteFavorite(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProduct,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
+  }) {
+    return errorDeleteFavorite?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProduct,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
+    required TResult orElse(),
+  }) {
+    if (errorDeleteFavorite != null) {
+      return errorDeleteFavorite(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(loadingGetProduct value) loadingGetProduct,
+    required TResult Function(SuccessGetProduct value) successGetProduct,
+    required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+  }) {
+    return errorDeleteFavorite(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(loadingGetProduct value)? loadingGetProduct,
+    TResult? Function(SuccessGetProduct value)? successGetProduct,
+    TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+  }) {
+    return errorDeleteFavorite?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(loadingGetProduct value)? loadingGetProduct,
+    TResult Function(SuccessGetProduct value)? successGetProduct,
+    TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    required TResult orElse(),
+  }) {
+    if (errorDeleteFavorite != null) {
+      return errorDeleteFavorite(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorDeleteFavorite implements HomeState {
+  const factory ErrorDeleteFavorite({required final String errorMessage}) =
+      _$ErrorDeleteFavoriteImpl;
+
+  String get errorMessage;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ErrorDeleteFavoriteImplCopyWith<_$ErrorDeleteFavoriteImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

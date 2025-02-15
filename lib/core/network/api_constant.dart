@@ -12,4 +12,8 @@ class ApiConstant {
   static const addComment = 'comments_table';
 
   static const getCategory = 'productes?select=*&category=eq.{category}';
+
+  static const addFavorite = 'favorite_product';
+  static const deleteFavorite =
+      'favorite_product?for_user_id=eq.{userId}&for_product_id=eq.{productId}';
 }

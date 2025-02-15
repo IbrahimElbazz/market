@@ -1,4 +1,3 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/widgets/cached_network_image.dart';
@@ -9,8 +8,14 @@ class ProductCard extends StatelessWidget {
   const ProductCard({
     super.key,
     required this.dataProduct,
+    this.onTap,
+    this.onTapIconFav,
+    this.icon,
   });
   final GetProductResponse dataProduct;
+  final void Function()? onTap;
+  final void Function()? onTapIconFav;
+  final Widget? icon;
 
   @override
   Widget build(BuildContext context) {
@@ -28,25 +33,28 @@ class ProductCard extends StatelessWidget {
           ),
           child: Column(
             children: [
-              CachedImage(
-                imageUrl: dataProduct.imageUrl ?? "",
+              GestureDetector(
+                onTap: onTap,
+                child: CachedImage(
+                  imageUrl: dataProduct.imageUrl ?? "",
+                ),
               ),
               const GapH(height: 10),
               Row(
                 children: [
                   const GapW(width: 30),
-                  Text(
-                    dataProduct.productName ?? "",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 24.sp,
+                  GestureDetector(
+                    onTap: onTap,
+                    child: Text(
+                      dataProduct.productName ?? "",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                        fontSize: 24.sp,
+                      ),
                     ),
                   ),
                   const Spacer(),
-                  const Icon(
-                    Icons.favorite,
-                    color: Colors.grey,
-                  ),
+                  icon ?? const SizedBox.shrink(),
                   const GapW(width: 30),
                 ],
               ),
