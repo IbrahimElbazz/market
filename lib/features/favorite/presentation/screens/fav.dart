@@ -8,6 +8,7 @@ import 'package:market/features/favorite/logic/cubit/fav_state.dart';
 import 'package:market/features/home/logic/cubit/home_cubit.dart';
 import 'package:market/features/home/logic/cubit/home_state.dart';
 import 'package:market/features/product_details/presentation/screens/product_details.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
 class Fav extends StatefulWidget {
   const Fav({super.key});
@@ -145,25 +146,19 @@ class _FavState extends State<Fav> {
                                     builder: (context, state) {
                                       return IconButton(
                                         onPressed: () {
-                                          if (context
-                                              .read<HomeCubit>()
-                                              .checkFavorite(
-                                                  getProductResponse[index]
-                                                      .productes
-                                                      .productId
-                                                      .toString())) {
+                                          if ((context
+                                                  .read<FavCubit>()
+                                                  .favoriteList[index]
+                                                  .isFavorite &&
+                                              context
+                                                      .read<FavCubit>()
+                                                      .favoriteList[index]
+                                                      .for_user_id ==
+                                                  Supabase.instance.client.auth
+                                                      .currentUser!.id)) {
                                             context
                                                 .read<HomeCubit>()
                                                 .deleteFavorite(
-                                                  getProductResponse[index]
-                                                      .productes
-                                                      .productId
-                                                      .toString(),
-                                                );
-                                          } else {
-                                            context
-                                                .read<HomeCubit>()
-                                                .addFavorite(
                                                   getProductResponse[index]
                                                       .productes
                                                       .productId
@@ -173,14 +168,16 @@ class _FavState extends State<Fav> {
                                         },
                                         icon: Icon(
                                           Icons.favorite,
-                                          color: context
-                                                  .read<HomeCubit>()
-                                                  .checkFavorite(
-                                                    getProductResponse[index]
-                                                        .productes
-                                                        .productId
-                                                        .toString(),
-                                                  )
+                                          color: (context
+                                                      .read<FavCubit>()
+                                                      .favoriteList[index]
+                                                      .isFavorite &&
+                                                  context
+                                                          .read<FavCubit>()
+                                                          .favoriteList[index]
+                                                          .for_user_id ==
+                                                      Supabase.instance.client
+                                                          .auth.currentUser!.id)
                                               ? Colors.red
                                               : Colors.grey,
                                         ),

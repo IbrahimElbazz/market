@@ -20,15 +20,16 @@ class GetProductResponse {
   List<CommentsTable>? commentsTable;
   List<FavoriteProduct>? favoriteProduct;
 
-  GetProductResponse(
-      {this.productId,
-      this.createdAt,
-      this.productName,
-      this.salary,
-      this.description,
-      this.category,
-      this.sale,
-      this.imageUrl});
+  GetProductResponse({
+    this.productId,
+    this.createdAt,
+    this.productName,
+    this.salary,
+    this.description,
+    this.category,
+    this.sale,
+    this.imageUrl,
+  });
 
   factory GetProductResponse.fromJson(Map<String, dynamic> json) =>
       _$GetProductResponseFromJson(json);
@@ -74,14 +75,14 @@ class CommentsTable {
 class FavoriteProduct {
   String? id;
   String? created_at;
-  bool? isFavorite;
+  bool isFavorite;
   String? for_user_id;
   String? for_product_id;
 
   FavoriteProduct(
       {this.id,
       this.created_at,
-      this.isFavorite,
+      required this.isFavorite,
       this.for_user_id,
       this.for_product_id});
   factory FavoriteProduct.fromJson(Map<String, dynamic> json) =>

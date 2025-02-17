@@ -6,6 +6,8 @@ import 'package:market/features/home/logic/cubit/home_state.dart';
 import 'package:market/market.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+Map<String, bool> favoriteProduct = {};
+
 class HomeCubit extends Cubit<HomeState> {
   HomeCubit(this._getProductRepo) : super(const HomeState.initial());
   final HomeRepo _getProductRepo;
@@ -44,7 +46,6 @@ class HomeCubit extends Cubit<HomeState> {
 
   // add favorite
 
-  Map<String, bool> favoriteProduct = {};
   void addFavorite(String productId) async {
     emit(const HomeState.loadingAddFavorite());
     final response = await _getProductRepo.addFavorite(

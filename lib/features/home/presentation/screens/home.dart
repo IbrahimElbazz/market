@@ -7,6 +7,8 @@ import 'package:market/core/di/dependency_injection.dart';
 import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/core/widgets/product_card.dart';
+import 'package:market/features/favorite/logic/cubit/fav_cubit.dart';
+import 'package:market/features/favorite/presentation/screens/fav.dart';
 import 'package:market/features/home/logic/cubit/home_cubit.dart';
 import 'package:market/features/home/logic/cubit/home_state.dart';
 import 'package:market/features/home/presentation/widgets/list_category.dart';
@@ -24,6 +26,7 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     context.read<HomeCubit>().getProducts();
+    context.read<FavCubit>().getFavorite();
     super.initState();
   }
 

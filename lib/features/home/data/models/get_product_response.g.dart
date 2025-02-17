@@ -81,7 +81,7 @@ FavoriteProduct _$FavoriteProductFromJson(Map<String, dynamic> json) =>
     FavoriteProduct(
       id: json['id'] as String?,
       created_at: json['created_at'] as String?,
-      isFavorite: json['isFavorite'] as bool?,
+      isFavorite: json['isFavorite'] as bool,
       for_user_id: json['for_user_id'] as String?,
       for_product_id: json['for_product_id'] as String?,
     );
