@@ -1,8 +1,11 @@
+import 'dart:developer';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/widgets/cached_network_image.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/features/home/data/models/get_product_response.dart';
+import 'package:pay_with_paymob/pay_with_paymob.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({
@@ -70,19 +73,39 @@ class ProductCard extends StatelessWidget {
                     ),
                   ),
                   const Spacer(),
-                  Container(
-                    width: 100,
-                    height: 50,
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(16),
-                    ),
-                    child: Center(
-                      child: Text(
-                        'Buy',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20.sp,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => PaymentView(
+                            onPaymentSuccess: () {
+                              log('  payment success');
+                            },
+                            onPaymentError: () {
+                              log('  payment failure');
+                            },
+                            price: double.parse(
+                              dataProduct.salary!,
+                            ), // Required: Total price (e.g., 100 for 100 EGP)
+                          ),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      width: 100,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        color: Colors.blue,
+                        borderRadius: BorderRadius.circular(16),
+                      ),
+                      child: Center(
+                        child: Text(
+                          'Buy',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20.sp,
+                          ),
                         ),
                       ),
                     ),

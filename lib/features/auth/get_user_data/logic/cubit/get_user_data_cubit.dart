@@ -10,6 +10,7 @@ class GetUserDataCubit extends Cubit<GetUserDataState> {
   GetUserDataCubit() : super(const GetUserDataState.initial());
 
   UserDataModel? userDataModel;
+  UserDataModel? userData;
   Future<void> getUserData() async {
     emit(const GetUserDataState.getUserDataLoading());
     try {

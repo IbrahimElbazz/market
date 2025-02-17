@@ -44,6 +44,7 @@ dependencies:
   google_sign_in: ^6.2.2
   json_annotation: ^4.9.0
   logger: ^2.5.0
+  pay_with_paymob: ^1.4.0
   pretty_dio_logger: ^1.4.0
   retrofit: ^4.4.2
   retrofit_generator: ^9.1.5
