@@ -1,17 +1,11 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:market/core/constant/key.dart';
-import 'package:market/core/di/dependency_injection.dart';
 import 'package:market/core/widgets/custom_text_field.dart';
 import 'package:market/core/widgets/gap.dart';
 import 'package:market/core/widgets/product_card.dart';
-import 'package:market/features/auth/get_user_data/data/models/user_data_model.dart';
-import 'package:market/features/auth/get_user_data/logic/cubit/get_user_data_cubit.dart';
 import 'package:market/features/favorite/logic/cubit/fav_cubit.dart';
-import 'package:market/features/favorite/presentation/screens/fav.dart';
 import 'package:market/features/home/logic/cubit/home_cubit.dart';
 import 'package:market/features/home/logic/cubit/home_state.dart';
 import 'package:market/features/home/presentation/widgets/list_category.dart';
@@ -20,7 +14,9 @@ import 'package:market/features/search/presentation/screens/search_delegate.dart
 import 'package:pay_with_paymob/pay_with_paymob.dart';
 
 class Home extends StatefulWidget {
-  const Home({super.key});
+  const Home({
+    super.key,
+  });
 
   @override
   State<Home> createState() => _HomeState();
@@ -37,13 +33,7 @@ class _HomeState extends State<Home> {
       iframeId: PaymentKey.iframeId,
       integrationCardId: PaymentKey.integrationCardId,
       integrationMobileWalletId: PaymentKey.integrationMobileWalletId,
-      // // Optional User Data
-      // userData: UserData(
-      //   email: data?.email ?? "", // Optional: Defaults to 'NA'
-      //   phone: "010", // Optional: Defaults to 'NA'
-      //   name: data?.name ?? "", // Optional: Defaults to 'NA'
-      //   lastName: "User Last Name", // Optional: Defaults to 'NA'
-      // ),
+      // Optional User Data
 
       // Optional Style Customizations
       style: Style(

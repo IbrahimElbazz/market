@@ -3,6 +3,7 @@ import 'dart:developer';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
+import 'package:market/core/constant/table.dart';
 import 'package:market/core/nav_bar/logic/cubit/navigation_cubit.dart';
 import 'package:market/core/nav_bar/logic/cubit/navigation_state.dart';
 import 'package:market/features/favorite/presentation/screens/fav.dart';
@@ -16,7 +17,7 @@ class NavBar extends StatelessWidget {
   final List<Widget> views = [
     const Home(),
     const Store(),
-    Fav(),
+    const Fav(),
     const Profile(),
   ];
 

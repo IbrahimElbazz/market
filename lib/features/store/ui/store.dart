@@ -18,10 +18,9 @@ class Store extends StatefulWidget {
 }
 
 class _StoreState extends State<Store> {
-  final GetProductResponse _response = GetProductResponse();
   @override
   void initState() {
-    context.read<HomeCubit>().getProducts();
+    context.read<HomeCubit>().getPurchase();
     super.initState();
   }
 
@@ -91,33 +90,36 @@ class _StoreState extends State<Store> {
                       current is loadingAddFavorite ||
                       current is ErrorDeleteFavorite ||
                       current is SuccessDeleteFavorite ||
-                      current is loadingDeleteFavorite;
+                      current is loadingDeleteFavorite ||
+                      current is loadingGetPurchase ||
+                      current is SuccessGetPurchase ||
+                      current is ErrorGetPurchase;
                 },
                 buildWhen: (previous, current) {
-                  return current is ErrorGetProduct ||
-                      current is SuccessGetProduct ||
-                      current is loadingGetProduct;
+                  return current is loadingGetPurchase ||
+                      current is SuccessGetPurchase ||
+                      current is ErrorGetPurchase;
                 },
                 builder: (context, state) {
                   return state.maybeWhen(
                     orElse: () {
                       return const SizedBox.shrink();
                     },
-                    loadingGetProduct: () {
+                    loadingGetPurchase: () {
                       return const CircularProgressIndicator(
                         color: Colors.blue,
                       );
                     },
-                    errorGetProduct: (errorMessage) {
+                    errorGetPurchase: (errorMessage) {
                       return Text(errorMessage);
                     },
-                    successGetProduct: (getProductResponse) {
-                      return getProductResponse.isEmpty
+                    successGetPurchase: (data) {
+                      return data.isEmpty
                           ? SizedBox(
                               height: 100.h,
                               child: Center(
                                 child: Text(
-                                  'not fount product !!!',
+                                  'not fount Purchase !!!',
                                   style: TextStyle(
                                     fontSize: 20.sp,
                                     color: Colors.red,
@@ -128,7 +130,7 @@ class _StoreState extends State<Store> {
                           : ListView.builder(
                               physics: const NeverScrollableScrollPhysics(),
                               shrinkWrap: true,
-                              itemCount: getProductResponse.length,
+                              itemCount: data.length,
                               itemBuilder: (context, index) => Padding(
                                 padding: const EdgeInsets.all(8.0),
                                 child: ProductCard(
@@ -138,7 +140,7 @@ class _StoreState extends State<Store> {
                                       MaterialPageRoute(
                                         builder: (context) {
                                           return ProductDetails(
-                                            data: getProductResponse[index],
+                                            data: data[index].productes!,
                                           );
                                         },
                                       ),
@@ -150,14 +152,15 @@ class _StoreState extends State<Store> {
                                         onPressed: () {
                                           if (context
                                               .read<HomeCubit>()
-                                              .checkFavorite(
-                                                  getProductResponse[index]
-                                                      .productId
-                                                      .toString())) {
+                                              .checkFavorite(data[index]
+                                                  .productes!
+                                                  .productId
+                                                  .toString())) {
                                             context
                                                 .read<HomeCubit>()
                                                 .deleteFavorite(
-                                                  getProductResponse[index]
+                                                  data[index]
+                                                      .productes!
                                                       .productId
                                                       .toString(),
                                                 );
@@ -165,7 +168,8 @@ class _StoreState extends State<Store> {
                                             context
                                                 .read<HomeCubit>()
                                                 .addFavorite(
-                                                  getProductResponse[index]
+                                                  data[index]
+                                                      .productes!
                                                       .productId
                                                       .toString(),
                                                 );
@@ -176,7 +180,8 @@ class _StoreState extends State<Store> {
                                           color: context
                                                   .read<HomeCubit>()
                                                   .checkFavorite(
-                                                    getProductResponse[index]
+                                                    data[index]
+                                                        .productes!
                                                         .productId
                                                         .toString(),
                                                   )
@@ -186,7 +191,7 @@ class _StoreState extends State<Store> {
                                       );
                                     },
                                   ),
-                                  dataProduct: getProductResponse[index],
+                                  dataProduct: data[index].productes!,
                                 ),
                               ),
                             );

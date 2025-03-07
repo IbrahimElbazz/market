@@ -9,15 +9,15 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 Map<String, bool> favoriteProduct = {};
 
 class HomeCubit extends Cubit<HomeState> {
-  HomeCubit(this._getProductRepo) : super(const HomeState.initial());
-  final HomeRepo _getProductRepo;
+  HomeCubit(this._homeRepo) : super(const HomeState.initial());
+  final HomeRepo _homeRepo;
 
   // get product method
   List<GetProductResponse> productList = [];
 
   void getProducts() async {
     emit(const HomeState.loadingGetProduct());
-    final response = await _getProductRepo.getProducts();
+    final response = await _homeRepo.getProducts();
     response.when(
       success: (productData) {
         productList = productData;
@@ -33,7 +33,7 @@ class HomeCubit extends Cubit<HomeState> {
   // get Category
   void getCategory(String categoryName) async {
     emit(const HomeState.loadingGetProduct());
-    final response = await _getProductRepo.getCategory(categoryName);
+    final response = await _homeRepo.getCategory(categoryName);
     response.when(
       success: (productData) {
         emit(HomeState.successGetProduct(productData));
@@ -48,7 +48,7 @@ class HomeCubit extends Cubit<HomeState> {
 
   void addFavorite(String productId) async {
     emit(const HomeState.loadingAddFavorite());
-    final response = await _getProductRepo.addFavorite(
+    final response = await _homeRepo.addFavorite(
       AddFavorite(
         for_product_id: productId,
         for_user_id: client.auth.currentUser!.id,
@@ -69,7 +69,7 @@ class HomeCubit extends Cubit<HomeState> {
 // delete favorite
   void deleteFavorite(String productId) async {
     emit(const HomeState.loadingDeleteFavorite());
-    final response = await _getProductRepo.deleteFavorite(
+    final response = await _homeRepo.deleteFavorite(
       client.auth.currentUser!.id,
       productId,
     );
@@ -88,5 +88,18 @@ class HomeCubit extends Cubit<HomeState> {
 
   bool checkFavorite(String productId) {
     return favoriteProduct.containsKey(productId);
+  }
+
+  Future getPurchase() async {
+    emit(const HomeState.loadingGetPurchase());
+    final response = await _homeRepo.getPurchase(client.auth.currentUser!.id);
+    response.when(
+      success: (data) {
+        emit(HomeState.successGetPurchase(data));
+      },
+      failure: (message) {
+        emit(HomeState.errorGetPurchase(errorMessage: message));
+      },
+    );
   }
 }

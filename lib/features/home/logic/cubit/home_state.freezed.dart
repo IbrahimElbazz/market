@@ -33,6 +33,10 @@ mixin _$HomeState {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -52,6 +56,10 @@ mixin _$HomeState {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -71,6 +79,10 @@ mixin _$HomeState {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -91,6 +103,9 @@ mixin _$HomeState {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -108,6 +123,9 @@ mixin _$HomeState {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -125,6 +143,9 @@ mixin _$HomeState {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -206,6 +227,10 @@ class _$InitialImpl implements _Initial {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return initial();
   }
@@ -228,6 +253,10 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return initial?.call();
   }
@@ -250,6 +279,10 @@ class _$InitialImpl implements _Initial {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -276,6 +309,9 @@ class _$InitialImpl implements _Initial {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return initial(this);
   }
@@ -296,6 +332,9 @@ class _$InitialImpl implements _Initial {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return initial?.call(this);
   }
@@ -316,6 +355,9 @@ class _$InitialImpl implements _Initial {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -385,6 +427,10 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return loadingGetProduct();
   }
@@ -407,6 +453,10 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return loadingGetProduct?.call();
   }
@@ -429,6 +479,10 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (loadingGetProduct != null) {
@@ -455,6 +509,9 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return loadingGetProduct(this);
   }
@@ -475,6 +532,9 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return loadingGetProduct?.call(this);
   }
@@ -495,6 +555,9 @@ class _$loadingGetProductImpl implements loadingGetProduct {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (loadingGetProduct != null) {
@@ -602,6 +665,10 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return successGetProduct(getProductResponse);
   }
@@ -624,6 +691,10 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return successGetProduct?.call(getProductResponse);
   }
@@ -646,6 +717,10 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (successGetProduct != null) {
@@ -672,6 +747,9 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return successGetProduct(this);
   }
@@ -692,6 +770,9 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return successGetProduct?.call(this);
   }
@@ -712,6 +793,9 @@ class _$SuccessGetProductImpl implements SuccessGetProduct {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (successGetProduct != null) {
@@ -820,6 +904,10 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return errorGetProduct(errorMessage);
   }
@@ -842,6 +930,10 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return errorGetProduct?.call(errorMessage);
   }
@@ -864,6 +956,10 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (errorGetProduct != null) {
@@ -890,6 +986,9 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return errorGetProduct(this);
   }
@@ -910,6 +1009,9 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return errorGetProduct?.call(this);
   }
@@ -930,6 +1032,9 @@ class _$ErrorGetProductImpl implements ErrorGetProduct {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (errorGetProduct != null) {
@@ -1008,6 +1113,10 @@ class _$loadingGetCategoryImpl implements loadingGetCategory {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return loadingGetCategory();
   }
@@ -1030,6 +1139,10 @@ class _$loadingGetCategoryImpl implements loadingGetCategory {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return loadingGetCategory?.call();
   }
@@ -1052,6 +1165,10 @@ class _$loadingGetCategoryImpl implements loadingGetCategory {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (loadingGetCategory != null) {
@@ -1078,6 +1195,9 @@ class _$loadingGetCategoryImpl implements loadingGetCategory {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return loadingGetCategory(this);
   }
@@ -1098,6 +1218,9 @@ class _$loadingGetCategoryImpl implements loadingGetCategory {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return loadingGetCategory?.call(this);
   }
@@ -1118,6 +1241,9 @@ class _$loadingGetCategoryImpl implements loadingGetCategory {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (loadingGetCategory != null) {
@@ -1225,6 +1351,10 @@ class _$SuccessGetCategoryImpl implements SuccessGetCategory {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return successGetCategory(getProductResponse);
   }
@@ -1247,6 +1377,10 @@ class _$SuccessGetCategoryImpl implements SuccessGetCategory {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return successGetCategory?.call(getProductResponse);
   }
@@ -1269,6 +1403,10 @@ class _$SuccessGetCategoryImpl implements SuccessGetCategory {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (successGetCategory != null) {
@@ -1295,6 +1433,9 @@ class _$SuccessGetCategoryImpl implements SuccessGetCategory {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return successGetCategory(this);
   }
@@ -1315,6 +1456,9 @@ class _$SuccessGetCategoryImpl implements SuccessGetCategory {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return successGetCategory?.call(this);
   }
@@ -1335,6 +1479,9 @@ class _$SuccessGetCategoryImpl implements SuccessGetCategory {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (successGetCategory != null) {
@@ -1443,6 +1590,10 @@ class _$ErrorGetCategoryImpl implements ErrorGetCategory {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return errorGetCategory(errorMessage);
   }
@@ -1465,6 +1616,10 @@ class _$ErrorGetCategoryImpl implements ErrorGetCategory {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return errorGetCategory?.call(errorMessage);
   }
@@ -1487,6 +1642,10 @@ class _$ErrorGetCategoryImpl implements ErrorGetCategory {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (errorGetCategory != null) {
@@ -1513,6 +1672,9 @@ class _$ErrorGetCategoryImpl implements ErrorGetCategory {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return errorGetCategory(this);
   }
@@ -1533,6 +1695,9 @@ class _$ErrorGetCategoryImpl implements ErrorGetCategory {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return errorGetCategory?.call(this);
   }
@@ -1553,6 +1718,9 @@ class _$ErrorGetCategoryImpl implements ErrorGetCategory {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (errorGetCategory != null) {
@@ -1631,6 +1799,10 @@ class _$loadingAddFavoriteImpl implements loadingAddFavorite {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return loadingAddFavorite();
   }
@@ -1653,6 +1825,10 @@ class _$loadingAddFavoriteImpl implements loadingAddFavorite {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return loadingAddFavorite?.call();
   }
@@ -1675,6 +1851,10 @@ class _$loadingAddFavoriteImpl implements loadingAddFavorite {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (loadingAddFavorite != null) {
@@ -1701,6 +1881,9 @@ class _$loadingAddFavoriteImpl implements loadingAddFavorite {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return loadingAddFavorite(this);
   }
@@ -1721,6 +1904,9 @@ class _$loadingAddFavoriteImpl implements loadingAddFavorite {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return loadingAddFavorite?.call(this);
   }
@@ -1741,6 +1927,9 @@ class _$loadingAddFavoriteImpl implements loadingAddFavorite {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (loadingAddFavorite != null) {
@@ -1810,6 +1999,10 @@ class _$SuccessAddFavoriteImpl implements SuccessAddFavorite {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return successAddFavorite();
   }
@@ -1832,6 +2025,10 @@ class _$SuccessAddFavoriteImpl implements SuccessAddFavorite {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return successAddFavorite?.call();
   }
@@ -1854,6 +2051,10 @@ class _$SuccessAddFavoriteImpl implements SuccessAddFavorite {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (successAddFavorite != null) {
@@ -1880,6 +2081,9 @@ class _$SuccessAddFavoriteImpl implements SuccessAddFavorite {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return successAddFavorite(this);
   }
@@ -1900,6 +2104,9 @@ class _$SuccessAddFavoriteImpl implements SuccessAddFavorite {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return successAddFavorite?.call(this);
   }
@@ -1920,6 +2127,9 @@ class _$SuccessAddFavoriteImpl implements SuccessAddFavorite {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (successAddFavorite != null) {
@@ -2018,6 +2228,10 @@ class _$ErrorAddFavoriteImpl implements ErrorAddFavorite {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return errorAddFavorite(errorMessage);
   }
@@ -2040,6 +2254,10 @@ class _$ErrorAddFavoriteImpl implements ErrorAddFavorite {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return errorAddFavorite?.call(errorMessage);
   }
@@ -2062,6 +2280,10 @@ class _$ErrorAddFavoriteImpl implements ErrorAddFavorite {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (errorAddFavorite != null) {
@@ -2088,6 +2310,9 @@ class _$ErrorAddFavoriteImpl implements ErrorAddFavorite {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return errorAddFavorite(this);
   }
@@ -2108,6 +2333,9 @@ class _$ErrorAddFavoriteImpl implements ErrorAddFavorite {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return errorAddFavorite?.call(this);
   }
@@ -2128,6 +2356,9 @@ class _$ErrorAddFavoriteImpl implements ErrorAddFavorite {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (errorAddFavorite != null) {
@@ -2208,6 +2439,10 @@ class _$loadingDeleteFavoriteImpl implements loadingDeleteFavorite {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return loadingDeleteFavorite();
   }
@@ -2230,6 +2465,10 @@ class _$loadingDeleteFavoriteImpl implements loadingDeleteFavorite {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return loadingDeleteFavorite?.call();
   }
@@ -2252,6 +2491,10 @@ class _$loadingDeleteFavoriteImpl implements loadingDeleteFavorite {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (loadingDeleteFavorite != null) {
@@ -2278,6 +2521,9 @@ class _$loadingDeleteFavoriteImpl implements loadingDeleteFavorite {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return loadingDeleteFavorite(this);
   }
@@ -2298,6 +2544,9 @@ class _$loadingDeleteFavoriteImpl implements loadingDeleteFavorite {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return loadingDeleteFavorite?.call(this);
   }
@@ -2318,6 +2567,9 @@ class _$loadingDeleteFavoriteImpl implements loadingDeleteFavorite {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (loadingDeleteFavorite != null) {
@@ -2389,6 +2641,10 @@ class _$SuccessDeleteFavoriteImpl implements SuccessDeleteFavorite {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return successDeleteFavorite();
   }
@@ -2411,6 +2667,10 @@ class _$SuccessDeleteFavoriteImpl implements SuccessDeleteFavorite {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return successDeleteFavorite?.call();
   }
@@ -2433,6 +2693,10 @@ class _$SuccessDeleteFavoriteImpl implements SuccessDeleteFavorite {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (successDeleteFavorite != null) {
@@ -2459,6 +2723,9 @@ class _$SuccessDeleteFavoriteImpl implements SuccessDeleteFavorite {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return successDeleteFavorite(this);
   }
@@ -2479,6 +2746,9 @@ class _$SuccessDeleteFavoriteImpl implements SuccessDeleteFavorite {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return successDeleteFavorite?.call(this);
   }
@@ -2499,6 +2769,9 @@ class _$SuccessDeleteFavoriteImpl implements SuccessDeleteFavorite {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (successDeleteFavorite != null) {
@@ -2597,6 +2870,10 @@ class _$ErrorDeleteFavoriteImpl implements ErrorDeleteFavorite {
     required TResult Function() loadingDeleteFavorite,
     required TResult Function() successDeleteFavorite,
     required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
   }) {
     return errorDeleteFavorite(errorMessage);
   }
@@ -2619,6 +2896,10 @@ class _$ErrorDeleteFavoriteImpl implements ErrorDeleteFavorite {
     TResult? Function()? loadingDeleteFavorite,
     TResult? Function()? successDeleteFavorite,
     TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
   }) {
     return errorDeleteFavorite?.call(errorMessage);
   }
@@ -2641,6 +2922,10 @@ class _$ErrorDeleteFavoriteImpl implements ErrorDeleteFavorite {
     TResult Function()? loadingDeleteFavorite,
     TResult Function()? successDeleteFavorite,
     TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (errorDeleteFavorite != null) {
@@ -2667,6 +2952,9 @@ class _$ErrorDeleteFavoriteImpl implements ErrorDeleteFavorite {
     required TResult Function(SuccessDeleteFavorite value)
         successDeleteFavorite,
     required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
   }) {
     return errorDeleteFavorite(this);
   }
@@ -2687,6 +2975,9 @@ class _$ErrorDeleteFavoriteImpl implements ErrorDeleteFavorite {
     TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
   }) {
     return errorDeleteFavorite?.call(this);
   }
@@ -2707,6 +2998,9 @@ class _$ErrorDeleteFavoriteImpl implements ErrorDeleteFavorite {
     TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
     TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
     TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
     required TResult orElse(),
   }) {
     if (errorDeleteFavorite != null) {
@@ -2726,5 +3020,689 @@ abstract class ErrorDeleteFavorite implements HomeState {
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ErrorDeleteFavoriteImplCopyWith<_$ErrorDeleteFavoriteImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$loadingGetPurchaseImplCopyWith<$Res> {
+  factory _$$loadingGetPurchaseImplCopyWith(_$loadingGetPurchaseImpl value,
+          $Res Function(_$loadingGetPurchaseImpl) then) =
+      __$$loadingGetPurchaseImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$loadingGetPurchaseImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$loadingGetPurchaseImpl>
+    implements _$$loadingGetPurchaseImplCopyWith<$Res> {
+  __$$loadingGetPurchaseImplCopyWithImpl(_$loadingGetPurchaseImpl _value,
+      $Res Function(_$loadingGetPurchaseImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$loadingGetPurchaseImpl implements loadingGetPurchase {
+  const _$loadingGetPurchaseImpl();
+
+  @override
+  String toString() {
+    return 'HomeState.loadingGetPurchase()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$loadingGetPurchaseImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProduct,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetProduct,
+    required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
+  }) {
+    return loadingGetPurchase();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProduct,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
+  }) {
+    return loadingGetPurchase?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProduct,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
+    required TResult orElse(),
+  }) {
+    if (loadingGetPurchase != null) {
+      return loadingGetPurchase();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(loadingGetProduct value) loadingGetProduct,
+    required TResult Function(SuccessGetProduct value) successGetProduct,
+    required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
+  }) {
+    return loadingGetPurchase(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(loadingGetProduct value)? loadingGetProduct,
+    TResult? Function(SuccessGetProduct value)? successGetProduct,
+    TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
+  }) {
+    return loadingGetPurchase?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(loadingGetProduct value)? loadingGetProduct,
+    TResult Function(SuccessGetProduct value)? successGetProduct,
+    TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
+    required TResult orElse(),
+  }) {
+    if (loadingGetPurchase != null) {
+      return loadingGetPurchase(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class loadingGetPurchase implements HomeState {
+  const factory loadingGetPurchase() = _$loadingGetPurchaseImpl;
+}
+
+/// @nodoc
+abstract class _$$SuccessGetPurchaseImplCopyWith<$Res> {
+  factory _$$SuccessGetPurchaseImplCopyWith(_$SuccessGetPurchaseImpl value,
+          $Res Function(_$SuccessGetPurchaseImpl) then) =
+      __$$SuccessGetPurchaseImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({List<GetPurchaseModel> getPurchaseModel});
+}
+
+/// @nodoc
+class __$$SuccessGetPurchaseImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$SuccessGetPurchaseImpl>
+    implements _$$SuccessGetPurchaseImplCopyWith<$Res> {
+  __$$SuccessGetPurchaseImplCopyWithImpl(_$SuccessGetPurchaseImpl _value,
+      $Res Function(_$SuccessGetPurchaseImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? getPurchaseModel = null,
+  }) {
+    return _then(_$SuccessGetPurchaseImpl(
+      null == getPurchaseModel
+          ? _value._getPurchaseModel
+          : getPurchaseModel // ignore: cast_nullable_to_non_nullable
+              as List<GetPurchaseModel>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$SuccessGetPurchaseImpl implements SuccessGetPurchase {
+  const _$SuccessGetPurchaseImpl(final List<GetPurchaseModel> getPurchaseModel)
+      : _getPurchaseModel = getPurchaseModel;
+
+  final List<GetPurchaseModel> _getPurchaseModel;
+  @override
+  List<GetPurchaseModel> get getPurchaseModel {
+    if (_getPurchaseModel is EqualUnmodifiableListView)
+      return _getPurchaseModel;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_getPurchaseModel);
+  }
+
+  @override
+  String toString() {
+    return 'HomeState.successGetPurchase(getPurchaseModel: $getPurchaseModel)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$SuccessGetPurchaseImpl &&
+            const DeepCollectionEquality()
+                .equals(other._getPurchaseModel, _getPurchaseModel));
+  }
+
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, const DeepCollectionEquality().hash(_getPurchaseModel));
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$SuccessGetPurchaseImplCopyWith<_$SuccessGetPurchaseImpl> get copyWith =>
+      __$$SuccessGetPurchaseImplCopyWithImpl<_$SuccessGetPurchaseImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProduct,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetProduct,
+    required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
+  }) {
+    return successGetPurchase(getPurchaseModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProduct,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
+  }) {
+    return successGetPurchase?.call(getPurchaseModel);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProduct,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
+    required TResult orElse(),
+  }) {
+    if (successGetPurchase != null) {
+      return successGetPurchase(getPurchaseModel);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(loadingGetProduct value) loadingGetProduct,
+    required TResult Function(SuccessGetProduct value) successGetProduct,
+    required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
+  }) {
+    return successGetPurchase(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(loadingGetProduct value)? loadingGetProduct,
+    TResult? Function(SuccessGetProduct value)? successGetProduct,
+    TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
+  }) {
+    return successGetPurchase?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(loadingGetProduct value)? loadingGetProduct,
+    TResult Function(SuccessGetProduct value)? successGetProduct,
+    TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
+    required TResult orElse(),
+  }) {
+    if (successGetPurchase != null) {
+      return successGetPurchase(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class SuccessGetPurchase implements HomeState {
+  const factory SuccessGetPurchase(
+      final List<GetPurchaseModel> getPurchaseModel) = _$SuccessGetPurchaseImpl;
+
+  List<GetPurchaseModel> get getPurchaseModel;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$SuccessGetPurchaseImplCopyWith<_$SuccessGetPurchaseImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$ErrorGetPurchaseImplCopyWith<$Res> {
+  factory _$$ErrorGetPurchaseImplCopyWith(_$ErrorGetPurchaseImpl value,
+          $Res Function(_$ErrorGetPurchaseImpl) then) =
+      __$$ErrorGetPurchaseImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({String errorMessage});
+}
+
+/// @nodoc
+class __$$ErrorGetPurchaseImplCopyWithImpl<$Res>
+    extends _$HomeStateCopyWithImpl<$Res, _$ErrorGetPurchaseImpl>
+    implements _$$ErrorGetPurchaseImplCopyWith<$Res> {
+  __$$ErrorGetPurchaseImplCopyWithImpl(_$ErrorGetPurchaseImpl _value,
+      $Res Function(_$ErrorGetPurchaseImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? errorMessage = null,
+  }) {
+    return _then(_$ErrorGetPurchaseImpl(
+      errorMessage: null == errorMessage
+          ? _value.errorMessage
+          : errorMessage // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ErrorGetPurchaseImpl implements ErrorGetPurchase {
+  const _$ErrorGetPurchaseImpl({required this.errorMessage});
+
+  @override
+  final String errorMessage;
+
+  @override
+  String toString() {
+    return 'HomeState.errorGetPurchase(errorMessage: $errorMessage)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ErrorGetPurchaseImpl &&
+            (identical(other.errorMessage, errorMessage) ||
+                other.errorMessage == errorMessage));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, errorMessage);
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ErrorGetPurchaseImplCopyWith<_$ErrorGetPurchaseImpl> get copyWith =>
+      __$$ErrorGetPurchaseImplCopyWithImpl<_$ErrorGetPurchaseImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loadingGetProduct,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetProduct,
+    required TResult Function(String errorMessage) errorGetProduct,
+    required TResult Function() loadingGetCategory,
+    required TResult Function(List<GetProductResponse> getProductResponse)
+        successGetCategory,
+    required TResult Function(String errorMessage) errorGetCategory,
+    required TResult Function() loadingAddFavorite,
+    required TResult Function() successAddFavorite,
+    required TResult Function(String errorMessage) errorAddFavorite,
+    required TResult Function() loadingDeleteFavorite,
+    required TResult Function() successDeleteFavorite,
+    required TResult Function(String errorMessage) errorDeleteFavorite,
+    required TResult Function() loadingGetPurchase,
+    required TResult Function(List<GetPurchaseModel> getPurchaseModel)
+        successGetPurchase,
+    required TResult Function(String errorMessage) errorGetPurchase,
+  }) {
+    return errorGetPurchase(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loadingGetProduct,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult? Function(String errorMessage)? errorGetProduct,
+    TResult? Function()? loadingGetCategory,
+    TResult? Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult? Function(String errorMessage)? errorGetCategory,
+    TResult? Function()? loadingAddFavorite,
+    TResult? Function()? successAddFavorite,
+    TResult? Function(String errorMessage)? errorAddFavorite,
+    TResult? Function()? loadingDeleteFavorite,
+    TResult? Function()? successDeleteFavorite,
+    TResult? Function(String errorMessage)? errorDeleteFavorite,
+    TResult? Function()? loadingGetPurchase,
+    TResult? Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult? Function(String errorMessage)? errorGetPurchase,
+  }) {
+    return errorGetPurchase?.call(errorMessage);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loadingGetProduct,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetProduct,
+    TResult Function(String errorMessage)? errorGetProduct,
+    TResult Function()? loadingGetCategory,
+    TResult Function(List<GetProductResponse> getProductResponse)?
+        successGetCategory,
+    TResult Function(String errorMessage)? errorGetCategory,
+    TResult Function()? loadingAddFavorite,
+    TResult Function()? successAddFavorite,
+    TResult Function(String errorMessage)? errorAddFavorite,
+    TResult Function()? loadingDeleteFavorite,
+    TResult Function()? successDeleteFavorite,
+    TResult Function(String errorMessage)? errorDeleteFavorite,
+    TResult Function()? loadingGetPurchase,
+    TResult Function(List<GetPurchaseModel> getPurchaseModel)?
+        successGetPurchase,
+    TResult Function(String errorMessage)? errorGetPurchase,
+    required TResult orElse(),
+  }) {
+    if (errorGetPurchase != null) {
+      return errorGetPurchase(errorMessage);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(loadingGetProduct value) loadingGetProduct,
+    required TResult Function(SuccessGetProduct value) successGetProduct,
+    required TResult Function(ErrorGetProduct value) errorGetProduct,
+    required TResult Function(loadingGetCategory value) loadingGetCategory,
+    required TResult Function(SuccessGetCategory value) successGetCategory,
+    required TResult Function(ErrorGetCategory value) errorGetCategory,
+    required TResult Function(loadingAddFavorite value) loadingAddFavorite,
+    required TResult Function(SuccessAddFavorite value) successAddFavorite,
+    required TResult Function(ErrorAddFavorite value) errorAddFavorite,
+    required TResult Function(loadingDeleteFavorite value)
+        loadingDeleteFavorite,
+    required TResult Function(SuccessDeleteFavorite value)
+        successDeleteFavorite,
+    required TResult Function(ErrorDeleteFavorite value) errorDeleteFavorite,
+    required TResult Function(loadingGetPurchase value) loadingGetPurchase,
+    required TResult Function(SuccessGetPurchase value) successGetPurchase,
+    required TResult Function(ErrorGetPurchase value) errorGetPurchase,
+  }) {
+    return errorGetPurchase(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(loadingGetProduct value)? loadingGetProduct,
+    TResult? Function(SuccessGetProduct value)? successGetProduct,
+    TResult? Function(ErrorGetProduct value)? errorGetProduct,
+    TResult? Function(loadingGetCategory value)? loadingGetCategory,
+    TResult? Function(SuccessGetCategory value)? successGetCategory,
+    TResult? Function(ErrorGetCategory value)? errorGetCategory,
+    TResult? Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult? Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult? Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult? Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult? Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult? Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult? Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult? Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult? Function(ErrorGetPurchase value)? errorGetPurchase,
+  }) {
+    return errorGetPurchase?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(loadingGetProduct value)? loadingGetProduct,
+    TResult Function(SuccessGetProduct value)? successGetProduct,
+    TResult Function(ErrorGetProduct value)? errorGetProduct,
+    TResult Function(loadingGetCategory value)? loadingGetCategory,
+    TResult Function(SuccessGetCategory value)? successGetCategory,
+    TResult Function(ErrorGetCategory value)? errorGetCategory,
+    TResult Function(loadingAddFavorite value)? loadingAddFavorite,
+    TResult Function(SuccessAddFavorite value)? successAddFavorite,
+    TResult Function(ErrorAddFavorite value)? errorAddFavorite,
+    TResult Function(loadingDeleteFavorite value)? loadingDeleteFavorite,
+    TResult Function(SuccessDeleteFavorite value)? successDeleteFavorite,
+    TResult Function(ErrorDeleteFavorite value)? errorDeleteFavorite,
+    TResult Function(loadingGetPurchase value)? loadingGetPurchase,
+    TResult Function(SuccessGetPurchase value)? successGetPurchase,
+    TResult Function(ErrorGetPurchase value)? errorGetPurchase,
+    required TResult orElse(),
+  }) {
+    if (errorGetPurchase != null) {
+      return errorGetPurchase(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ErrorGetPurchase implements HomeState {
+  const factory ErrorGetPurchase({required final String errorMessage}) =
+      _$ErrorGetPurchaseImpl;
+
+  String get errorMessage;
+
+  /// Create a copy of HomeState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ErrorGetPurchaseImplCopyWith<_$ErrorGetPurchaseImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

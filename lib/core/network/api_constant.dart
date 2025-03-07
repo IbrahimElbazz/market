@@ -18,4 +18,6 @@ class ApiConstant {
       'favorite_product?for_user_id=eq.{userId}&for_product_id=eq.{productId}';
   static const getFavorite =
       'favorite_product?select=*,productes(*)&for_user_id=eq.{id}';
+  static const getPurchase =
+      'purchase_table?select=*,productes(*)&for_user_id=eq.{id}';
 }

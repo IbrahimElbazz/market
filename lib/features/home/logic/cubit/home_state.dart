@@ -1,5 +1,6 @@
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:market/features/home/data/models/get_product_response.dart';
+import 'package:market/features/home/data/models/get_purchase_model.dart';
 
 part 'home_state.freezed.dart';
 
@@ -32,4 +33,11 @@ class HomeState with _$HomeState {
   const factory HomeState.successDeleteFavorite() = SuccessDeleteFavorite;
   const factory HomeState.errorDeleteFavorite({required String errorMessage}) =
       ErrorDeleteFavorite;
+
+  // get Purchase
+  const factory HomeState.loadingGetPurchase() = loadingGetPurchase;
+  const factory HomeState.successGetPurchase(
+      List<GetPurchaseModel> getPurchaseModel) = SuccessGetPurchase;
+  const factory HomeState.errorGetPurchase({required String errorMessage}) =
+      ErrorGetPurchase;
 }

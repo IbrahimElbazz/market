@@ -5,6 +5,7 @@ import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:market/core/constant/table.dart';
+import 'package:market/core/helper/shared_pref_helper.dart';
 import 'package:market/market.dart';
 import 'package:market/features/auth/login/logic/cubit/login_state.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
@@ -74,7 +75,12 @@ class LoginCubit extends Cubit<LoginState> {
     emit(const LoginState.saveUserDataLoading());
     try {
       await client.from(TableHelper.userDataTable).upsert(
-          {'name': name, 'email': email, 'id': client.auth.currentUser!.id});
+        {
+          'name': name,
+          'email': email,
+          'id': client.auth.currentUser!.id,
+        },
+      );
 
       emit(const LoginState.saveUserDataSuccess());
     } catch (e) {

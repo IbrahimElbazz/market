@@ -3,6 +3,7 @@ import 'package:market/core/network/api_constant.dart';
 import 'package:market/features/favorite/data/models/get_fav_model.dart';
 import 'package:market/features/home/data/models/add_favorite.dart';
 import 'package:market/features/home/data/models/get_product_response.dart';
+import 'package:market/features/home/data/models/get_purchase_model.dart';
 import 'package:market/features/product_details/data/models/comments/add_comment_model.dart';
 import 'package:market/features/product_details/data/models/comments/get_comments_response_model.dart';
 import 'package:market/features/product_details/data/models/rates/add_rate_request_model.dart';
@@ -72,6 +73,10 @@ abstract class ApiService {
 
   @GET(ApiConstant.getFavorite)
   Future<List<getFavoriteModel>> getFavorite(
+    @Path('id') String id,
+  );
+  @GET(ApiConstant.getPurchase)
+  Future<List<GetPurchaseModel>> getPurchase(
     @Path('id') String id,
   );
 }
